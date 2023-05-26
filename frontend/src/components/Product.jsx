@@ -2,7 +2,6 @@ import { featureProducts, latestProducts, offers } from "../../data";
 
 const items = ["New Arrivals", "Best Sellers", "Featured", "Special 0ffers"];
 const grid1 = `grid grid-rows-1`;
-const grid2 = `grid grid-rows-4 grid-flow-col gap-4`;
 const flexCenter = `flex items-center justify-center`;
 
 const Product = () => {
@@ -51,19 +50,21 @@ const Product = () => {
           </ul>
         </div>
 
-        <div className=" mt-20 grid grid-flow-row grid-cols-3">
+        <div className=" mt-20 grid grid-flow-row  grid-cols-3 bg-emerald-300">
           {latestProducts.map((product) => (
-            <div className={`${grid2} h-[306px] w-[360px]`} key={product.id}>
-              <div className={`${flexCenter} bg-bgcard px-5 py-5`}>
+            <div key={product.id}>
+              <div className={`bg-bgcard px-5 py-5`}>
                 <img src={product.img} alt={product.name} className="" />
+                <div className={` flex gap-x-4 bg-white`}>
+                  <p className="text-sm text-pink">{product.name}</p>
+                  <div className="flex justify-center space-x-2">
+                    <p className="text-sm text-blue ">{product.discount}</p>
+                    <p className="text-sm text-red line-through">
+                      {product.price}
+                    </p>
+                  </div>
+                </div>
               </div>
-
-              {/* <div className={`${flexCenter} gap-x-2 bg-white px-8 py-2`}>
-                <p className="text-sm text-pink">{product.name}</p>
-
-                <p className="text-sm text-blue ">{product.discount}</p>
-                <p className="text-sm text-red line-through">{product.price}</p>
-              </div> */}
             </div>
           ))}
         </div>
