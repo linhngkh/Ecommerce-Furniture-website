@@ -4,14 +4,17 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        dmsans: ["DM Sans", "sans-serif"],
-        montserrat: ["Montserrat", "sans-serif"],
+        jose: ["Josefin Sans", "sans-serif"],
       },
       screens: {
         xs: "480px",
         sm: "768px",
         md: "1060px",
       },
+      colors: {
+        pink: "#fb2e86",
+        
+      }
     },
   },
   plugins: [],
