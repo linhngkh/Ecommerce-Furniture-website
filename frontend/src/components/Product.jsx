@@ -50,7 +50,7 @@ const Product = () => {
           </ul>
         </div>
 
-        <div className=" mt-20 grid grid-flow-row  grid-cols-3 bg-emerald-300">
+        <div className=" mt-10 grid grid-flow-col grid-rows-2  gap-4 bg-emerald-300 ">
           {latestProducts.map((product) => (
             <div key={product.id}>
               <div className={`bg-bgcard px-5 py-5`}>
