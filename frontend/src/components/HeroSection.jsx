@@ -1,4 +1,4 @@
-import React from "react";
+import ActionButton from "../shares/ActionButton";
 
 const HeroSection = () => {
   return (
@@ -17,9 +17,7 @@ const HeroSection = () => {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in
             est adipiscing in phasellus non in justo.
           </p>
-          <button className="bg-pink px-8 py-2 text-sm text-white">
-            Shop Now
-          </button>
+          <ActionButton>Shop Now</ActionButton>
         </div>
         {/* images */}
         <div className="flex-1">
