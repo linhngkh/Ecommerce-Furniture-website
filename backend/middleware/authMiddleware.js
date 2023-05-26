@@ -1,12 +1,12 @@
 const jwt = require("jsonwebtoken");
-
-const expressAsyncHandler = require("express-async-handler");
 const User = require("../models/User");
 const ExpressAsyncHandler = require("express-async-handler");
 
 const protect = ExpressAsyncHandler(async (req, res, next) => {
   let token;
+
   token = req.cookies.jwt;
+
   if (token) {
     try {
       const decoded = jwt.verify(token, process.env.JWT_SECRET);

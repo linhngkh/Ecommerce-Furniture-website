@@ -78,15 +78,20 @@ const getUserProfile = asyncHandler(async (req, res) => {
 //PUT /api/users/profile
 
 const updateUserProfile = asyncHandler(async (req, res) => {
-  const user = await User.findById(req.params.id);
+  //get user info
+  const user = await User.findById(req.user._id);
+
+  //check user to update
   if (user) {
     user.username = req.body.username || user.username;
     user.email = req.body.email || user.email;
-
+    //check password to update
     if (req.body.password) {
       user.password = req.body.password;
     }
+    //save new updated user
     const updatedUser = await user.save();
+
     res.status(200).json({
       _id: updatedUser._id,
       username: updatedUser.username,
