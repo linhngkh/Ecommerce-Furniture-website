@@ -21,6 +21,7 @@ export default {
         primary: "#F2F0FF",
         secondary: "#F6F7FB",
         bgcard: "#F7F7F7",
+        subtext: "#babbce",
         lightblue: "#00C1FE",
         mint: "#05E6B7",
         sand: "#FFEAC1",
