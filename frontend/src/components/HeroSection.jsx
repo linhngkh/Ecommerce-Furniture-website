@@ -1,8 +1,9 @@
 import ActionButton from "../shares/ActionButton";
+import Armchair from "../assets/armchair.png";
 
 const HeroSection = () => {
   return (
-    <section className="min-h-full w-full bg-primary">
+    <section className=" min-h-full w-full bg-primary">
       <div className="flex  items-center px-20 py-20">
         {/* text */}
         <div className="flex-1 flex-col space-y-5">
@@ -21,9 +22,16 @@ const HeroSection = () => {
         </div>
         {/* images */}
         <div className="flex-1">
-          <img src="/armchair.png" alt="arm chair" />
+          <div className="relative">
+            <div className="before:top-50 ] before:absolute before:left-10  before:h-screen before:w-screen md:before:content-bg1 z-[-1]">
+              <div className="before:top-50 before:left-15 before:absolute  md:before:content-bg2 ">
+                <img src={Armchair} alt="arm chair" />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+
       <div>dot dot dot </div>
     </section>
   );

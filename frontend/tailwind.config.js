@@ -22,6 +22,10 @@ export default {
         mint: "#05E6B7",
         sand: "#FFEAC1",
       },
+      content: {
+        bg1: "url('./assets/eclipse60.png')",
+        bg2: "url('./assets/eclipse61.png')",
+      },
     },
     plugins: [],
   },
