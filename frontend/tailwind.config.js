@@ -13,9 +13,15 @@ export default {
       },
       colors: {
         pink: "#fb2e86",
-        
-      }
+        deepestblue: "#0D0E43",
+        deeperblue: "#2F1AC4",
+        violet: "#7E33E0",
+        primary: "#F2F0FF",
+        lightblue: "#00C1FE",
+        mint: "#05E6B7",
+        sand: "#FFEAC1",
+      },
     },
+    plugins: [],
   },
-  plugins: [],
 };
