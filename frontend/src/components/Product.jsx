@@ -1,32 +1,52 @@
 import { featureProducts, newProducts, offers } from "../../data";
-import ProductCard from "./ProductCard";
+
+const items = ["New Arrivals", "Best Sellers", "Featured", "Special 0ffers"];
+const grid = `grid grid-rows-1`;
+const flexCenter = `flex items-center justify-center`;
 
 const Product = () => {
   return (
     <section className="mx-auto min-h-full w-5/6 py-20">
       <div className="py-20">
-        <h1 className="text-center font-jose text-4xl text-blue">
+        <h1 className="text-center font-jose text-4xl font-bold text-blue">
           Featured Products
         </h1>
         {/* featured products */}
-        <div className="mt-5 flex  justify-evenly  md:flex">
+        <div className="mt-10 flex  justify-evenly  md:flex">
           {featureProducts.map((product, id) => (
-            <ProductCard product={product} key={id} />
+            <div
+              className={`${grid} h-[361px] w-[270px] drop-shadow-xl`}
+              key={id}
+            >
+              <div className={`${flexCenter} bg-secondary px-5 py-5`}>
+                <img src={product.img} alt={product.name} className="" />
+              </div>
+              <div
+                className={`${flexCenter} flex-col gap-y-2 bg-white px-8 py-2`}
+              >
+                <h3 className="text-pink">{product.name}</h3>
+                <img src={product.color} alt={product.name} />
+                <p className="font-sm font-jose text-blue">{product.code}</p>
+                <p className="text-sm text-blue">{product.price}</p>
+              </div>
+            </div>
           ))}
         </div>
       </div>
 
       {/* latest products */}
       <div>
-        <h1 className="text-center font-jose text-4xl text-blue">
+        <h1 className="text-center font-jose text-4xl font-bold text-blue">
           Latest Products
         </h1>
         <div>
           <ul className=" flex justify-center gap-4 py-5 text-blue ">
-            <li className="hover:text-pink hover:underline">New Arrivals</li>
-            <li className="hover:text-pink hover:underline">Best Sellers</li>
-            <li className="hover:text-pink hover:underline">Featured</li>
-            <li className="hover:text-pink hover:underline">Special 0ffers</li>
+            {items.map((item, index) => (
+              <li className="hover:text-pink hover:underline" key={index}>
+                {" "}
+                {item}
+              </li>
+            ))}
           </ul>
         </div>
         {newProducts.map((product) => (
