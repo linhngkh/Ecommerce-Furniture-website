@@ -52,7 +52,9 @@ const Header = () => {
                 to="/"
                 className={({ isActive }) => (isActive ? activeClassname : "")}
               >
-                Home
+                <div className={`${itemCenter}`}>
+                  Home <FiChevronDown />
+                </div>
               </NavLink>
             </li>
             <li>
