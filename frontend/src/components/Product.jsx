@@ -8,7 +8,7 @@ const Product = () => {
         Featured Products
       </h1>
       {/* featured products */}
-      <div className="mt-5 items-center justify-between gap-8 md:flex">
+      <div className="m-5 flex  justify-between  md:flex">
         {featureProducts.map((product, id) => (
           <ProductCard product={product} key={id} />
         ))}

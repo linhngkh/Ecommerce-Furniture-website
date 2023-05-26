@@ -17,7 +17,7 @@ export const featureProducts = [
   },
   {
     id: 3,
-    img: "./src/assets/chair1.png",
+    img: "./src/assets/chairblue.png",
     name: "Cantilever chair",
     color: "./src/assets/colors.png",
     code: "Code - Y523201",
