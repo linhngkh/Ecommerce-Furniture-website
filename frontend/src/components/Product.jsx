@@ -77,18 +77,18 @@ const Product = () => {
           What Shop Offer!
         </h1>
 
-        <div className="mt-10 flex justify-between ">
+        <div className="mt-10  flex justify-between rounded-sm bg-secondary p-2">
           {offers.map((offer) => (
             <div
               key={offer.index}
-              className={`flex h-[320px] w-[270px] flex-col items-center justify-center bg-white p-3 drop-shadow-lg`}
+              className={` ${flexCenter} h-[320px] w-[270px] flex-col  bg-white `}
             >
               {" "}
               <div className={`${flexCenter}`}>
                 <img src={offer.img} alt="image" />
               </div>{" "}
               <div className="px-2 py-2 text-center">
-                <p>{offer.name}</p>
+                <p className="mb-3">{offer.name}</p>
                 <p className="text-sm text-subtext">{offer.desc}</p>
               </div>
             </div>
