@@ -58,12 +58,12 @@ const Product = () => {
                 <img src={product.img} alt={product.name} className="" />
               </div>
 
-              <div className={`${flexCenter} gap-x-2 bg-white px-8 py-2`}>
+              {/* <div className={`${flexCenter} gap-x-2 bg-white px-8 py-2`}>
                 <p className="text-sm text-pink">{product.name}</p>
 
                 <p className="text-sm text-blue ">{product.discount}</p>
                 <p className="text-sm text-red line-through">{product.price}</p>
-              </div>
+              </div> */}
             </div>
           ))}
         </div>
