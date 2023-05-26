@@ -33,7 +33,7 @@ export const featureProducts = [
   },
 ];
 
-export const newProducts = [
+export const latestProducts = [
   {
     id: 1,
     img: "./src/assets/chair5.png",
