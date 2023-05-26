@@ -23,7 +23,7 @@ export default {
         sand: "#FFEAC1",
       },
       content: {
-        bg1: "url('./assets/eclipse60.png')",
+        lamp: "url('./assets/eclipse60.png')",
         bg2: "url('./assets/eclipse61.png')",
       },
     },

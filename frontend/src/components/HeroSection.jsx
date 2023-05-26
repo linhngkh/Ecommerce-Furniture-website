@@ -1,10 +1,12 @@
 import ActionButton from "../shares/ActionButton";
-import Armchair from "../assets/armchair.png";
-
+import Sofa from "../assets/sofa.png";
+import Lamp from "../assets/lamp.png";
 const HeroSection = () => {
   return (
     <section className=" min-h-full w-full bg-primary">
-      <div className="flex  items-center px-20 py-20">
+      <img src={Lamp} alt="lamp" />
+
+      <div className="flex  items-center px-10 py-20">
         {/* text */}
         <div className="flex-1 flex-col space-y-5">
           <p className="text-sm text-pink">
@@ -22,12 +24,8 @@ const HeroSection = () => {
         </div>
         {/* images */}
         <div className="flex-1">
-          <div className="relative">
-            <div className="before:top-50 ] before:absolute before:left-10  before:h-screen before:w-screen md:before:content-bg1 z-[-1]">
-              <div className="before:top-50 before:left-15 before:absolute  md:before:content-bg2 ">
-                <img src={Armchair} alt="arm chair" />
-              </div>
-            </div>
+          <div className="relative ">
+            <img src={Sofa} alt="sofa" />
           </div>
         </div>
       </div>
