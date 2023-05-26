@@ -25,7 +25,7 @@ export const featureProducts = [
   },
   {
     id: 4,
-    img: "./src/assets/chair4.png",
+    img: "./src/assets/chair22.png",
     name: "Cantilever chair",
     color: "./src/assets/colors.png",
     code: "Code - Y523201",
@@ -36,7 +36,7 @@ export const featureProducts = [
 export const latestProducts = [
   {
     id: 1,
-    img: "./src/assets/chair5.png",
+    img: "./src/assets/brown.png",
     name: "Comfort Handy Craft",
     price: "€65.00",
     discount: "€42.00",
@@ -71,7 +71,7 @@ export const latestProducts = [
   },
   {
     id: 6,
-    img: "./src/assets/chair4.png",
+    img: "./src/assets/chair22.png",
     name: "Cantilever chair",
     price: "€105.00",
     discount: "€82.00",
@@ -82,17 +82,21 @@ export const offers = [
   {
     img: "./src/assets/delivery.png",
     name: "24/7 Support",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida.",
   },
   {
     img: "./src/assets/cashback.png",
     name: "24/7 Support",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida.",
   },
   {
     img: "./src/assets/quality.png",
     name: "24/7 Support",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida.",
   },
   {
     img: "./src/assets/support.png",
     name: "24/7 Support",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida.",
   },
 ];

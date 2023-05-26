@@ -50,14 +50,15 @@ const Product = () => {
           </ul>
         </div>
 
-        <div className=" mt-10 grid grid-flow-col grid-rows-2  gap-4 bg-emerald-300 ">
+        <div className=" mt-10 grid grid-cols-3 grid-rows-2 gap-y-2  ">
           {latestProducts.map((product) => (
-            <div key={product.id}>
-              <div className={`bg-bgcard px-5 py-5`}>
+            <div key={product.id} className="flex items-center justify-center ">
+              <div className={`grid place-items-center bg-secondary`}>
                 <img src={product.img} alt={product.name} className="" />
-                <div className={` flex gap-x-4 bg-white`}>
-                  <p className="text-sm text-pink">{product.name}</p>
-                  <div className="flex justify-center space-x-2">
+                <div className="flex space-x-2 bg-white py-2">
+                  <p className="text-sm text-blue">{product.name}</p>
+
+                  <div className="flex space-x-2 ">
                     <p className="text-sm text-blue ">{product.discount}</p>
                     <p className="text-sm text-red line-through">
                       {product.price}
@@ -69,13 +70,34 @@ const Product = () => {
           ))}
         </div>
       </div>
-      <div>
-        {offers.map((offer) => (
-          <div key={offer.index}>
-            {" "}
-            <img src={offer.img} alt="" />
-          </div>
-        ))}
+
+      {/* offers */}
+      <div className="mt-10">
+        <h1 className="text-center font-jose text-4xl font-bold text-blue">
+          What Shop Offer!
+        </h1>
+
+        <div className="mt-10 flex justify-between">
+          {offers.map((offer) => (
+            <div
+              key={offer.index}
+              //   className={`flex h-[320px] w-[270px] flex-col space-x-3 bg-emerald-50 drop-shadow-lg`}
+              className={`${grid1} h-[320px] w-[270px] space-x-3  drop-shadow-lg`}
+            >
+              {" "}
+              <div className={`${flexCenter}  px-5 py-5`}>
+                <img src={offer.img} alt="image" />
+              </div>
+              <div
+                className={`${flexCenter} flex-col gap-y-2 bg-white px-8 py-2`}
+              >
+                {" "}
+                <p>{offer.name}</p>
+                <p>{offer.desc}</p>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );
