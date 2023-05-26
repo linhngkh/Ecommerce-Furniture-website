@@ -1,17 +1,20 @@
-import { featureProducts, newProducts } from "../../data";
+import { featureProducts, newProducts, offers } from "../../data";
+import ProductCard from "./ProductCard";
 
 const Product = () => {
   return (
-    <>
-      <div>
-        {featureProducts.map((product) => (
-          <div key={product.index}>
-            {" "}
-            <img src={product.img} alt="" />
-            <p>{product.name}</p>
-          </div>
+    <section className="mx-auto min-h-full w-5/6 py-20">
+      <h1 className="text-center font-jose text-4xl text-blue">
+        Featured Products
+      </h1>
+      {/* featured products */}
+      <div className="mt-5 items-center justify-between gap-8 md:flex">
+        {featureProducts.map((product, id) => (
+          <ProductCard product={product} key={id} />
         ))}
       </div>
+
+      {/* latest products */}
       <div>
         {newProducts.map((product) => (
           <div key={product.index}>
@@ -20,7 +23,15 @@ const Product = () => {
           </div>
         ))}
       </div>
-    </>
+      <div>
+        {offers.map((offer) => (
+          <div key={offer.index}>
+            {" "}
+            <img src={offer.img} alt="" />
+          </div>
+        ))}
+      </div>
+    </section>
   );
 };
 

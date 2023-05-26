@@ -44,7 +44,7 @@ const Header = () => {
       </div>
       {/* below header */}
       <div className={` ${divBetween} gap-3  px-20 py-2`}>
-        <h1 className="text-2xl font-bold">Hekto</h1>
+        <h1 className="font-jose text-2xl font-bold">Hekto</h1>
         <div className="">
           <ul className="flex flex-row gap-5">
             <li>

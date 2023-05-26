@@ -14,10 +14,11 @@ export default {
       colors: {
         pink: "#fb2e86",
         deeppink: "#be185d",
-        deepestblue: "#0D0E43",
-        deeperblue: "#2F1AC4",
+        blue: "#1A0B5B",
+        blues: "#2F1AC4",
         violet: "#7E33E0",
         primary: "#F2F0FF",
+        secondary: "#F6F7FB",
         lightblue: "#00C1FE",
         mint: "#05E6B7",
         sand: "#FFEAC1",

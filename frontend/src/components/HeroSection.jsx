@@ -16,7 +16,7 @@ const HeroSection = () => {
             <p className="text-sm text-pink">
               Best Furniture For Your Castle....
             </p>
-            <h1 className="font-jos text-3xl font-bold leading-10">
+            <h1 className="font-jose text-3xl font-bold leading-10">
               New Furniture Collection <br />
               Trends in 2020
             </h1>
