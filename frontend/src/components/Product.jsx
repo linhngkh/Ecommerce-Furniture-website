@@ -61,7 +61,8 @@ const Product = () => {
               <div className={`${flexCenter} gap-x-2 bg-white px-8 py-2`}>
                 <h3 className="text-pink">{product.name}</h3>
 
-                <p className="text-sm text-blue">{product.price}</p>
+                <p className="text-sm text-blue ">{product.discount}</p>
+                <p className="text-sm text-red line-through">{product.price}</p>
               </div>
             </div>
           ))}
