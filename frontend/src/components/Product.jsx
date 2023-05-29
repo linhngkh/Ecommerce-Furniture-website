@@ -52,7 +52,7 @@ const Product = () => {
 
         <div className=" mt-10 grid grid-cols-3 grid-rows-2 gap-y-2  ">
           {latestProducts.map((product) => (
-            <div key={product.id} className="flex items-center justify-center ">
+            <div key={product.id} className={`${flexCenter}`}>
               <div className={`grid place-items-center bg-secondary`}>
                 <img src={product.img} alt={product.name} className="" />
                 <div className="flex space-x-2 bg-white py-2">
@@ -72,24 +72,24 @@ const Product = () => {
       </div>
 
       {/* offers */}
-      <div className="mt-10">
+      <div className="mt-10 ">
         <h1 className="text-center font-jose text-4xl font-bold text-blue">
           What Shop Offer!
         </h1>
 
-        <div className="mt-10  flex justify-between rounded-sm bg-secondary p-2">
-          {offers.map((offer) => (
+        <div className=" mt-10 flex justify-between space-x-5 rounded-sm bg-secondary p-2 drop-shadow-[rgba(7,_65,_210,_0.1)_0px_9px_30px]">
+          {offers.map((offer, index) => (
             <div
-              key={offer.index}
-              className={` ${flexCenter} h-[320px] w-[270px] flex-col  bg-white `}
+              key={index}
+              className={` ${flexCenter} h-[320px] w-[270px] flex-col gap-x-5 bg-white`}
             >
               {" "}
-              <div className={`${flexCenter}`}>
+              <div className={`${flexCenter} mb-3`}>
                 <img src={offer.img} alt="image" />
               </div>{" "}
-              <div className="px-2 py-2 text-center">
-                <p className="mb-3">{offer.name}</p>
-                <p className="text-sm text-subtext">{offer.desc}</p>
+              <div className=" px-4 py-1 text-center">
+                <p className="mb-3 font-jose">{offer.name}</p>
+                <p className="text-xs text-subtext">{offer.desc}</p>
               </div>
             </div>
           ))}
