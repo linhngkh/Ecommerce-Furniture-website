@@ -3,10 +3,11 @@ import Discount1 from "../assets/discount.png";
 import Discount2 from "../assets/discount1.png";
 import SmallChair1 from "../assets/small-1.png";
 import SmallChair2 from "../assets/small-2.png";
+import SmallChair3 from "../assets/small-3.png";
 
 const Trending = () => {
   return (
-    <section className="mb-20 mt-20">
+    <section className="mb-20 mt-20 ">
       <h1 className="mb-10 text-center font-jose text-4xl font-bold text-blue">
         Trending Products
       </h1>
@@ -35,7 +36,7 @@ const Trending = () => {
         ))}
       </div>
 
-      <div className="pt-10">
+      <div className="flex justify-stretch pt-10">
         <div className="flex basis-2/3 flex-row gap-3 px-10">
           <div className="flex basis-1/3 flex-col bg-[#fff8fb] px-4 py-6  text-blue">
             <div className="w-full">
@@ -65,8 +66,36 @@ const Trending = () => {
               <img src={Discount1} alt="image" />
             </div>
           </div>
+
+          <div className="w-[50%] bg-red">
+            <div className="flex ">
+              <img src={SmallChair1} alt="chair" />
+              <div>
+                {" "}
+                <p>Executive Seat chair</p>
+                <p>€32.00</p>
+              </div>
+            </div>
+            <div className="flex ">
+              {" "}
+              <img src={SmallChair2} alt="chair" />
+              <div>
+                {" "}
+                <p>Executive Seat chair</p>
+                <p>€32.00</p>
+              </div>
+            </div>
+            <div className="flex">
+              {" "}
+              <img src={SmallChair3} alt="chair" />
+              <div>
+                {" "}
+                <p>Executive Seat chair</p>
+                <p>€32.00</p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div className="basis-1/3"></div>
       </div>
     </section>
   );
