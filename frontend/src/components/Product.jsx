@@ -50,13 +50,20 @@ const Product = () => {
           </ul>
         </div>
 
-        <div className=" mt-10 grid grid-cols-3 grid-rows-2 gap-y-2  ">
+        <div className=" mt-10 grid w-full grid-cols-3 grid-rows-2 gap-y-2 ">
           {latestProducts.map((product) => (
-            <div key={product.id} className={`${flexCenter}`}>
+            <div key={product.id} className={`${flexCenter} `}>
               <div className={`grid place-items-center bg-secondary`}>
-                <img src={product.img} alt={product.name} className="" />
-                <div className="flex space-x-2 bg-white py-2">
-                  <p className="text-sm text-blue">{product.name}</p>
+                <img
+                  src={product.img}
+                  alt={product.name}
+                  className="h-50 w-full object-cover"
+                  loading="lazy"
+                />
+                <div className="flex space-x-2 bg-white py-2 ">
+                  <p className="text-sm text-blue underline decoration-subtext underline-offset-8">
+                    {product.name}
+                  </p>
 
                   <div className="flex space-x-2 ">
                     <p className="text-sm text-blue ">{product.discount}</p>
@@ -85,7 +92,7 @@ const Product = () => {
             >
               {" "}
               <div className={`${flexCenter} mb-3`}>
-                <img src={offer.img} alt="image" />
+                <img src={offer.img} alt="image" loading="lazy" />
               </div>{" "}
               <div className=" px-4 py-1 text-center">
                 <p className="mb-3 font-jose">{offer.name}</p>
