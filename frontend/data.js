@@ -36,45 +36,28 @@ export const featureProducts = [
 export const latestProducts = [
   {
     id: 1,
-    img: "./src/assets/brown.png",
+    img: "./src/assets/Component 9.png",
     name: "Comfort Handy Craft",
-    price: "€65.00",
-    discount: "€42.00",
   },
   {
     id: 2,
-    img: "./src/assets/chair6.png",
-    name: "Cantilever yellow chair",
-    price: "€99.00",
-    discount: "€67.00",
+    img: "./src/assets/component-2.png",
   },
   {
     id: 3,
-    img: "./src/assets/chair7.png",
-    name: "Cantilever  chair",
-    price: "€65.00",
-    discount: "€42.00",
+    img: "./src/assets/component-3.png",
   },
   {
     id: 4,
-    img: "./src/assets/chair8.png",
-    name: "Cantilever long chair",
-    price: "€125.00",
-    discount: "€109.00",
+    img: "./src/assets/component-4.png",
   },
   {
     id: 5,
-    img: "./src/assets/chair9.png",
-    name: "Cantilever chair",
-    price: "€95.00",
-    discount: "€55.00",
+    img: "./src/assets/component 11.png",
   },
   {
     id: 6,
-    img: "./src/assets/chair22.png",
-    name: "Cantilever chair",
-    price: "€105.00",
-    discount: "€82.00",
+    img: "./src/assets/component 12.png",
   },
 ];
 
@@ -98,5 +81,32 @@ export const offers = [
     img: "./src/assets/support.png",
     name: "24/7 Support",
     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida.",
+  },
+];
+
+export const trendings = [
+  {
+    img: "./src/assets/trending-1.png",
+    name: "Cantilever chair",
+    price: "€35.00",
+    discount: "€42.00",
+  },
+  {
+    img: "./src/assets/trending-2.png",
+    name: "Cantilever chair",
+    price: "€43.00",
+    discount: "€55.00",
+  },
+  {
+    img: "./src/assets/trending-3.png",
+    name: "Cantilever chair",
+    price: "€32.00",
+    discount: "€65.00",
+  },
+  {
+    img: "./src/assets/trending-4.png",
+    name: "Cantilever chair",
+    price: "€77.00",
+    discount: "€62.00",
   },
 ];
