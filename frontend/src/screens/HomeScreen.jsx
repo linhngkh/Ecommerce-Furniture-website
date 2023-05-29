@@ -1,3 +1,4 @@
+import Features from "../components/Features";
 import HeroSection from "../components/HeroSection";
 import Product from "../components/Product";
 
@@ -6,6 +7,7 @@ const HomeScreen = () => {
     <section>
       <HeroSection />
       <Product />
+      <Features />
     </section>
   );
 };

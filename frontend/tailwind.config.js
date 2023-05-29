@@ -25,6 +25,8 @@ export default {
         lightblue: "#00C1FE",
         mint: "#05E6B7",
         sand: "#FFEAC1",
+        feature: "#f1f0ff",
+        blueBold: "#151875",
       },
       content: {
         lamp: "url('./assets/eclipse60.png')",
