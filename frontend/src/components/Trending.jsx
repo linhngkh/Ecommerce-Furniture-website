@@ -1,4 +1,8 @@
 import { trendings } from "../../data";
+import Discount1 from "../assets/discount.png";
+import Discount2 from "../assets/discount1.png";
+import SmallChair1 from "../assets/small-1.png";
+import SmallChair2 from "../assets/small-2.png";
 
 const Trending = () => {
   return (
@@ -7,13 +11,12 @@ const Trending = () => {
         Trending Products
       </h1>
       <div className="flex flex-row justify-center drop-shadow-[rgba(7,_65,_210,_0.1)_0px_9px_30px] ">
-        {trendings.map((trending) => (
+        {trendings.map((trending, index) => (
           <div
-            key={trending.index}
-            className=" h-[340px] w-[270px] border-x-8 border-y-8  border-white 
-          "
+            key={index}
+            className=" h-[340px] w-[270px] border-x-8 border-y-8  border-white"
           >
-            <div>
+            <div key={trending.index}>
               <img src={trending.img} alt="chair" />
             </div>
 
@@ -30,10 +33,41 @@ const Trending = () => {
             </div>
           </div>
         ))}
-          </div>
-          
+      </div>
 
-          <div></div>
+      <div className="pt-10">
+        <div className="flex basis-2/3 flex-row gap-3 px-10">
+          <div className="flex basis-1/3 flex-col bg-[#fff8fb] px-4 py-6  text-blue">
+            <div className="w-full">
+              <p className="font-jose text-lg font-semibold">
+                23% off in all products
+              </p>
+              <p className="hover:underline-pink text-sm hover:text-pink hover:underline ">
+                Shop now
+              </p>
+            </div>
+
+            <div className="flex justify-end">
+              <img src={Discount2} alt="" />
+            </div>
+          </div>
+
+          <div className="flex basis-1/3 flex-col bg-[#EEEFFB] px-4 py-6 text-blue">
+            <div className="w-full">
+              <p className="font-jose text-lg font-semibold">
+                23% off in all products
+              </p>
+              <p className="hover:underline-pink text-sm hover:text-pink hover:underline ">
+                View Collection
+              </p>
+            </div>
+            <div className="flex justify-end">
+              <img src={Discount1} alt="image" />
+            </div>
+          </div>
+        </div>
+        <div className="basis-1/3"></div>
+      </div>
     </section>
   );
 };
