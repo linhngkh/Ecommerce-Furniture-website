@@ -23,36 +23,38 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="space-y-6">
-          <h3 className="text-black">Categories</h3>
-          <ul className="space-y-4 text-sm text-subtext">
-            <li>Laptops & Computers</li>
-            <li>Cameras & Photography</li>
-            <li>Smart Phones & Tablets</li>
-            <li>Video Games & Consoles</li>
-            <li>Waterproof Headphones</li>
-          </ul>
-        </div>
-        <div className="space-y-6">
-          <h3 className="text-black">Customer Care</h3>
-          <ul className="space-y-4 text-sm text-subtext">
-            <li>My Account</li>
-            <li>Discount</li>
-            <li>Return</li>
-            <li>Order History</li>
-            <li>order Tracking</li>
-          </ul>
-        </div>
-        <div className="space-y-6">
-          <h3 className="text-black">Pages</h3>
-          <ul className="space-y-4 text-sm text-subtext">
-            <li>Blog</li>
-            <li>Browser the Shop</li>
-            <li>Category</li>
-            <li>Pre-Built Pages</li>
-            <li>Visual Composer Elements</li>
-            <li>WooCommerce Pages</li>
-          </ul>
+        <div className="ml-10 flex flex-1 gap-20">
+          <div className="space-y-6 ">
+            <h3 className="font-jose text-black">Categories</h3>
+            <ul className="space-y-4 text-sm text-subtext">
+              <li>Laptops & Computers</li>
+              <li>Cameras & Photography</li>
+              <li>Smart Phones & Tablets</li>
+              <li>Video Games & Consoles</li>
+              <li>Waterproof Headphones</li>
+            </ul>
+          </div>
+          <div className="space-y-6 ">
+            <h3 className="font-jose text-black">Customer Care</h3>
+            <ul className="space-y-4 text-sm text-subtext">
+              <li>My Account</li>
+              <li>Discount</li>
+              <li>Return</li>
+              <li>Order History</li>
+              <li>order Tracking</li>
+            </ul>
+          </div>
+          <div className="space-y-6 ">
+            <h3 className="font-jose text-black">Pages</h3>
+            <ul className="space-y-4 text-sm text-subtext">
+              <li>Blog</li>
+              <li>Browser the Shop</li>
+              <li>Category</li>
+              <li>Pre-Built Pages</li>
+              <li>Visual Composer Elements</li>
+              <li>WooCommerce Pages</li>
+            </ul>
+          </div>
         </div>
       </div>
       <div className="flex items-center justify-around bg-[#e7e4f8] py-4">
