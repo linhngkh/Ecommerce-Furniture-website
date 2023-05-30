@@ -77,7 +77,7 @@ const DiscountItem = () => {
               <div className=" rounded-full bg-secondary p-7 drop-shadow-[rgba(7,_65,_210,_0.1)_0px_9px_10px]">
                 <img src={category.img} alt="image" className="w-full" />
               </div>
-              <div className="mt-5 flex justify-center text-center">
+              <div className="text-md mt-5 flex justify-center text-center text-blueBold">
                 {category.name}
               </div>
             </div>
@@ -85,13 +85,12 @@ const DiscountItem = () => {
         </div>
       </div>
       {/* banner */}
-      <div>
-        <div className="relative">
-          <img src={Banner} alt="banner" />
-        </div>
-        <div className="absolute flex flex-col items-center justify-center">
-          <h1 className="mb-10 text-center font-jose text-2xl font-bold text-blue">
-            Get Leatest Update By Subscribe 0ur Newslater
+      <div className="relative">
+        <img src={Banner} alt="banner" className="" />
+
+        <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 transform text-center">
+          <h1 className=" text-center font-jose text-2xl font-bold text-blue">
+            Get Leatest Update By Subscribe <br /> 0ur Newslater
           </h1>
           <ActionButton>Shop Now</ActionButton>
         </div>
