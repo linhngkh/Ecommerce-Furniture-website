@@ -151,3 +151,27 @@ export const topCategory = [
     price: "€32.00",
   },
 ];
+
+export const blogs = [
+  {
+    img: "./src/assets/frame-1.png",
+    author: "SaberAli",
+    date: "17 August, 2022",
+    title: "Top Essential Trends in 2021",
+    desc: "More off this less hello samlande lied much over tightly circa horse taped mightly",
+  },
+  {
+    img: "./src/assets/frame-2.png",
+    author: "Surfauxion",
+    date: "13 May, 2021",
+    title: "New Fresh In Your Home",
+    desc: "More off this less hello samlande lied much over tightly circa horse taped mightly",
+  },
+  {
+    img: "./src/assets/frame-3.png",
+    author: "SaberAli",
+    date: "1 May, 2023",
+    title: "How Color Changes?",
+    desc: "More off this less hello samlande lied much over tightly circa horse taped mightly",
+  },
+];

@@ -73,8 +73,8 @@ const DiscountItem = () => {
           Top Categories
         </h1>
         <div className="flex items-center justify-center gap-x-8">
-          {topCategory.map((category) => (
-            <div key={category.index}>
+          {topCategory.map((category, _index) => (
+            <div key={_index}>
               <div className=" rounded-full bg-secondary p-7 drop-shadow-[rgba(7,_65,_210,_0.1)_0px_9px_10px]">
                 <img src={category.img} alt="image" className="w-full" />
               </div>
