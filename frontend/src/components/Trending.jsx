@@ -3,8 +3,9 @@ import Discount1 from "../assets/discount.png";
 import Discount2 from "../assets/discount1.png";
 
 const Trending = () => {
+  const flexCenter = `flex flex-col justify-center`;
   return (
-    <section className="mb-20 mt-20 w-full ">
+    <section className="mb-20 mt-20 w-full">
       <h1 className="mb-10 text-center font-jose text-4xl font-bold text-blue">
         Trending Products
       </h1>
@@ -33,10 +34,10 @@ const Trending = () => {
         ))}
       </div>
 
-      <div className="w-full pt-10">
-        <div className="flex flex-1 flex-row justify-evenly gap-x-3">
-          <div className="flex flex-col bg-[#fff8fb] px-4 py-6  text-blue">
-            <div className="w-full">
+      <div className="p-20">
+        <div className="flex flex-1 flex-row justify-center gap-x-5">
+          <div className=" flex bg-[#fff8fb] px-4  py-6 text-blue drop-shadow-[rgba(7,_65,_210,_0.1)_0px_0px_20px]">
+            <div className="">
               <p className="font-jose text-lg font-semibold">
                 23% off in all products
               </p>
@@ -44,14 +45,13 @@ const Trending = () => {
                 Shop now
               </p>
             </div>
-
-            <div className="flex justify-end">
-              <img src={Discount2} alt="" />
+            <div>
+              <img src={Discount2} alt="image" />
             </div>
           </div>
 
-          <div className="flex flex-col bg-[#EEEFFB] px-4 py-6 text-blue">
-            <div className="w-full">
+          <div className="flex flex-col bg-[#EEEFFB] px-4 py-6 text-blue drop-shadow-[rgba(7,_65,_210,_0.1)_0px_0px_20px]">
+            <div className="">
               <p className="font-jose text-lg font-semibold">
                 23% off in all products
               </p>
@@ -59,24 +59,26 @@ const Trending = () => {
                 View Collection
               </p>
             </div>
-            <div className="flex justify-end">
+            <div>
               <img src={Discount1} alt="image" />
             </div>
           </div>
 
-          <div className="flex flex-col justify-around ">
-            <div className="flex gap-x-4">
-              {trendingSmallChairs.map((item) => (
-                <div className="flex gap-x-4" key={item.index}>
+          <div className="flex">
+            <div className={`${flexCenter} gap-y-4 `}>
+              {trendingSmallChairs.map((item, _id) => (
+                <div className="flex gap-x-4" key={_id}>
                   <img
                     src={item.img}
                     alt="chair"
-                    className="bg-secondary px-3 py-2"
+                    className="bg-secondary px-5 py-2"
                   />
-                  <div>
+                  <div
+                    className={`${flexCenter} font-jose text-sm font-semibold text-blue`}
+                  >
                     {" "}
-                    <p>Executive Seat chair</p>
-                    <p>€32.00</p>
+                    <p>{item.name}</p>
+                    <p>{item.price}</p>
                   </div>
                 </div>
               ))}
