@@ -1,6 +1,7 @@
 import { topCategory } from "../../data";
 import Chair from "../assets/chair101.png";
 import Banner from "../assets/banner.png";
+import Brand from "../assets/brand.png";
 import ActionButton from "../shares/ActionButton";
 import { BsCheck2 } from "react-icons/bs";
 const DiscountItem = () => {
@@ -89,11 +90,15 @@ const DiscountItem = () => {
         <img src={Banner} alt="banner" className="" />
 
         <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 transform text-center">
-          <h1 className=" text-center font-jose text-2xl font-bold text-blue">
+          <h1 className=" text-center font-jose text-2xl font-bold leading-10 text-blue">
             Get Leatest Update By Subscribe <br /> 0ur Newslater
           </h1>
           <ActionButton>Shop Now</ActionButton>
         </div>
+      </div>
+      {/* brand */}
+      <div className="mt-20  flex justify-center">
+        <img src={Brand} alt="brand" />
       </div>
     </section>
   );

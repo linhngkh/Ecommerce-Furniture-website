@@ -1,3 +1,4 @@
+import Blog from "../components/Blog";
 import DiscountItem from "../components/DiscountItem";
 import Features from "../components/Features";
 import HeroSection from "../components/HeroSection";
@@ -12,6 +13,7 @@ const HomeScreen = () => {
       <Features />
       <Trending />
       <DiscountItem />
+      <Blog />
     </section>
   );
 };
