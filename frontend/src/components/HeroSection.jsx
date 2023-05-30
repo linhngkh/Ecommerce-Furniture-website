@@ -34,7 +34,6 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-      <div>dot dot dot </div>
     </section>
   );
 };

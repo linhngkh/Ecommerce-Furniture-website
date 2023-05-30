@@ -1,11 +1,12 @@
 import BigChair from "../assets/chairbig.png";
 import { GoPrimitiveDot } from "react-icons/go";
+
 const Features = () => {
   const dotStyle = `flex flex-row items-center gap-2`;
   return (
     <section className="flex items-center justify-center bg-feature">
       {/* image */}
-      <div className="">
+      <div>
         <img src={BigChair} alt="big sofa" />
       </div>
       {/* features */}
