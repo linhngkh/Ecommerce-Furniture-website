@@ -110,3 +110,21 @@ export const trendings = [
     discount: "€62.00",
   },
 ];
+
+export const trendingSmallChairs = [
+  {
+    img: "./src/assets/small-1.png",
+    name: "Executive Seat chair",
+    price: "€32.00",
+  },
+  {
+    img: "./src/assets/small-2.png",
+    name: "Executive Seat chair",
+    price: "€32.00",
+  },
+  {
+    img: "./src/assets/small-3.png",
+    name: "Executive Seat chair",
+    price: "€32.00",
+  },
+];
