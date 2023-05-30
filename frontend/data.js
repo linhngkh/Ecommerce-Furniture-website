@@ -145,4 +145,9 @@ export const topCategory = [
     name: "Executive Seat chair",
     price: "€32.00",
   },
+  {
+    img: "./src/assets/top-1.png",
+    name: "Executive Seat chair",
+    price: "€32.00",
+  },
 ];

@@ -9,14 +9,14 @@ const Trending = () => {
       <h1 className="mb-10 text-center font-jose text-4xl font-bold text-blue">
         Trending Products
       </h1>
-      <div className="flex  flex-row justify-center drop-shadow-[rgba(7,_65,_210,_0.1)_0px_9px_30px]">
+      <div className="flex  flex-row justify-center gap-x-4 drop-shadow-[rgba(7,_65,_210,_0.1)_0px_9px_30px] ">
         {trendings.map((trending, index) => (
           <div
             key={index}
-            className=" h-[340px] w-[270px] border-x-8 border-y-8  border-white"
+            className=" h-[350px] w-[270px] border-x-8  border-y-8 border-white"
           >
             <div key={trending.index}>
-              <img src={trending.img} alt="chair" />
+              <img src={trending.img} alt="chair" className="w-full" />
             </div>
 
             <div className=" flex flex-col items-center justify-center bg-white px-5 py-3">
