@@ -1,6 +1,7 @@
 ## E-commerce Furniture MERN Stack
 #### I follow the design print from this free figma link: https://www.behance.net/gallery/118083883/Ecommerce-UI-Kit
-<img href="https://mir-s3-cdn-cf.behance.net/project_modules/fs/b7a195118083883.6081e8680155d.jpg"/>
+<img width="1101" alt="Screenshot 2023-05-31 at 17 34 58" src="https://github.com/linhngkh/ecommmerce-furniture-mern/assets/44481142/bd299f12-13c8-48d6-bb1a-c331628696a1">
+
 
 ### Built with
 #### Front End
