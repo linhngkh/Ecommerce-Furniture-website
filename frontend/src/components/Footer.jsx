@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <section className="bg-[#eeeffb]">
       <div className="flex items-center justify-around px-10 py-20">
-        <div className="ml-10 flex flex-1 gap-10">
+        <div className="flex gap-10">
           <div className="space-y-6">
             <h1 className="font-jose text-2xl font-bold text-black">Hekto</h1>
             <input
