@@ -4,16 +4,16 @@ import { AiFillTwitterCircle } from "react-icons/ai";
 const Footer = () => {
   return (
     <section className="bg-[#eeeffb]">
-      <div className="flex items-center justify-between px-40 py-20">
-        <div className="ml-10 flex flex-1 gap-20">
+      <div className="flex items-center justify-around px-10 py-20">
+        <div className="ml-10 flex flex-1 gap-10">
           <div className="space-y-6">
             <h1 className="font-jose text-2xl font-bold text-black">Hekto</h1>
             <input
               type="text"
               placeholder="Enter Email Address"
-              className="rounded-l-sm px-2 py-1"
+              className="rounded-l-sm px-2 py-1 text-sm"
             />
-            <button className="rounded-sm bg-pink px-6 py-1 text-white hover:bg-deeppink">
+            <button className="rounded-sm bg-pink px-6 py-1 text-sm text-white hover:bg-deeppink">
               Sign Up
             </button>
             <div>
@@ -23,7 +23,7 @@ const Footer = () => {
               </p>
             </div>
           </div>
-          <div className="space-y-6 ">
+          <div className="space-y-5 ">
             <h3 className="font-jose text-black">Categories</h3>
             <ul className="space-y-4 text-sm text-subtext">
               <li>Laptops & Computers</li>

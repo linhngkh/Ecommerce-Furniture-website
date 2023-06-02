@@ -50,28 +50,16 @@ const Product = () => {
           </ul>
         </div>
 
-        <div className=" mt-10 grid w-full grid-cols-3 grid-rows-2 gap-y-2 ">
+        <div className=" mt-10 grid w-full grid-cols-3 grid-rows-2 gap-x-5 gap-y-20 ">
           {latestProducts.map((product) => (
             <div key={product.id} className={`${flexCenter} `}>
-              <div className={`grid place-items-center bg-secondary`}>
+              <div className={`grid place-items-center gap-2 bg-secondary`}>
                 <img
                   src={product.img}
                   alt={product.name}
                   className="h-50 w-full object-cover"
                   loading="lazy"
                 />
-                <div className="flex space-x-2 bg-white py-2 ">
-                  <p className="text-sm text-blue underline decoration-subtext underline-offset-8">
-                    {product.name}
-                  </p>
-
-                  <div className="flex space-x-2 ">
-                    <p className="text-sm text-blue ">{product.discount}</p>
-                    <p className="text-sm text-red line-through">
-                      {product.price}
-                    </p>
-                  </div>
-                </div>
               </div>
             </div>
           ))}

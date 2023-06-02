@@ -9,14 +9,14 @@ const Blog = () => {
         <h1 className="mb-10 text-center font-jose text-4xl font-bold text-blue">
           Latest Blog
         </h1>
-        <div className="flex items-center justify-center gap-x-5">
+        <div className="flex items-center justify-center gap-x-10 ">
           {blogs.map((item, index) => (
             <div
               key={index}
-              className="h-[550px] w-[493px] rounded-b-lg bg-white leading-10 drop-shadow-[rgba(7,_65,_210,_0.1)_0px_20px_40px]"
+              className="h-[480px] w-[550px] rounded-b-lg bg-white drop-shadow-[rgba(7,_65,_210,_0.1)_0px_20px_40px]"
             >
               <img src={item.img} alt={item.desc} className="w-full" />
-              <div className="p-3">
+              <div className="px-2 py-2">
                 <div className="flex items-center justify-between">
                   <div className="flex ">
                     <BiPen color="red" />
@@ -28,14 +28,16 @@ const Blog = () => {
                   </div>
                 </div>
               </div>
-              <div className="px-5">
-                <h3 className=" font-jose font-bold text-blueBold hover:text-pink">
+              <div className="flex flex-col justify-center px-3 py-4">
+                <h3 className="text-md font-jose font-bold text-blueBold hover:text-pink">
                   {item.title}
                 </h3>
-                <p className="text-sm text-subtext ">{item.desc}</p>
+                <p className="text-xs leading-loose text-subtext">
+                  {item.desc}
+                </p>
                 <a
                   href="/blogs"
-                  className=" text-sm text-blueBold hover:underline"
+                  className=" mt-4 text-xs text-blueBold underline underline-offset-8 hover:text-pink"
                 >
                   Read More
                 </a>

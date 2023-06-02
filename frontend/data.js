@@ -37,7 +37,6 @@ export const latestProducts = [
   {
     id: 1,
     img: "./src/assets/Component 9.png",
-    name: "Comfort Handy Craft",
   },
   {
     id: 2,
