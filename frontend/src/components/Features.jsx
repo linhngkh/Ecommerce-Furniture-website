@@ -1,25 +1,54 @@
 import BigChair from "../assets/chairbig.png";
 import { GoPrimitiveDot } from "react-icons/go";
+import { motion } from "framer-motion";
 
 const Features = () => {
   const dotStyle = `flex flex-row items-center gap-2`;
   return (
     <section className="flex items-center justify-center bg-feature">
       {/* image */}
-      <div>
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.5 }}
+        transition={{ duration: 0.5 }}
+        variants={{
+          hidden: { opacity: 0, x: -50 },
+          visible: { opacity: 1, x: 0 },
+        }}
+      >
         <img src={BigChair} alt="big sofa" />
-      </div>
+      </motion.div>
       {/* features */}
       <div className="basis-1/2 space-y-4">
-        <div className="">
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ duration: 0.5 }}
+          variants={{
+            hidden: { opacity: 0, x: 50 },
+            visible: { opacity: 1, x: 0 },
+          }}
+        >
           <h1 className="overflow-x-hidden  font-jose  text-3xl font-bold text-blueBold">
             <span className="indent-3">Unique Features Of leatest & </span>{" "}
             <br />
             <span className="indent-3">Trending Poducts</span>
           </h1>
-        </div>
+        </motion.div>
 
-        <div className="decoration-none space-y-3 text-sm text-subtext">
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ delay: 0.2, duration: 0.5 }}
+          variants={{
+            hidden: { opacity: 0, x: 50 },
+            visible: { opacity: 1, x: 0 },
+          }}
+          className="decoration-none space-y-3 text-sm text-subtext"
+        >
           <div className={`${dotStyle}`}>
             <GoPrimitiveDot className="text-pink" /> All frames constructed with
             hardwood solids and laminates
@@ -33,8 +62,19 @@ const Features = () => {
             <GoPrimitiveDot className="text-mint" /> Arms, backs and seats are
             structurally reinforced
           </div>
-        </div>
-        <div className="flex flex-row gap-3 pt-4">
+        </motion.div>
+
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ delay: 0.3, duration: 0.5 }}
+          variants={{
+            hidden: { opacity: 0, x: 50 },
+            visible: { opacity: 1, x: 0 },
+          }}
+          className="flex flex-row gap-3 pt-4"
+        >
           <button className="font-md rounded-sm bg-pink px-7 py-2 font-jose text-white hover:bg-deeppink">
             Add To Cart
           </button>
@@ -42,7 +82,7 @@ const Features = () => {
             <p className="font-bold">B&B Italian Sofa</p>
             <p>€32.00</p>
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

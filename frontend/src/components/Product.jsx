@@ -1,4 +1,5 @@
 import { featureProducts, latestProducts, offers } from "../../data";
+import { motion } from "framer-motion";
 
 const items = ["New Arrivals", "Best Sellers", "Featured", "Special 0ffers"];
 const grid1 = `grid grid-rows-1`;
@@ -7,7 +8,17 @@ const flexCenter = `flex items-center justify-center`;
 const Product = () => {
   return (
     <section className="mx-auto min-h-full w-5/6 py-20">
-      <div className="py-20">
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.5 }}
+        transition={{ duration: 0.5 }}
+        variants={{
+          hidden: { opacity: 0, x: -50 },
+          visible: { opacity: 1, x: 0 },
+        }}
+        className="py-20"
+      >
         <h1 className="text-center font-jose text-4xl font-bold text-blue">
           Featured Products
         </h1>
@@ -32,13 +43,26 @@ const Product = () => {
             </div>
           ))}
         </div>
-      </div>
+      </motion.div>
 
       {/* latest products */}
       <div>
-        <h1 className="text-center font-jose text-4xl font-bold text-blue">
-          Latest Products
-        </h1>
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ duration: 0.5 }}
+          variants={{
+            hidden: { opacity: 0, x: 50 },
+            visible: { opacity: 1, x: 0 },
+          }}
+        >
+          {" "}
+          <h1 className="text-center font-jose text-4xl font-bold text-blue">
+            Latest Products
+          </h1>
+        </motion.div>
+
         <div>
           <ul className=" flex justify-center gap-4 py-5 text-blue ">
             {items.map((item, index) => (
@@ -67,7 +91,17 @@ const Product = () => {
       </div>
 
       {/* offers */}
-      <div className="mt-10 ">
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.5 }}
+        transition={{ duration: 0.5 }}
+        variants={{
+          hidden: { opacity: 0, x: -50 },
+          visible: { opacity: 1, x: 0 },
+        }}
+        className="mt-10 "
+      >
         <h1 className="text-center font-jose text-4xl font-bold text-blue">
           What Shop Offer!
         </h1>
@@ -89,7 +123,7 @@ const Product = () => {
             </div>
           ))}
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };
