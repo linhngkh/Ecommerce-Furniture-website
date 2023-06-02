@@ -1,17 +1,50 @@
 import { trendings, trendingSmallChairs } from "../../data";
 import Discount1 from "../assets/discount.png";
 import Discount2 from "../assets/discount1.png";
+import { motion } from "framer-motion";
+
+const container = {
+  hidden: {},
+  visible: {
+    transition: { staggerChildren: 0.2 },
+  },
+};
+
+const childVariant = {
+  hidden: { opacity: 0, scale: 0.9 },
+  visible: { opacity: 1, scale: 1 },
+};
 
 const Trending = () => {
   const flexCenter = `flex flex-col justify-center`;
   return (
-    <section className="mb-20 mt-20 w-full">
-      <h1 className="mb-10 text-center font-jose text-4xl font-bold text-blue">
-        Trending Products
-      </h1>
-      <div className="flex  flex-row justify-center gap-x-4 drop-shadow-[rgba(7,_65,_210,_0.1)_0px_9px_30px] ">
+    <section className=" mt-20 w-full">
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.5 }}
+        transition={{ duration: 0.5 }}
+        variants={{
+          hidden: { opacity: 0, x: -50 },
+          visible: { opacity: 1, x: 0 },
+        }}
+      >
+        {" "}
+        <h1 className="mb-10 text-center font-jose text-4xl font-bold text-blue">
+          Trending Products
+        </h1>
+      </motion.div>
+
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.5 }}
+        variants={container}
+        className="flex  flex-row justify-center gap-x-4 drop-shadow-[rgba(7,_65,_210,_0.1)_0px_9px_30px] "
+      >
         {trendings.map((trending, index) => (
-          <div
+          <motion.div
+            variants={childVariant}
             key={index}
             className=" h-[350px] w-[270px] border-x-8  border-y-8 border-white"
           >
@@ -30,9 +63,9 @@ const Trending = () => {
                 </span>
               </div>
             </div>
-          </div>
+          </motion.div>
         ))}
-      </div>
+      </motion.div>
 
       <div className="p-20">
         <div className="flex flex-1 flex-row justify-center gap-x-5">

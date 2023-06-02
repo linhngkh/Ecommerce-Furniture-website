@@ -1,11 +1,22 @@
 import { blogs } from "../../data";
 import { BiPen } from "react-icons/bi";
 import { MdDateRange } from "react-icons/md";
+import { motion } from "framer-motion";
+
 const Blog = () => {
   return (
     <section className="px-40 py-10">
       {/* blog */}
-      <div className="">
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.5 }}
+        transition={{ duration: 0.5 }}
+        variants={{
+          hidden: { opacity: 0, y: 50 },
+          visible: { opacity: 1, y: 0 },
+        }}
+      >
         <h1 className="mb-10 text-center font-jose text-4xl font-bold text-blue">
           Latest Blog
         </h1>
@@ -45,7 +56,7 @@ const Blog = () => {
             </div>
           ))}
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };
