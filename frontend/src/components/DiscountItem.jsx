@@ -54,7 +54,7 @@ const DiscountItem = () => {
         </ul>
       </motion.div>
 
-      <div className="flex flex-row items-center px-10">
+      <div className="items-center md:flex md:flex-row md:px-10">
         {/* features */}
         <div className=" basis-1/2 space-y-4 pl-10">
           <motion.div
