@@ -20,13 +20,13 @@ const Blog = () => {
         <h1 className="mb-10 text-center font-jose text-4xl font-bold text-blue">
           Latest Blog
         </h1>
-        <div className="flex items-center justify-center gap-x-10 ">
+        <div className=" place-items-center space-y-5 md:flex md:items-center md:justify-center md:gap-x-8 ">
           {blogs.map((item, index) => (
             <div
               key={index}
-              className="h-[480px] w-[550px] rounded-b-lg bg-white drop-shadow-[rgba(7,_65,_210,_0.1)_0px_20px_40px]"
+              className="rounded-b-lg bg-white drop-shadow-[rgba(7,_65,_210,_0.1)_0px_20px_40px] md:h-[480px] md:w-[550px]"
             >
-              <img src={item.img} alt={item.desc} className="w-full" />
+              <img src={item.img} alt={item.desc} className="md:w-full" />
               <div className="px-2 py-2">
                 <div className="flex items-center justify-between">
                   <div className="flex ">
@@ -39,7 +39,8 @@ const Blog = () => {
                   </div>
                 </div>
               </div>
-              <div className="flex flex-col justify-center px-3 py-4">
+
+              <div className="px-3 py-4 md:flex md:flex-col md:justify-center ">
                 <h3 className="text-md font-jose font-bold text-blueBold hover:text-pink">
                   {item.title}
                 </h3>

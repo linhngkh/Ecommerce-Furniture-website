@@ -78,6 +78,7 @@ const DiscountItem = () => {
               feugiat habitasse nec, bibendum condimentum.
             </p>
           </motion.div>
+
           {/* lists */}
           <motion.div
             initial="hidden"
@@ -154,14 +155,14 @@ const DiscountItem = () => {
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
           variants={container}
-          className="flex items-center justify-center gap-x-8"
+          className="grid grid-flow-row grid-cols-2 items-center justify-center gap-7 md:flex md:gap-x-8"
         >
           {topCategory.map((category, _index) => (
             <motion.div variants={childVariant} key={_index}>
-              <div className=" rounded-full bg-secondary p-7 drop-shadow-[rgba(7,_65,_210,_0.1)_0px_9px_10px]">
+              <div className="rounded-full bg-secondary p-7 drop-shadow-[rgba(7,_65,_210,_0.1)_0px_9px_10px]">
                 <img src={category.img} alt="image" className="w-full" />
               </div>
-              <div className="text-md mt-5 flex justify-center text-center text-blueBold">
+              <div className=" md:text-md mt-5 flex justify-center text-center text-sm text-blueBold">
                 {category.name}
               </div>
             </motion.div>
@@ -170,10 +171,10 @@ const DiscountItem = () => {
       </div>
       {/* banner */}
       <div className="relative">
-        <img src={Banner} alt="banner" className="" />
+        <img src={Banner} alt="banner" className="w-full" />
 
-        <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 transform text-center">
-          <h1 className=" text-center font-jose text-2xl font-bold leading-10 text-blue">
+        <div className="absolute left-1/2 top-1/2  -translate-x-1/2 -translate-y-1/2 transform text-center">
+          <h1 className="text-md text-center font-jose font-bold text-blue md:text-2xl md:leading-10">
             Get Leatest Update By Subscribe <br /> 0ur Newslater
           </h1>
           <ActionButton>Shop Now</ActionButton>
