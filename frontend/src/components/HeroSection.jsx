@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 const HeroSection = () => {
   return (
-    <section className="bg-primary">
+    <section className="bg-primary pt-20">
       <div className=" flex min-h-full w-full ">
         {/* LAMP */}
         <motion.div
@@ -24,7 +24,7 @@ const HeroSection = () => {
           <img src={Lamp} alt="lamp" className="" />
         </motion.div>
 
-        <div className="flex basis-3/4 items-center py-20 ">
+        <div className="flex basis-3/4 items-center py-20">
           {/* text */}
           <motion.div
             initial="hidden"

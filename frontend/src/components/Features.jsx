@@ -19,6 +19,7 @@ const Features = () => {
       >
         <img src={BigChair} alt="big sofa" />
       </motion.div>
+
       {/* features */}
       <div className="basis-1/2 space-y-4">
         <motion.div

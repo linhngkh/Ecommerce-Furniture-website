@@ -19,7 +19,7 @@ const childVariant = {
 
 const Product = () => {
   return (
-    <section className="mx-auto min-h-full w-5/6 py-20">
+    <section className="mx-auto min-h-full w-5/6">
       <motion.div
         initial="hidden"
         whileInView="visible"
