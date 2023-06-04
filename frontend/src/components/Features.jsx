@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 const Features = () => {
   const dotStyle = `flex flex-row items-center gap-2`;
   return (
-    <section className="flex items-center justify-center bg-feature">
+    <section className="grid justify-center bg-feature md:flex md:items-center md:justify-center">
       {/* image */}
       <motion.div
         initial="hidden"
@@ -21,7 +21,7 @@ const Features = () => {
       </motion.div>
 
       {/* features */}
-      <div className="basis-1/2 space-y-4">
+      <div className="md:basis-1/2 md:space-y-4">
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -74,7 +74,7 @@ const Features = () => {
             hidden: { opacity: 0, x: 50 },
             visible: { opacity: 1, x: 0 },
           }}
-          className="flex flex-row gap-3 pt-4"
+          className="mb-10 mt-5 flex gap-4 md:flex md:flex-row md:gap-3 md:pt-4"
         >
           <button className="font-md rounded-sm bg-pink px-7 py-2 font-jose text-white hover:bg-deeppink">
             Add To Cart
