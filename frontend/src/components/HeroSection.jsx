@@ -6,8 +6,8 @@ import { motion } from "framer-motion";
 
 const HeroSection = () => {
   return (
-    <section className="bg-primary pt-20">
-      <div className=" flex min-h-full w-full ">
+    <section className="bg-primary md:pt-20">
+      <div className="grid px-10 md:flex">
         {/* LAMP */}
         <motion.div
           initial="hidden"
@@ -18,13 +18,13 @@ const HeroSection = () => {
             hidden: { opacity: 0, x: -50 },
             visible: { opacity: 1, x: 0 },
           }}
-          className=" w-[20%]"
+          className="w-[10%] md:w-[20%]"
         >
           {" "}
           <img src={Lamp} alt="lamp" className="" />
         </motion.div>
 
-        <div className="flex basis-3/4 items-center py-20">
+        <div className="flex flex-col items-center  md:flex md:basis-3/4 md:flex-row md:py-20">
           {/* text */}
           <motion.div
             initial="hidden"
@@ -35,7 +35,7 @@ const HeroSection = () => {
               hidden: { opacity: 0, x: -50 },
               visible: { opacity: 1, x: 0 },
             }}
-            className="flex-1 flex-col space-y-5"
+            className="flex-1 space-y-5"
           >
             <p className="text-sm text-pink">
               Best Furniture For Your Castle....
@@ -61,9 +61,9 @@ const HeroSection = () => {
               hidden: { opacity: 0, x: 50 },
               visible: { opacity: 1, x: 0 },
             }}
-            className="flex-1"
+            className="mt-10 flex-1"
           >
-            <div className="relative ">
+            <div className="relative flex items-center">
               <img src={Sofa} alt="sofa" />
             </div>
           </motion.div>
