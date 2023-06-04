@@ -135,10 +135,10 @@ const Header = ({ isTopOfPage }) => {
           </div>
         </div>
       ) : (
-        <div className={` ${divBetween}  gap-3 bg-white px-20 py-2`}>
-          <h1 className="font-jose text-2xl font-bold">Hekto</h1>
+        <div className={` ${divBetween}  gap-3 bg-secondary px-20 py-3`}>
+          <h1 className="font-jose text-3xl font-bold text-black">Hekto</h1>
           <button
-            className="rounded-full bg-violet p-2"
+            className="rounded-full bg-blues p-2"
             onClick={() => setIsMenuToggled(!isMenuToggled)}
           >
             <GiHamburgerMenu className="h-6 w-6 text-white" />
@@ -148,89 +148,88 @@ const Header = ({ isTopOfPage }) => {
 
       {/* mobile menu modal */}
       {!isAboveMediumScreens && isMenuToggled && (
-        <div className="fixed right-0 top-0 w-[40%] bg-violet text-white drop-shadow-xl">
+        <div className="fixed bottom-0 right-0 top-0 z-40 h-full w-[300px] bg-blue text-white drop-shadow-xl md:top-16 md:ml-40 md:justify-end">
           {/* close Button */}
-          <div className="flex justify-end px-20 py-4">
-            <button onClick={() => setIsMenuToggled(!isMenuToggled)}>
+          <div className="flex justify-end px-16 py-5">
+            <button
+              onClick={() => setIsMenuToggled(!isMenuToggled)}
+              className="cursor-pointer"
+            >
               {" "}
-              <AiOutlineCloseCircle className="h-6 w-6 text-white" />
+              <AiOutlineCloseCircle className="h-8 w-8 text-white" />
             </button>
           </div>
 
           {/* menu items */}
-          <div className="ml-[10%] flex flex-col items-center text-2xl">
-            <div>
-              {/* below header */}
-              <div>
-                <div className="">
-                  <ul className="flex flex-col gap-5 text-xl">
-                    <li>
-                      <NavLink
-                        to="/"
-                        className={({ isActive }) =>
-                          isActive ? activeClassname : ""
-                        }
-                      >
-                        <div className={`${itemCenter}`}>
-                          Home <FiChevronDown />
-                        </div>
-                      </NavLink>
-                    </li>
-                    <li>
-                      <NavLink
-                        to="/pages"
-                        className={({ isActive }) =>
-                          isActive ? activeClassname : ""
-                        }
-                      >
-                        Pages
-                      </NavLink>
-                    </li>
-                    <li>
-                      <NavLink
-                        to="/products"
-                        className={({ isActive }) =>
-                          isActive ? activeClassname : ""
-                        }
-                      >
-                        Products
-                      </NavLink>
-                    </li>
-                    <li>
-                      <NavLink
-                        to="/blog"
-                        className={({ isActive }) =>
-                          isActive ? activeClassname : ""
-                        }
-                      >
-                        Blog
-                      </NavLink>
-                    </li>
-                    <li>
-                      <NavLink
-                        to="/shop"
-                        className={({ isActive }) =>
-                          isActive ? activeClassname : ""
-                        }
-                      >
-                        Shop
-                      </NavLink>
-                    </li>
-                    <li>
-                      <NavLink
-                        to="/contact"
-                        className={({ isActive }) =>
-                          isActive ? activeClassname : ""
-                        }
-                      >
-                        Contact
-                      </NavLink>
-                    </li>
-                  </ul>
-                </div>
-                {/* search bar */}
-              </div>
+          <div className="flex flex-col items-center py-7 text-2xl">
+            {/* below header */}
+            <div className="">
+              <ul className="flex flex-col gap-5 text-xl">
+                <li>
+                  <NavLink
+                    to="/"
+                    className={({ isActive }) =>
+                      isActive ? activeClassname : ""
+                    }
+                  >
+                    <div className={`${itemCenter}`}>
+                      Home <FiChevronDown />
+                    </div>
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink
+                    to="/pages"
+                    className={({ isActive }) =>
+                      isActive ? activeClassname : ""
+                    }
+                  >
+                    Pages
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink
+                    to="/products"
+                    className={({ isActive }) =>
+                      isActive ? activeClassname : ""
+                    }
+                  >
+                    Products
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink
+                    to="/blog"
+                    className={({ isActive }) =>
+                      isActive ? activeClassname : ""
+                    }
+                  >
+                    Blog
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink
+                    to="/shop"
+                    className={({ isActive }) =>
+                      isActive ? activeClassname : ""
+                    }
+                  >
+                    Shop
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink
+                    to="/contact"
+                    className={({ isActive }) =>
+                      isActive ? activeClassname : ""
+                    }
+                  >
+                    Contact
+                  </NavLink>
+                </li>
+              </ul>
             </div>
+            {/* search bar */}
           </div>
         </div>
       )}
