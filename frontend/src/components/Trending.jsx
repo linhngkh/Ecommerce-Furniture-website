@@ -68,33 +68,31 @@ const Trending = () => {
       </motion.div>
 
       {/* 3 divs */}
-      <div className=" space-y-10 p-20 md:flex md:flex-1 md:flex-row md:justify-center md:gap-x-5">
+      <div className=" space-y-10 p-20 md:flex md:flex-row md:justify-center md:gap-x-5">
         {/* first */}
         <div className="bg-[#fff8fb] text-blue drop-shadow-[rgba(7,_65,_210,_0.1)_0px_0px_20px] md:flex  md:w-[30%] md:px-4 md:py-6">
-          <div className="p-4">
+          <div className="p-4 md:flex md:flex-col md:p-4">
             <p className="font-jose text-lg font-semibold">
               23% off in all products
             </p>
             <p className="hover:underline-pink text-sm hover:text-pink hover:underline ">
               Shop now
             </p>
-          </div>
-          <div className="">
-            <img src={Discount2} alt="image" />
+
+            <img src={Discount2} alt="image" className="w-30" />
           </div>
         </div>
 
         {/* second */}
         <div className="bg-[#EEEFFB] text-blue drop-shadow-[rgba(7,_65,_210,_0.1)_0px_0px_20px] md:flex md:w-[30%] md:px-4 md:py-6">
-          <div className="p-4">
+          <div className="p-4 md:flex md:flex-col md:p-4">
             <p className="font-jose text-lg font-semibold">
               23% off in all products
             </p>
             <p className="hover:underline-pink text-sm hover:text-pink hover:underline ">
               View Collection
             </p>
-          </div>
-          <div className="md:flex md:justify-end">
+
             <img src={Discount1} alt="image" />
           </div>
         </div>
