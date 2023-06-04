@@ -8,6 +8,7 @@ const HeroSection = () => {
   return (
     <section className="bg-primary">
       <div className=" flex min-h-full w-full ">
+        {/* LAMP */}
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -17,10 +18,10 @@ const HeroSection = () => {
             hidden: { opacity: 0, x: -50 },
             visible: { opacity: 1, x: 0 },
           }}
-          className="w-[20%]"
+          className="relative w-[20%]"
         >
           {" "}
-          <img src={Lamp} alt="lamp" />
+          <img src={Lamp} alt="lamp" className="absolute" />
         </motion.div>
 
         <div className="flex basis-3/4 items-center py-20 ">
