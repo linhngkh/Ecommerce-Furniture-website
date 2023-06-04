@@ -23,10 +23,10 @@ const Header = ({ isTopOfPage }) => {
   const navbarBackground = isTopOfPage ? "" : "drop-shadow bg-white";
 
   return (
-    <nav className={`fixed top-0 z-30 w-full`}>
+    <nav>
       {/* upper header */}
       {isAboveMediumScreens ? (
-        <div>
+        <div className={`fixed top-0 z-30 w-full`}>
           <div
             className={`${divStart} flex-cols   bg-violet px-20 text-sm text-white `}
           >
