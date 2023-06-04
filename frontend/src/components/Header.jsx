@@ -28,7 +28,7 @@ const Header = ({ isTopOfPage }) => {
       {isAboveMediumScreens ? (
         <div className={`fixed top-0 z-30 w-full`}>
           <div
-            className={`${divStart} flex-cols   bg-violet px-20 text-sm text-white `}
+            className={`${divStart} flex-cols bg-violet px-20 text-sm text-white `}
           >
             <div className={` ${divStart}  h-10 flex-1  flex-row gap-3  py-2`}>
               <AiOutlineMail /> hekto@gmail.com
