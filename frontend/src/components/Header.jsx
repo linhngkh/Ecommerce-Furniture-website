@@ -16,9 +16,9 @@ const divBetween = `flex justify-between items-center`;
 
 const Header = () => {
   return (
-    <nav>
+    <nav className="fixed top-0 z-30 w-full">
       {/* upper header */}
-      <div className="">
+      <div>
         <div
           className={`${divStart} flex-cols   bg-violet px-20 text-sm text-white `}
         >

@@ -18,10 +18,10 @@ const HeroSection = () => {
             hidden: { opacity: 0, x: -50 },
             visible: { opacity: 1, x: 0 },
           }}
-          className="relative w-[20%]"
+          className=" w-[20%]"
         >
           {" "}
-          <img src={Lamp} alt="lamp" className="absolute" />
+          <img src={Lamp} alt="lamp" className="" />
         </motion.div>
 
         <div className="flex basis-3/4 items-center py-20 ">
