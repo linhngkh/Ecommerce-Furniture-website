@@ -40,13 +40,13 @@ const Trending = () => {
         whileInView="visible"
         viewport={{ once: true, amount: 0.5 }}
         variants={container}
-        className="flex  flex-row justify-center gap-x-4 drop-shadow-[rgba(7,_65,_210,_0.1)_0px_9px_30px] "
+        className="grid grid-flow-row grid-cols-2 gap-y-7 drop-shadow-[rgba(7,_65,_210,_0.1)_0px_9px_30px] md:flex md:flex-row  md:justify-center md:gap-x-4"
       >
         {trendings.map((trending, index) => (
           <motion.div
             variants={childVariant}
             key={index}
-            className=" h-[350px] w-[270px] border-x-8  border-y-8 border-white"
+            className=" h-[350px] w-[270px] justify-self-center  border-x-8 border-y-8 border-white"
           >
             <div key={trending.index}>
               <img src={trending.img} alt="chair" className="w-full" />
@@ -67,55 +67,57 @@ const Trending = () => {
         ))}
       </motion.div>
 
-      <div className="p-20">
-        <div className="flex flex-1 flex-row justify-center gap-x-5">
-          <div className=" flex bg-[#fff8fb] px-4  py-6 text-blue drop-shadow-[rgba(7,_65,_210,_0.1)_0px_0px_20px]">
-            <div className="">
-              <p className="font-jose text-lg font-semibold">
-                23% off in all products
-              </p>
-              <p className="hover:underline-pink text-sm hover:text-pink hover:underline ">
-                Shop now
-              </p>
-            </div>
-            <div>
-              <img src={Discount2} alt="image" />
-            </div>
+      {/* 3 divs */}
+      <div className=" space-y-10 p-20 md:flex md:flex-1 md:flex-row md:justify-center md:gap-x-5">
+        {/* first */}
+        <div className="bg-[#fff8fb] text-blue drop-shadow-[rgba(7,_65,_210,_0.1)_0px_0px_20px] md:flex  md:w-[30%] md:px-4 md:py-6">
+          <div className="p-4">
+            <p className="font-jose text-lg font-semibold">
+              23% off in all products
+            </p>
+            <p className="hover:underline-pink text-sm hover:text-pink hover:underline ">
+              Shop now
+            </p>
           </div>
-
-          <div className="flex flex-col bg-[#EEEFFB] px-4 py-6 text-blue drop-shadow-[rgba(7,_65,_210,_0.1)_0px_0px_20px]">
-            <div className="">
-              <p className="font-jose text-lg font-semibold">
-                23% off in all products
-              </p>
-              <p className="hover:underline-pink text-sm hover:text-pink hover:underline ">
-                View Collection
-              </p>
-            </div>
-            <div>
-              <img src={Discount1} alt="image" />
-            </div>
+          <div className="">
+            <img src={Discount2} alt="image" />
           </div>
+        </div>
 
-          <div className="flex">
-            <div className={`${flexCenter} gap-y-4 `}>
-              {trendingSmallChairs.map((item, _id) => (
-                <div className="flex gap-x-4" key={_id}>
-                  <img
-                    src={item.img}
-                    alt="chair"
-                    className="bg-secondary px-5 py-2"
-                  />
-                  <div
-                    className={`${flexCenter} font-jose text-sm font-semibold text-blue`}
-                  >
-                    {" "}
-                    <p>{item.name}</p>
-                    <p>{item.price}</p>
-                  </div>
+        {/* second */}
+        <div className="bg-[#EEEFFB] text-blue drop-shadow-[rgba(7,_65,_210,_0.1)_0px_0px_20px] md:flex md:w-[30%] md:px-4 md:py-6">
+          <div className="p-4">
+            <p className="font-jose text-lg font-semibold">
+              23% off in all products
+            </p>
+            <p className="hover:underline-pink text-sm hover:text-pink hover:underline ">
+              View Collection
+            </p>
+          </div>
+          <div className="md:flex md:justify-end">
+            <img src={Discount1} alt="image" />
+          </div>
+        </div>
+
+        {/* third */}
+        <div className=" md:flex md:w-[33,3%]">
+          <div className={`${flexCenter} gap-y-4`}>
+            {trendingSmallChairs.map((item, _id) => (
+              <div className="flex gap-x-4" key={_id}>
+                <img
+                  src={item.img}
+                  alt="chair"
+                  className="bg-secondary px-5 py-2"
+                />
+                <div
+                  className={`${flexCenter} font-jose text-sm font-semibold text-blue`}
+                >
+                  {" "}
+                  <p>{item.name}</p>
+                  <p>{item.price}</p>
                 </div>
-              ))}
-            </div>
+              </div>
+            ))}
           </div>
         </div>
       </div>
