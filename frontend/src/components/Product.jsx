@@ -34,14 +34,14 @@ const Product = () => {
           Featured Products
         </h1>
         {/* featured products */}
-        <div className="grid grid-flow-col grid-rows-2 gap-y-4 px-20 py-5 md:mt-10 md:flex md:justify-evenly md:px-0">
+        <div className="grid grid-flow-col grid-rows-2 gap-y-7 px-20 py-5 md:mt-10 md:flex md:justify-evenly md:px-0">
           {featureProducts.map((product, id) => (
             <div
               className={` h-[361px] w-[270px] justify-self-center drop-shadow-xl md:grid md:grid-rows-1`}
               key={id}
             >
               <div className={`${flexCenter} bg-secondary px-5 py-5`}>
-                <img src={product.img} alt={product.name} className="" />
+                <img src={product.img} alt={product.name} />
               </div>
               <div
                 className={`${flexCenter} flex-col gap-y-2 bg-white px-8 py-2`}
@@ -85,7 +85,7 @@ const Product = () => {
           </ul>
         </div>
 
-        <div className=" mt-10 grid w-full grid-cols-3 grid-rows-2 gap-x-5 gap-y-20 ">
+        <div className="mt-10 grid grid-flow-col grid-rows-3 gap-3 md:w-full md:grid-cols-3 md:grid-rows-2  md:gap-x-5 md:gap-y-20">
           {latestProducts.map((product) => (
             <div key={product.id} className={`${flexCenter} `}>
               <div className={`grid place-items-center gap-2 bg-secondary`}>
@@ -122,13 +122,13 @@ const Product = () => {
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
           variants={container}
-          className=" mt-10 flex justify-between space-x-5 rounded-sm bg-secondary p-2 drop-shadow-[rgba(7,_65,_210,_0.1)_0px_9px_30px]"
+          className=" mt-10 grid grid-flow-col grid-rows-2 rounded-sm bg-secondary p-2 drop-shadow-[rgba(7,_65,_210,_0.1)_0px_9px_30px] md:flex md:justify-between md:space-x-5"
         >
           {offers.map((offer, index) => (
             <motion.div
               variants={childVariant}
               key={index}
-              className={` ${flexCenter} h-[320px] w-[270px] flex-col gap-x-5 bg-white`}
+              className={` ${flexCenter} h-[320px] w-[270px] flex-col gap-x-5 justify-self-center bg-white `}
             >
               {" "}
               <div className={`${flexCenter} mb-3`}>
