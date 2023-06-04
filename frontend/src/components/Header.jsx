@@ -20,10 +20,10 @@ const divBetween = `flex justify-between items-center`;
 const Header = ({ isTopOfPage }) => {
   const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
   const [isMenuToggled, setIsMenuToggled] = useState(false);
-  const navbarBackground = isTopOfPage ? "" : "drop-shadow-md";
+  const navbarBackground = isTopOfPage ? "" : "drop-shadow bg-white";
 
   return (
-    <nav className="fixed top-0 z-30 w-full">
+    <nav className={`fixed top-0 z-30 w-full`}>
       {/* upper header */}
       {isAboveMediumScreens ? (
         <div>
@@ -53,7 +53,9 @@ const Header = ({ isTopOfPage }) => {
           </div>
 
           {/* below header */}
-          <div className={` ${divBetween}  gap-3 bg-white px-20 py-2`}>
+          <div
+            className={` ${divBetween} ${navbarBackground}   gap-3  px-20 py-2`}
+          >
             <h1 className="font-jose text-2xl font-bold">Hekto</h1>
             <div className="">
               <ul className="flex flex-row gap-5">
