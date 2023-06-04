@@ -19,7 +19,7 @@ const childVariant = {
 
 const Product = () => {
   return (
-    <section className="mx-auto min-h-full w-5/6">
+    <section className=" md:mx-auto md:min-h-full md:w-5/6">
       <motion.div
         initial="hidden"
         whileInView="visible"
@@ -31,14 +31,14 @@ const Product = () => {
         }}
         className="py-20"
       >
-        <h1 className="text-center font-jose text-4xl font-bold text-blue">
+        <h1 className="pb-5 text-center font-jose text-4xl font-bold text-blue">
           Featured Products
         </h1>
         {/* featured products */}
-        <div className="mt-10 flex  justify-evenly  md:flex">
+        <div className="grid grid-cols-2 justify-center gap-6 px-24 md:mt-10 md:flex md:justify-evenly md:px-0">
           {featureProducts.map((product, id) => (
             <div
-              className={`${grid1} h-[361px] w-[270px] drop-shadow-xl`}
+              className={`h-[361px] w-[270px] drop-shadow-xl md:grid md:grid-rows-1 `}
               key={id}
             >
               <div className={`${flexCenter} bg-secondary px-5 py-5`}>
