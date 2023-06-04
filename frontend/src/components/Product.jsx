@@ -122,7 +122,7 @@ const Product = () => {
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
           variants={container}
-          className=" mt-10 grid grid-flow-col grid-rows-2 rounded-sm bg-secondary p-2 drop-shadow-[rgba(7,_65,_210,_0.1)_0px_9px_30px] md:flex md:justify-between md:space-x-5"
+          className=" mb-20 mt-10 grid grid-flow-col grid-rows-2 gap-y-4 rounded-sm   drop-shadow-[rgba(7,_65,_210,_0.1)_0px_9px_40px] md:flex md:justify-between md:gap-0 md:space-x-5"
         >
           {offers.map((offer, index) => (
             <motion.div
