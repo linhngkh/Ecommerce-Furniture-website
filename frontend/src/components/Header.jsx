@@ -11,6 +11,7 @@ import { BsPerson } from "react-icons/bs";
 import useMediaQuery from "../hooks/useMediaQuery";
 import { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
+import LanguageDropdown from "./LanguageDropdown";
 //active classname
 const activeClassname = "text-rose-600";
 const divStart = `flex justify-start items-center`;
@@ -37,7 +38,7 @@ const Header = ({ isTopOfPage }) => {
 
             <div className={`${divStart} gap-5`}>
               <div className={`${itemCenter}`}>
-                English <FiChevronDown />
+                <LanguageDropdown /> <FiChevronDown />
               </div>
               <div className={`${itemCenter}`}>
                 USD <FiChevronDown />

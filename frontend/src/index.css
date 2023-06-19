@@ -26,3 +26,24 @@ body,
 .grid-column-6 {
   @apply grid w-full grid-cols-1 gap-10 px-10 md:grid-cols-2 xl:grid-cols-3;
 }
+
+/* Remove default browser styles */
+select {
+  appearance: none;
+  background-color: transparent;
+  color: #ffffff;
+}
+
+/* Style the dropdown arrow */
+select::-ms-expand {
+  display: none;
+}
+
+select::after {
+  content: "";
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  margin-left: 0.5em;
+  transform: rotate(45deg);
+}
