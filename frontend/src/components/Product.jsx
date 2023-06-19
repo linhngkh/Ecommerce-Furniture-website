@@ -34,7 +34,7 @@ const Product = () => {
           Featured Products
         </h1>
         {/* featured products */}
-        <div className="grid grid-flow-col grid-rows-2 gap-y-7 px-20 py-5 md:mt-10 md:flex md:justify-evenly md:px-0">
+        <div className="grid-column-3">
           {featureProducts.map((product, id) => (
             <div
               className={` h-[361px] w-[270px] justify-self-center drop-shadow-xl md:grid md:grid-rows-1`}
@@ -85,7 +85,7 @@ const Product = () => {
           </ul>
         </div>
 
-        <div className="mt-10 grid grid-flow-col grid-rows-3 gap-3 md:w-full md:grid-cols-3 md:grid-rows-2  md:gap-x-5 md:gap-y-20">
+        <div className="grid-column-6 0 mt-10">
           {latestProducts.map((product) => (
             <div key={product.id} className={`${flexCenter} `}>
               <div className={`grid place-items-center gap-2 bg-secondary`}>
