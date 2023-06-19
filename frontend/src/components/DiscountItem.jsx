@@ -155,12 +155,16 @@ const DiscountItem = () => {
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
           variants={container}
-          className="grid grid-flow-row grid-cols-2 items-center justify-center gap-7 md:flex md:gap-x-8"
+          className="grid-column-3 items-center justify-center gap-7 md:flex md:gap-x-8"
         >
           {topCategory.map((category, _index) => (
             <motion.div variants={childVariant} key={_index}>
               <div className="rounded-full bg-secondary p-7 drop-shadow-[rgba(7,_65,_210,_0.1)_0px_9px_10px]">
-                <img src={category.img} alt="image" className="w-full" />
+                <img
+                  src={category.img}
+                  alt="image"
+                  className="w-full object-fill"
+                />
               </div>
               <div className=" md:text-md mt-5 flex justify-center text-center text-sm text-blueBold">
                 {category.name}
@@ -171,10 +175,10 @@ const DiscountItem = () => {
       </div>
       {/* banner */}
       <div className="relative">
-        <img src={Banner} alt="banner" className="w-full" />
+        <img src={Banner} alt="banner" className="w-full object-cover" />
 
         <div className="absolute left-1/2 top-1/2  -translate-x-1/2 -translate-y-1/2 transform text-center">
-          <h1 className="text-md text-center font-jose font-bold text-blue md:text-2xl md:leading-10">
+          <h1 className="text-center font-jose text-sm font-bold text-blue md:text-2xl md:leading-10">
             Get Leatest Update By Subscribe <br /> 0ur Newslater
           </h1>
           <ActionButton>Shop Now</ActionButton>

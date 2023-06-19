@@ -29,7 +29,6 @@ const Trending = () => {
           visible: { opacity: 1, x: 0 },
         }}
       >
-        {" "}
         <h1 className="mb-10 text-center font-jose text-4xl font-bold text-blue">
           Trending Products
         </h1>
@@ -40,7 +39,7 @@ const Trending = () => {
         whileInView="visible"
         viewport={{ once: true, amount: 0.5 }}
         variants={container}
-        className="grid grid-flow-row grid-cols-2 gap-y-7 drop-shadow-[rgba(7,_65,_210,_0.1)_0px_9px_30px] md:flex md:flex-row  md:justify-center md:gap-x-4"
+        className="grid-column-3 drop-shadow-[rgba(7,_65,_210,_0.1)_0px_9px_30px] md:flex md:flex-row  md:justify-center md:gap-x-4"
       >
         {trendings.map((trending, index) => (
           <motion.div

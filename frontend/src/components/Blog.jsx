@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 const Blog = () => {
   return (
-    <section className="px-40 py-10">
+    <section className="px-10 py-5 md:px-40 md:py-10">
       {/* blog */}
       <motion.div
         initial="hidden"
@@ -26,7 +26,11 @@ const Blog = () => {
               key={index}
               className="rounded-b-lg bg-white drop-shadow-[rgba(7,_65,_210,_0.1)_0px_20px_40px] md:h-[480px] md:w-[550px]"
             >
-              <img src={item.img} alt={item.desc} className="md:w-full" />
+              <img
+                src={item.img}
+                alt={item.desc}
+                className="w-full object-cover"
+              />
               <div className="px-2 py-2">
                 <div className="flex items-center justify-between">
                   <div className="flex ">
