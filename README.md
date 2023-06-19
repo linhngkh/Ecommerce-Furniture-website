@@ -1,4 +1,4 @@
-## E-commerce Furniture MERN Stack
+## Fully Responsive E-commerce Furniture MERN Stack
 #### I follow the design print from this free figma link: https://www.behance.net/gallery/118083883/Ecommerce-UI-Kit
 #### Screenshot
 
@@ -23,4 +23,6 @@
  * add/ remove items to cart
  * see payment in totals
  * check out
-##### Working with Front End, I practice CSS skills with flex box, grid.
+
+##### Reflection
+* Working with Front End, I practice CSS skills with flex box, grid to style the website the same with Figma design.
