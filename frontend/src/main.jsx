@@ -8,6 +8,9 @@ import {
   RouterProvider,
   Route,
 } from "react-router-dom";
+import "./i18n";
+
+//components
 import HomeScreen from "./screens/HomeScreen.jsx";
 import LoginScreen from "./screens/LoginScreen.jsx";
 import RegisterScreen from "./screens/RegisterScreen.jsx";
