@@ -7,7 +7,7 @@ import LanguageDetector from "i18next-browser-languagedetector";
 // have a look at the Quick start guide
 // for passing in lng and translations on init
 
-const availableLanguages = ["ko", "en", "chi", "hi"];
+const availableLanguages = ["en", "fi", "vn"];
 
 const option = {
   order: ["navigator", "htmlTag", "path", "subdomail"],

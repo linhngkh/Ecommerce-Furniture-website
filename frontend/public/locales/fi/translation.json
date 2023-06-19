@@ -4,6 +4,7 @@
     "products" :"Tuotteet",
     "blog":"Blogi",
     "shop": "Shop",
-    "contact": "Ota yhteyttä"
+    "contact": "Ota yhteyttä",
+    "login":  "Kirjaudu"
 
 }

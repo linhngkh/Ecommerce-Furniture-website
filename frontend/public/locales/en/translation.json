@@ -4,6 +4,7 @@
     "products" :"Products",
     "blog":"Blogs",
     "shop": "Shop",
-    "contact": "Contact Us"
+    "contact": "Contact Us",
+    "login":  "Log In"
 
 }
