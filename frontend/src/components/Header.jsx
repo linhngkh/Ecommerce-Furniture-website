@@ -12,6 +12,8 @@ import useMediaQuery from "../hooks/useMediaQuery";
 import { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import LanguageDropdown from "./LanguageDropdown";
+import { useTranslation } from "react-i18next";
+
 //active classname
 const activeClassname = "text-rose-600";
 const divStart = `flex justify-start items-center`;
@@ -19,8 +21,18 @@ const itemCenter = `flex items-center gap-1`;
 const divBetween = `flex justify-between items-center`;
 
 const Header = ({ isTopOfPage }) => {
+  //custom hook
   const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
+  //state
   const [isMenuToggled, setIsMenuToggled] = useState(false);
+  //language
+  const { t, i18n } = useTranslation();
+
+  const changeLanguage = async (e) => {
+    await i18n.changeLanguage(e.target.value);
+  };
+
+  //style
   const navbarBackground = isTopOfPage ? "" : "drop-shadow bg-white";
 
   return (
@@ -38,13 +50,14 @@ const Header = ({ isTopOfPage }) => {
 
             <div className={`${divStart} gap-5`}>
               <div className={`${itemCenter}`}>
-                <LanguageDropdown /> <FiChevronDown />
+                <LanguageDropdown onChange={(e) => changeLanguage(e)} />
+                <FiChevronDown />
               </div>
               <div className={`${itemCenter}`}>
                 USD <FiChevronDown />
               </div>
               <div className={`${itemCenter}`}>
-                Login <BsPerson />
+                {t("Login")} <BsPerson />
               </div>
               <div className={`${itemCenter}`}>
                 Wishlist <AiOutlineHeart />
@@ -68,7 +81,7 @@ const Header = ({ isTopOfPage }) => {
                     }
                   >
                     <div className={`${itemCenter}`}>
-                      Home <FiChevronDown />
+                      {t("Home")} <FiChevronDown />
                     </div>
                   </NavLink>
                 </li>
@@ -79,7 +92,7 @@ const Header = ({ isTopOfPage }) => {
                       isActive ? activeClassname : ""
                     }
                   >
-                    Pages
+                    {t("Pages")}
                   </NavLink>
                 </li>
                 <li>
@@ -89,7 +102,7 @@ const Header = ({ isTopOfPage }) => {
                       isActive ? activeClassname : ""
                     }
                   >
-                    Products
+                    {t("Products")}
                   </NavLink>
                 </li>
                 <li>
@@ -99,7 +112,7 @@ const Header = ({ isTopOfPage }) => {
                       isActive ? activeClassname : ""
                     }
                   >
-                    Blog
+                    {t("Blog")}
                   </NavLink>
                 </li>
                 <li>
@@ -109,7 +122,7 @@ const Header = ({ isTopOfPage }) => {
                       isActive ? activeClassname : ""
                     }
                   >
-                    Shop
+                    {t("Shop")}
                   </NavLink>
                 </li>
                 <li>
@@ -119,7 +132,7 @@ const Header = ({ isTopOfPage }) => {
                       isActive ? activeClassname : ""
                     }
                   >
-                    Contact
+                    {t("Contact")}
                   </NavLink>
                 </li>
               </ul>
@@ -158,7 +171,6 @@ const Header = ({ isTopOfPage }) => {
               onClick={() => setIsMenuToggled(!isMenuToggled)}
               className="cursor-pointer"
             >
-              {" "}
               <AiOutlineCloseCircle className="h-8 w-8 text-white" />
             </button>
           </div>
@@ -176,7 +188,8 @@ const Header = ({ isTopOfPage }) => {
                     }
                   >
                     <div className={`${itemCenter}`}>
-                      Home <FiChevronDown />
+                      {t("Home")}
+                      <FiChevronDown />
                     </div>
                   </NavLink>
                 </li>
@@ -187,7 +200,7 @@ const Header = ({ isTopOfPage }) => {
                       isActive ? activeClassname : ""
                     }
                   >
-                    Pages
+                    {t("Pages")}
                   </NavLink>
                 </li>
                 <li>
@@ -197,7 +210,7 @@ const Header = ({ isTopOfPage }) => {
                       isActive ? activeClassname : ""
                     }
                   >
-                    Products
+                    {t("Products")}
                   </NavLink>
                 </li>
                 <li>
@@ -207,7 +220,7 @@ const Header = ({ isTopOfPage }) => {
                       isActive ? activeClassname : ""
                     }
                   >
-                    Blog
+                    {t("Blog")}
                   </NavLink>
                 </li>
                 <li>
@@ -217,7 +230,7 @@ const Header = ({ isTopOfPage }) => {
                       isActive ? activeClassname : ""
                     }
                   >
-                    Shop
+                    {t("Shop")}
                   </NavLink>
                 </li>
                 <li>
@@ -227,7 +240,7 @@ const Header = ({ isTopOfPage }) => {
                       isActive ? activeClassname : ""
                     }
                   >
-                    Contact
+                    {t("Contact")}
                   </NavLink>
                 </li>
               </ul>

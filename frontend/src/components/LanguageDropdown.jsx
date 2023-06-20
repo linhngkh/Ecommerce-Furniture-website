@@ -1,14 +1,12 @@
-import React from "react";
-
-const LanguageDropdown = () => {
+const LanguageDropdown = (props) => {
   return (
-    <select>
+    <select onChange={props.onChange}>
       {/* <option>Select Language</option> */}
-      <option value="en" defaultValue={true}>
+      <option value={"en"} defaultValue={true}>
         EN
       </option>
-      <option value="fi">FI</option>
-      <option value="vn">VN</option>
+      <option value={"fi"}>FI</option>
+      <option value={"vn"}>VN</option>
     </select>
   );
 };
