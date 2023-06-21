@@ -3,7 +3,7 @@ import { AiFillTwitterCircle } from "react-icons/ai";
 
 const Footer = () => {
   return (
-    <section className="bg-[#eeeffb]">
+    <footer className="bg-[#eeeffb]">
       <div className="flex items-center justify-around px-10 py-20">
         <div className="flex gap-10">
           <div className="space-y-6">
@@ -64,7 +64,7 @@ const Footer = () => {
           <AiFillTwitterCircle size={25} />
         </div>
       </div>
-    </section>
+    </footer>
   );
 };
 
