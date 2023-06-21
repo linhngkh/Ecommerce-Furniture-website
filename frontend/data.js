@@ -134,11 +134,7 @@ export const topCategory = [
     name: "Mini LCW Chair",
     price: "€56.00",
   },
-  {
-    img: "./src/assets/top-2.png",
-    name: "Executive Seat chair",
-    price: "€32.00",
-  },
+
   {
     img: "./src/assets/top-3.png",
     name: "Executive Seat chair",
@@ -172,5 +168,56 @@ export const blogs = [
     date: "1 May, 2023",
     title: "How Color Changes?",
     desc: "More off this less hello samlande lied much over tightly circa horse taped mightly",
+  },
+];
+
+export const pageProducts = [
+  {
+    img: "./src/assets/pages/imageA.png",
+    name: "Vel elit euismod",
+    price: "€26.00",
+    discount: "€49.00",
+  },
+  {
+    img: "./src/assets/pages/imageB.png",
+    name: "Jonathan adler chair",
+    price: "€26.00",
+    discount: "€49.00",
+  },
+  {
+    img: "./src/assets/pages/imageC.png",
+    name: "Jonathan adler chair",
+    price: "€26.00",
+    discount: "€49.00",
+  },
+  {
+    img: "./src/assets/pages/imageD.png",
+    name: "Sed at fermentum",
+    price: "€32.00",
+    discount: "€49.00",
+  },
+  {
+    img: "./src/assets/pages/imageA.png",
+    name: "Vel elit euismod",
+    price: "€26.00",
+    discount: "€49.00",
+  },
+  {
+    img: "./src/assets/pages/imageB.png",
+    name: "Jonathan adler chair",
+    price: "€26.00",
+    discount: "€49.00",
+  },
+  {
+    img: "./src/assets/pages/imageC.png",
+    name: "Jonathan adler chair",
+    price: "€26.00",
+    discount: "€49.00",
+  },
+  {
+    img: "./src/assets/pages/imageD.png",
+    name: "Sed at fermentum",
+    price: "€32.00",
+    discount: "€49.00",
   },
 ];
