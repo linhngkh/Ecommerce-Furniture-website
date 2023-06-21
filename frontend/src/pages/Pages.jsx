@@ -6,7 +6,7 @@ const Pages = () => {
       <div className="mx-auto flex h-[200px] w-full items-center bg-primary px-20">
         <h1 className="font-jose text-2xl font-extrabold">Shop Grid Default</h1>
       </div>
-      <div className="flex h-full w-full bg-white px-20">
+      <div className="flex h-full w-full items-center justify-center bg-white px-20">
         <div className="my-20">
           <div className="flex justify-around gap-10">
             <div className="flex">
