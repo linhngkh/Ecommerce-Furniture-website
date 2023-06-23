@@ -1,7 +1,8 @@
 import { pageProducts } from "../../data";
 import { BsGridFill } from "react-icons/bs";
 import { MdOutlineFormatListBulleted } from "react-icons/md";
-const Pages = () => {
+
+const PagesGrid = () => {
   return (
     <section className="md:pt-20">
       {/* banner title */}
@@ -38,7 +39,7 @@ const Pages = () => {
           {/* product grid */}
           <div className="grid-column-4 mt-20">
             {pageProducts.map((item) => (
-              <div key={item.id} className="h-[340px] w-[240px] ">
+              <div key={item.id} className="h-[390px] w-[240px]">
                 <div className="flex items-center justify-center bg-secondary p-4 hover:bg-[#EBF4F3]">
                   <img
                     src={item.img}
@@ -47,7 +48,7 @@ const Pages = () => {
                     loading="lazy"
                   />
                 </div>
-                <div className="flex-1  py-5">
+                <div className=" md:py-5">
                   <div className="text-center">
                     <p className="text-md font-jose font-extrabold text-[#151875]">
                       {item.name}
@@ -70,4 +71,4 @@ const Pages = () => {
   );
 };
 
-export default Pages;
+export default PagesGrid;

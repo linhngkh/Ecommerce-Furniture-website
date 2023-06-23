@@ -16,7 +16,7 @@ import LoginScreen from "./screens/LoginScreen.jsx";
 import RegisterScreen from "./screens/RegisterScreen.jsx";
 import Contact from "./pages/Contact.jsx";
 import Blog from "./pages/Blog.jsx";
-import Pages from "./pages/Pages.jsx";
+import Pages from "./pages/PagesGrid.jsx";
 import Products from "./pages/Products.jsx";
 import Shop from "./pages/Shop.jsx";
 
