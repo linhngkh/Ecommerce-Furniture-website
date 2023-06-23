@@ -29,7 +29,7 @@ body,
 }
 
 .grid-column-4 {
-  @apply grid w-full grid-cols-1 gap-20 px-10 md:grid-cols-3 xl:grid-cols-4 xl:gap-40;
+  @apply grid w-full grid-cols-1  md:grid-cols-3 xl:grid-cols-4 xl:gap-10;
 }
 
 .subtext-thin {
