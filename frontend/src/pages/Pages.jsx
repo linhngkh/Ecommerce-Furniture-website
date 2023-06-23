@@ -1,8 +1,9 @@
 import { pageProducts } from "../../data";
-
+import { BsGridFill } from "react-icons/bs";
+import { MdOutlineFormatListBulleted } from "react-icons/md";
 const Pages = () => {
   return (
-    <section className=" md:pt-20">
+    <section className="w-full md:pt-20">
       <div className="mx-auto flex h-[200px] w-full items-center bg-primary px-20">
         <h1 className="font-jose text-2xl font-extrabold">Shop Grid Default</h1>
       </div>
@@ -10,17 +11,24 @@ const Pages = () => {
         <div className="my-20">
           <div className="flex justify-around gap-10">
             <div className="flex">
-              <h1>Ecommerce Acceories & Fashion item</h1>
+              <h1 className="text-md font-jose font-semibold text-blue">
+                Ecommerce Acceories & Fashion item
+              </h1>
             </div>
-            <div className="flex items-end justify-end gap-10">
-              <div>
+            <div className="subtext-thin flex items-end justify-end gap-7">
+              <div className="">
                 Per Page:
                 <input className="w-20 border-2" />
               </div>
               <div>
                 Sort By: <select className="w-20 border-2"></select>
               </div>
-              <div>View</div>
+              <div className="flex  items-center justify-center gap-2">
+                View:
+                <BsGridFill />
+                <MdOutlineFormatListBulleted />
+                <input className="w-25 border-2" />
+              </div>
             </div>
           </div>
           {/* product grid */}
