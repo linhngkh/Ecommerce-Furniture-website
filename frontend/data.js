@@ -1,7 +1,7 @@
 export const featureProducts = [
   {
     id: 1,
-    img: "./src/assets/chair2.png",
+    img: "/assets/chair2.png",
     name: "Cantilever chair",
     color: "./src/assets/colors.png",
     code: "Code - Y523201",
@@ -9,7 +9,7 @@ export const featureProducts = [
   },
   {
     id: 2,
-    img: "./src/assets/chair3.png",
+    img: "/assets/chair3.png",
     name: "Cantilever chair",
     color: "./src/assets/colors.png",
     code: "Code - Y523201",
@@ -17,7 +17,7 @@ export const featureProducts = [
   },
   {
     id: 3,
-    img: "./src/assets/chairblue.png",
+    img: "/assets/chairblue.png",
     name: "Cantilever chair",
     color: "./src/assets/colors.png",
     code: "Code - Y523201",
@@ -25,7 +25,7 @@ export const featureProducts = [
   },
   {
     id: 4,
-    img: "./src/assets/chair22.png",
+    img: "/assets/chair22.png",
     name: "Cantilever chair",
     color: "./src/assets/colors.png",
     code: "Code - Y523201",
@@ -36,48 +36,48 @@ export const featureProducts = [
 export const latestProducts = [
   {
     id: 1,
-    img: "./src/assets/Component 9.png",
+    img: "/assets/Component 9.png",
   },
   {
     id: 2,
-    img: "./src/assets/component-2.png",
+    img: "/assets/component-2.png",
   },
   {
     id: 3,
-    img: "./src/assets/component-3.png",
+    img: "/assets/component-3.png",
   },
   {
     id: 4,
-    img: "./src/assets/component-4.png",
+    img: "/assets/component-4.png",
   },
   {
     id: 5,
-    img: "./src/assets/component 11.png",
+    img: "/assets/component 11.png",
   },
   {
     id: 6,
-    img: "./src/assets/component 12.png",
+    img: "/assets/component 12.png",
   },
 ];
 
 export const offers = [
   {
-    img: "./src/assets/delivery.png",
+    img: "/assets/delivery.png",
     name: "24/7 Support",
     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida.",
   },
   {
-    img: "./src/assets/cashback.png",
+    img: "/assets/cashback.png",
     name: "24/7 Support",
     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida.",
   },
   {
-    img: "./src/assets/quality.png",
+    img: "/assets/quality.png",
     name: "24/7 Support",
     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida.",
   },
   {
-    img: "./src/assets/support.png",
+    img: "/assets/support.png",
     name: "24/7 Support",
     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida.",
   },
@@ -85,25 +85,25 @@ export const offers = [
 
 export const trendings = [
   {
-    img: "./src/assets/trending-1.png",
+    img: "/assets/trending-1.png",
     name: "Cantilever chair",
     price: "€35.00",
     discount: "€42.00",
   },
   {
-    img: "./src/assets/trending-2.png",
+    img: "/assets/trending-2.png",
     name: "Cantilever chair",
     price: "€43.00",
     discount: "€55.00",
   },
   {
-    img: "./src/assets/trending-3.png",
+    img: "/assets/trending-3.png",
     name: "Cantilever chair",
     price: "€32.00",
     discount: "€65.00",
   },
   {
-    img: "./src/assets/trending-4.png",
+    img: "/assets/trending-4.png",
     name: "Cantilever chair",
     price: "€77.00",
     discount: "€62.00",
@@ -112,17 +112,17 @@ export const trendings = [
 
 export const trendingSmallChairs = [
   {
-    img: "./src/assets/small-1.png",
+    img: "/assets/small-1.png",
     name: "Executive Seat chair",
     price: "€32.00",
   },
   {
-    img: "./src/assets/small-2.png",
+    img: "/assets/small-2.png",
     name: "Executive Seat chair",
     price: "€32.00",
   },
   {
-    img: "./src/assets/small-3.png",
+    img: "/assets/small-3.png",
     name: "Executive Seat chair",
     price: "€32.00",
   },
@@ -130,18 +130,18 @@ export const trendingSmallChairs = [
 
 export const topCategory = [
   {
-    img: "./src/assets/top-1.png",
+    img: "/assets/top-1.png",
     name: "Mini LCW Chair",
     price: "€56.00",
   },
 
   {
-    img: "./src/assets/top-3.png",
+    img: "/assets/top-3.png",
     name: "Executive Seat chair",
     price: "€32.00",
   },
   {
-    img: "./src/assets/top-1.png",
+    img: "/assets/top-1.png",
     name: "Executive Seat chair",
     price: "€32.00",
   },
@@ -149,21 +149,21 @@ export const topCategory = [
 
 export const blogs = [
   {
-    img: "./src/assets/frame-1.png",
+    img: "/assets/frame-1.png",
     author: "SaberAli",
     date: "17 August, 2022",
     title: "Top Essential Trends in 2021",
     desc: "More off this less hello samlande lied much over tightly circa horse taped mightly",
   },
   {
-    img: "./src/assets/frame-2.png",
+    img: "/assets/frame-2.png",
     author: "Surfauxion",
     date: "13 May, 2021",
     title: "New Fresh In Your Home",
     desc: "More off this less hello samlande lied much over tightly circa horse taped mightly",
   },
   {
-    img: "./src/assets/frame-3.png",
+    img: "/assets/frame-3.png",
     author: "SaberAli",
     date: "1 May, 2023",
     title: "How Color Changes?",
@@ -173,73 +173,73 @@ export const blogs = [
 
 export const pageProducts = [
   {
-    img: "./src/assets/pages/imageA.png",
+    img: "/assets/pages/imageA.png",
     name: "Vel elit euismod",
     price: "€26.00",
     discount: "€49.00",
   },
   {
-    img: "./src/assets/pages/imageB.png",
+    img: "/assets/pages/imageB.png",
     name: "Jonathan adler chair",
     price: "€26.00",
     discount: "€49.00",
   },
   {
-    img: "./src/assets/pages/imageC.png",
+    img: "/assets/pages/imageC.png",
     name: "Jonathan adler chair",
     price: "€26.00",
     discount: "€49.00",
   },
   {
-    img: "./src/assets/pages/imageD.png",
+    img: "/assets/pages/imageD.png",
     name: "Sed at fermentum",
     price: "€32.00",
     discount: "€49.00",
   },
   {
-    img: "./src/assets/pages/image-4.png",
+    img: "/assets/pages/image4.png",
     name: "Sed at fermentum",
     price: "€32.00",
     discount: "€49.00",
   },
   {
-    img: "./src/assets/pages/image-5.png",
+    img: "/assets/pages/image5.png",
     name: "Sed at fermentum",
     price: "€32.00",
     discount: "€49.00",
   },
   {
-    img: "./src/assets/pages/image-7.png",
+    img: "/assets/pages/image7.png",
     name: "Sed at fermentum",
     price: "€32.00",
     discount: "€49.00",
   },
   {
-    img: "./src/assets/pages/image-8.png",
+    img: "/assets/pages/image8.png",
     name: "Sed at fermentum",
     price: "€32.00",
     discount: "€49.00",
   },
   {
-    img: "./src/assets/pages/image10.png",
+    img: "/assets/pages/image10.png",
     name: "Sed at fermentum",
     price: "€32.00",
     discount: "€49.00",
   },
   {
-    img: "./src/assets/pages/image-11.png",
+    img: "/assets/pages/image11.png",
     name: "Sed at fermentum",
     price: "€32.00",
     discount: "€49.00",
   },
   {
-    img: "./src/assets/pages/image12.png",
+    img: "/assets/pages/image12.png",
     name: "Sed at fermentum",
     price: "€32.00",
     discount: "€49.00",
   },
   {
-    img: "./src/assets/pages/imageD.png",
+    img: "/assets/pages/imageD.png",
     name: "Sed at fermentum",
     price: "€32.00",
     discount: "€49.00",

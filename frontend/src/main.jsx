@@ -16,10 +16,11 @@ import LoginScreen from "./screens/LoginScreen.jsx";
 import RegisterScreen from "./screens/RegisterScreen.jsx";
 import Contact from "./pages/Contact.jsx";
 import Blog from "./pages/Blog.jsx";
-import Pages from "./pages/PagesGrid.jsx";
 import Products from "./pages/Products.jsx";
 import Shop from "./pages/Shop.jsx";
-
+import PagesGrid from "./pages/PagesGrid.jsx";
+import ShopList from "./pages/ShopList.jsx";
+import Accessories from "./pages/Accessories.jsx";
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<App />}>
@@ -31,7 +32,11 @@ const router = createBrowserRouter(
       <Route path="/blog" element={<Blog />} />
       <Route path="/products" element={<Products />} />
       <Route path="/shop" element={<Shop />} />
-      <Route path="/pages" element={<Pages />} />
+
+      <Route path="/pages/grid" element={<PagesGrid />} />
+      <Route path="/pages/shoplist" element={<ShopList />} />
+      <Route path="/pages/accessories" element={<Accessories />} />
+
       <Route path="/contact" element={<Contact />} />
     </Route>
   )

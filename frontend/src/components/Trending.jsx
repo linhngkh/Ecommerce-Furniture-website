@@ -1,6 +1,6 @@
 import { trendings, trendingSmallChairs } from "../../data";
-import Discount1 from "../assets/discount.png";
-import Discount2 from "../assets/discount1.png";
+import Discount1 from "/assets/discount.png";
+import Discount2 from "/assets/discount1.png";
 import { motion } from "framer-motion";
 
 const container = {

@@ -1,4 +1,4 @@
-import BigChair from "../assets/chairbig.png";
+import BigChair from "/assets/bigchair.png";
 import { GoPrimitiveDot } from "react-icons/go";
 import { motion } from "framer-motion";
 

@@ -1,6 +1,6 @@
 import ActionButton from "../shares/ActionButton";
-import Sofa from "../assets/sofa.png";
-import Lamp from "../assets/lamp.png";
+import Sofa from "/assets/sofa.png";
+import Lamp from "/assets/lamp.png";
 
 import { motion } from "framer-motion";
 

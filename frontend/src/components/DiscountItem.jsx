@@ -1,7 +1,7 @@
 import { topCategory } from "../../data";
-import Chair from "../assets/chair101.png";
-import Banner from "../assets/banner.png";
-import Brand from "../assets/brand.png";
+import Chair from "/assets/chair101.png";
+import Banner from "/assets/banner.png";
+import Brand from "/assets/brand.png";
 import ActionButton from "../shares/ActionButton";
 import { BsCheck2 } from "react-icons/bs";
 import { motion } from "framer-motion";

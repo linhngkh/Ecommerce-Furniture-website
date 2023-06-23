@@ -13,6 +13,7 @@ import { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import LanguageDropdown from "./LanguageDropdown";
 import { useTranslation } from "react-i18next";
+import DropDrownMenu from "../shares/DropDownMenu";
 
 //active classname
 const activeClassname = "text-rose-600";
@@ -75,7 +76,7 @@ const Header = ({ isTopOfPage }) => {
             >
               <h1 className="font-jose text-2xl font-bold">Hekto</h1>
               <div className="">
-                <ul className="flex flex-row gap-5">
+                <ul className="flex flex-row gap-5 ">
                   <li>
                     <NavLink
                       to="/"
@@ -89,14 +90,7 @@ const Header = ({ isTopOfPage }) => {
                     </NavLink>
                   </li>
                   <li>
-                    <NavLink
-                      to="/pages"
-                      className={({ isActive }) =>
-                        isActive ? activeClassname : ""
-                      }
-                    >
-                      {t("Pages")}
-                    </NavLink>
+                    <DropDrownMenu />
                   </li>
                   <li>
                     <NavLink
