@@ -19,8 +19,9 @@ import Blog from "./pages/Blog.jsx";
 import Products from "./pages/Products.jsx";
 import Shop from "./pages/Shop.jsx";
 import PagesGrid from "./pages/PagesGrid.jsx";
-import ShopList from "./pages/ShopList.jsx";
-import Accessories from "./pages/Accessories.jsx";
+import PageShopList from "./pages/PageShopList.jsx";
+import PageAccessories from "./pages/PageAccessories.jsx";
+
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<App />}>
@@ -34,8 +35,8 @@ const router = createBrowserRouter(
       <Route path="/shop" element={<Shop />} />
 
       <Route path="/pages/grid" element={<PagesGrid />} />
-      <Route path="/pages/shoplist" element={<ShopList />} />
-      <Route path="/pages/accessories" element={<Accessories />} />
+      <Route path="/pages/shoplist" element={<PageShopList />} />
+      <Route path="/pages/accessories" element={<PageAccessories />} />
 
       <Route path="/contact" element={<Contact />} />
     </Route>

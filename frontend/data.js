@@ -298,10 +298,51 @@ export const listScenes = [
   },
 ];
 
-
 export const accessoriesItem = [
   {
-    image: "/assets/lists/scene7.png",
+    image: "/assets/accessories/accessory-1.png",
+    title: "Curabitur lectus",
+    discount: "€26.00",
+    price: "€52.00",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo.",
+  },
+  {
+    image: "/assets/accessories/accessory-2.png",
+    title: "Curabitur lectus",
+    discount: "€26.00",
+    price: "€52.00",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo.",
+  },
+  {
+    image: "/assets/accessories/accessory-3.png",
+    title: "Curabitur lectus",
+    discount: "€26.00",
+    price: "€52.00",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo.",
+  },
+  {
+    image: "/assets/accessories/accessory-4.png",
+    title: "Curabitur lectus",
+    discount: "€26.00",
+    price: "€52.00",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo.",
+  },
+  {
+    image: "/assets/accessories/accessory-5.png",
+    title: "Curabitur lectus",
+    discount: "€26.00",
+    price: "€52.00",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo.",
+  },
+  {
+    image: "/assets/accessories/accessory-6.png",
+    title: "Curabitur lectus",
+    discount: "€26.00",
+    price: "€52.00",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo.",
+  },
+  {
+    image: "/assets/accessories/accessory-7.png",
     title: "Curabitur lectus",
     discount: "€26.00",
     price: "€52.00",

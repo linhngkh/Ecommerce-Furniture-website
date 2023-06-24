@@ -1,13 +1,13 @@
-import Accessories from "../pages/Accessories";
+import PageAccessories from "../pages/PageAccessories";
 import PagesGrid from "../pages/PagesGrid";
-import ShopList from "../pages/ShopList";
+import PageShopList from "../pages/PageShopList";
 
 const Pages = () => {
   return (
     <>
       <PagesGrid />
-      <ShopList />
-      <Accessories />
+      <PageShopList />
+      <PageAccessories />
     </>
   );
 };

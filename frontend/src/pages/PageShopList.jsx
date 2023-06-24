@@ -11,7 +11,7 @@ import { AiFillStar } from "react-icons/ai";
 
 import { listScenes } from "../../data";
 
-const ShopList = () => {
+const PageShopList = () => {
   return (
     <section className="md:pt-20">
       {/* banner title */}
@@ -108,4 +108,4 @@ const ShopList = () => {
   );
 };
 
-export default ShopList;
+export default PageShopList;
