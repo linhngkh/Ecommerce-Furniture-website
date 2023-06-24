@@ -56,3 +56,12 @@ select::after {
   margin-left: 0.5em;
   transform: rotate(45deg);
 }
+
+/* styles of page accessories */
+.title-product-option {
+  @apply font-jose text-base font-bold text-blue underline underline-offset-4;
+}
+
+.paragraph-text {
+  @apply text-sm text-subtext1;
+}

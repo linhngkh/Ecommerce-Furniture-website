@@ -34,6 +34,9 @@ export default {
         bg2: "url('./assets/eclipse61.png')",
       },
     },
-    plugins: [require("@tailwindcss/container-queries")],
+    plugins: [
+      require("@tailwindcss/container-queries"),
+      require("@tailwindcss/forms"),
+    ],
   },
 };
