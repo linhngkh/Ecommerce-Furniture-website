@@ -13,8 +13,8 @@ const PagesGrid = () => {
       <div className="flex h-full w-full items-center justify-center bg-white px-20 md:px-20 ">
         <div className="my-20">
           {/* bars */}
-          <div className="flex flex-col justify-around md:flex md:flex-row">
-            <div className="">
+          <div className="flex flex-col justify-between md:flex md:flex-row">
+            <div className="flex">
               <h1 className="text-md font-jose font-semibold text-blue">
                 Ecommerce Acceories & Fashion item
               </h1>
@@ -38,7 +38,7 @@ const PagesGrid = () => {
 
           {/* product grid */}
           <div className="grid-column-4 mt-20">
-            {pageProducts.map((item) => (
+            {pageProducts.map((item, index) => (
               <div key={item.name} className="h-[390px] w-[240px]">
                 <div className="flex items-center justify-center bg-secondary p-4 hover:bg-[#EBF4F3]">
                   <img
