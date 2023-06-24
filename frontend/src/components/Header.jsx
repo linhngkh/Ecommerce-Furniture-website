@@ -20,7 +20,7 @@ import useMediaQuery from "../hooks/useMediaQuery";
 import LanguageDropdown from "./LanguageDropdown";
 
 //active classname
-const activeClassname = "text-rose-600";
+const activeClassName = "text-rose-600";
 const divStart = `flex justify-start items-center`;
 const itemCenter = `flex items-center gap-1`;
 const divBetween = `flex justify-between items-center`;
@@ -70,16 +70,16 @@ const Header = ({ isTopOfPage }) => {
 
             {/* below header */}
             <div
-              className={` ${divBetween} ${navbarBackground}   gap-3  px-20 py-2`}
+              className={` ${divBetween} ${navbarBackground}  gap-3 px-20 py-2 text-navbartext`}
             >
-              <h1 className="font-jose text-2xl font-bold">Hekto</h1>
+              <h1 className="font-jose text-2xl font-bold ">Hekto</h1>
               <div className="">
                 <ul className="flex flex-row gap-5 ">
                   <li>
                     <NavLink
                       to="/"
                       className={({ isActive }) =>
-                        isActive ? activeClassname : ""
+                        isActive ? activeClassName : ""
                       }
                     >
                       <div className={`${itemCenter}`}>Home</div>
@@ -92,7 +92,7 @@ const Header = ({ isTopOfPage }) => {
                     <NavLink
                       to="/products"
                       className={({ isActive }) =>
-                        isActive ? activeClassname : ""
+                        isActive ? activeClassName : ""
                       }
                     >
                       Products
@@ -102,7 +102,7 @@ const Header = ({ isTopOfPage }) => {
                     <NavLink
                       to="/blog"
                       className={({ isActive }) =>
-                        isActive ? activeClassname : ""
+                        isActive ? activeClassName : ""
                       }
                     >
                       Blog
@@ -112,7 +112,7 @@ const Header = ({ isTopOfPage }) => {
                     <NavLink
                       to="/shop"
                       className={({ isActive }) =>
-                        isActive ? activeClassname : ""
+                        isActive ? activeClassName : ""
                       }
                     >
                       Shop
@@ -122,7 +122,7 @@ const Header = ({ isTopOfPage }) => {
                     <NavLink
                       to="/contact"
                       className={({ isActive }) =>
-                        isActive ? activeClassname : ""
+                        isActive ? activeClassName : ""
                       }
                     >
                       Contact
@@ -145,9 +145,11 @@ const Header = ({ isTopOfPage }) => {
           </div>
         ) : (
           <div className={` ${divBetween}  gap-3 bg-secondary px-20 py-3`}>
-            <h1 className="font-jose text-3xl font-bold text-black">Hekto</h1>
+            <h1 className="navbartext font-jose text-3xl font-bold text-blue">
+              Hekto
+            </h1>
             <button
-              className="rounded-full bg-blues p-2"
+              className="rounded-full bg-blue p-2"
               onClick={() => setIsMenuToggled(!isMenuToggled)}
             >
               <GiHamburgerMenu className="h-6 w-6 text-white" />
@@ -157,14 +159,14 @@ const Header = ({ isTopOfPage }) => {
 
         {/* mobile menu modal */}
         {!isAboveMediumScreens && isMenuToggled && (
-          <div className="fixed bottom-0 right-0 top-0 z-40 h-full w-[300px] bg-blue text-white drop-shadow-xl md:top-16 md:ml-40 md:justify-end">
+          <div className="fixed bottom-0 right-0 top-0 z-40 h-full w-[300px] bg-feature text-navbartext drop-shadow-xl md:top-16 md:ml-40 md:justify-end">
             {/* close Button */}
             <div className="flex justify-end px-16 py-5">
               <button
                 onClick={() => setIsMenuToggled(!isMenuToggled)}
                 className="cursor-pointer"
               >
-                <AiOutlineCloseCircle className="h-8 w-8 text-white" />
+                <AiOutlineCloseCircle className="h-8 w-8 text-navbartext" />
               </button>
             </div>
 
@@ -177,30 +179,20 @@ const Header = ({ isTopOfPage }) => {
                     <NavLink
                       to="/"
                       className={({ isActive }) =>
-                        isActive ? activeClassname : ""
+                        isActive ? activeClassName : ""
                       }
                     >
-                      <div className={`${itemCenter}`}>
-                        Home
-                        <FiChevronDown />
-                      </div>
+                      <div className={`${itemCenter}`}>Home</div>
                     </NavLink>
                   </li>
                   <li>
-                    <NavLink
-                      to="/pages"
-                      className={({ isActive }) =>
-                        isActive ? activeClassname : ""
-                      }
-                    >
-                      Pages
-                    </NavLink>
+                    <DropDrownMenu />
                   </li>
                   <li>
                     <NavLink
                       to="/products"
                       className={({ isActive }) =>
-                        isActive ? activeClassname : ""
+                        isActive ? activeClassName : ""
                       }
                     >
                       Products
@@ -210,7 +202,7 @@ const Header = ({ isTopOfPage }) => {
                     <NavLink
                       to="/blog"
                       className={({ isActive }) =>
-                        isActive ? activeClassname : ""
+                        isActive ? activeClassName : ""
                       }
                     >
                       Blog
@@ -220,7 +212,7 @@ const Header = ({ isTopOfPage }) => {
                     <NavLink
                       to="/shop"
                       className={({ isActive }) =>
-                        isActive ? activeClassname : ""
+                        isActive ? activeClassName : ""
                       }
                     >
                       Shop
@@ -230,7 +222,7 @@ const Header = ({ isTopOfPage }) => {
                     <NavLink
                       to="/contact"
                       className={({ isActive }) =>
-                        isActive ? activeClassname : ""
+                        isActive ? activeClassName : ""
                       }
                     >
                       Contact
