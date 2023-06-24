@@ -13,7 +13,7 @@ import { listScenes } from "../../data";
 
 const PageShopList = () => {
   return (
-    <section className="md:pt-20">
+    <section className="md:pt-10">
       {/* banner title */}
       <SharedBanner>Shop List</SharedBanner>
       <div className="flex h-full w-full flex-col items-center justify-center bg-white px-20 md:flex-col md:px-20 ">

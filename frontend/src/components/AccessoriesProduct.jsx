@@ -21,7 +21,7 @@ const AccessoriesProduct = () => {
             key={item.title}
             className="flex flex-col items-center justify-center gap-7  rounded-sm p-6 shadow-md  md:flex-row"
           >
-            <div className="w-[300px] rounded-sm">
+            <div className=" w-[300px] rounded-sm">
               <img
                 src={item.image}
                 alt={item.title}

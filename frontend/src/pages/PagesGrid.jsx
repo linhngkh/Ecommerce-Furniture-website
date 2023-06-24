@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 
 const PagesGrid = () => {
   return (
-    <section className="md:pt-20">
+    <section className="md:pt-10">
       {/* banner title */}
       <SharedBanner>Shop Grid Default</SharedBanner>
 

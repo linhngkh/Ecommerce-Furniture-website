@@ -38,6 +38,8 @@ const PageAccessories = () => {
               </div>
             </div>
           </div>
+
+          {/* mbile views */}
           {isAboveMediumScreens ? (
             <div className="mt-20 flex justify-between">
               {/* side bar */}
@@ -46,7 +48,7 @@ const PageAccessories = () => {
               <AccessoriesProduct />
             </div>
           ) : (
-            <div className="mt-10">
+            <div className="mt-5">
               <FilterAccessory />
               {/* products bar */}
               <AccessoriesProduct />
