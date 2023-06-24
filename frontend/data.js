@@ -36,7 +36,7 @@ export const featureProducts = [
 export const latestProducts = [
   {
     id: 1,
-    img: "/assets/Component 9.png",
+    img: "/assets/Component9.png",
   },
   {
     id: 2,
@@ -52,11 +52,11 @@ export const latestProducts = [
   },
   {
     id: 5,
-    img: "/assets/component 11.png",
+    img: "/assets/Component11.png",
   },
   {
     id: 6,
-    img: "/assets/component 12.png",
+    img: "/assets/Component12.png",
   },
 ];
 

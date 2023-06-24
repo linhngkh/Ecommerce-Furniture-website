@@ -1,4 +1,7 @@
+import { useState } from "react";
+
 import { NavLink } from "react-router-dom";
+
 import { BiPhoneCall, BiSearch } from "react-icons/bi";
 import {
   AiOutlineCloseCircle,
@@ -8,12 +11,14 @@ import {
 } from "react-icons/ai";
 import { FiChevronDown } from "react-icons/fi";
 import { BsPerson } from "react-icons/bs";
-import useMediaQuery from "../hooks/useMediaQuery";
-import { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
+
+import DropDrownMenu from "../shares/DropDownMenu";
+
+import useMediaQuery from "../hooks/useMediaQuery";
+
 import LanguageDropdown from "./LanguageDropdown";
 import { useTranslation } from "react-i18next";
-import DropDrownMenu from "../shares/DropDownMenu";
 
 //active classname
 const activeClassname = "text-rose-600";

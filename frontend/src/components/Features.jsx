@@ -1,5 +1,7 @@
 import BigChair from "/assets/bigchair.png";
+
 import { GoPrimitiveDot } from "react-icons/go";
+
 import { motion } from "framer-motion";
 
 const Features = () => {

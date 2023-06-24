@@ -1,7 +1,9 @@
 import { blogs } from "../../data";
+
+import { motion } from "framer-motion";
+
 import { BiPen } from "react-icons/bi";
 import { MdDateRange } from "react-icons/md";
-import { motion } from "framer-motion";
 
 const Blog = () => {
   return (

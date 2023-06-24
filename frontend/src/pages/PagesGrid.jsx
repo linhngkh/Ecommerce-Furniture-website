@@ -4,6 +4,8 @@ import { MdOutlineFormatListBulleted } from "react-icons/md";
 import SharedBanner from "../shares/SharedBanner";
 import SharedTitle from "../shares/SharedTitle";
 
+import { motion } from "framer-motion";
+
 const PagesGrid = () => {
   return (
     <section className="md:pt-20">
