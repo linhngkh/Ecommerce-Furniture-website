@@ -245,3 +245,55 @@ export const pageProducts = [
     discount: "€49.00",
   },
 ];
+
+export const listScenes = [
+  {
+    image: "/assets/lists/scene1.png",
+    title: "Accumsan tincidunt",
+    discount: "€26.00",
+    price: "€52.00",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo.",
+  },
+  {
+    image: "/assets/lists/scene2.png",
+    title: "In nulla",
+    discount: "€26.00",
+    price: "€52.00",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo.",
+  },
+  {
+    image: "/assets/lists/scene3.png",
+    title: "Vel sem",
+    discount: "€26.00",
+    price: "€52.00",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo.",
+  },
+  {
+    image: "/assets/lists/scene4.png",
+    title: "Porttitor cum",
+    discount: "€26.00",
+    price: "€52.00",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo.",
+  },
+  {
+    image: "/assets/lists/scene5.png",
+    title: "Nunc in",
+    discount: "€26.00",
+    price: "€52.00",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo.",
+  },
+  {
+    image: "/assets/lists/scene6.png",
+    title: "Vitae facilisis",
+    discount: "€26.00",
+    price: "€52.00",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo.",
+  },
+  {
+    image: "/assets/lists/scene7.png",
+    title: "Curabitur lectus",
+    discount: "€26.00",
+    price: "€52.00",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo.",
+  },
+];

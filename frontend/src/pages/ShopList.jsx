@@ -1,8 +1,13 @@
 import SharedBanner from "../shares/SharedBanner";
 import SharedTitle from "../shares/SharedTitle";
+
 import { BsGridFill } from "react-icons/bs";
 import { MdOutlineFormatListBulleted } from "react-icons/md";
+import { BsCart } from "react-icons/bs";
+import { AiOutlineHeart } from "react-icons/ai";
+import { SlMagnifierAdd } from "react-icons/sl";
 
+import { listScenes } from "../../data";
 
 const ShopList = () => {
   return (
@@ -33,6 +38,33 @@ const ShopList = () => {
         </div>
 
         {/* products */}
+        <div className="mt-20">
+          {listScenes.map((scene) => (
+            <div key={scene.title}>
+              <div>
+                <img src={scene.image} alt={scene.title} />
+              </div>
+              <div>
+                <p>{scene.title}</p>
+                <div>
+                  <p>{scene.discount}</p>
+                  <p>{scene.price}</p>
+                  <p></p> {/* star */}
+                  <p>{scene.desc}</p>
+                  <span>
+                    <BsCart />
+                  </span>
+                  <span>
+                    <AiOutlineHeart />
+                  </span>
+                  <span>
+                    <SlMagnifierAdd />
+                  </span>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );
