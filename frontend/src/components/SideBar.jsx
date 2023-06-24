@@ -5,6 +5,7 @@ import {
   AccessoriesCategories,
   PriceFilters,
 } from "../../data";
+
 const SideBar = () => {
   return (
     <div className="flex-1/3 paragraph-text space-y-10">
