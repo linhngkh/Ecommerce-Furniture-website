@@ -18,7 +18,7 @@ const PageAccessories = () => {
       {/* banner title */}
       <SharedBanner>Shop Left Sidebar</SharedBanner>
       <div className="flex h-full w-full items-center justify-center bg-white px-20 md:px-20 ">
-        <div className="my-20">
+        <div className="my-10 md:my-20">
           {/* search bars */}
           <div className="flex flex-col justify-between md:flex md:flex-row md:px-10">
             <SharedTitle />

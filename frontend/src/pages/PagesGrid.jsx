@@ -13,7 +13,7 @@ const PagesGrid = () => {
       <SharedBanner>Shop Grid Default</SharedBanner>
 
       <div className="flex h-full w-full items-center justify-center bg-white px-20 md:px-20 ">
-        <div className="my-20">
+        <div className="my-10 md:my-20">
           {/* search bars */}
           <div className="flex flex-col justify-between md:flex md:flex-row ">
             <SharedTitle />
@@ -35,7 +35,7 @@ const PagesGrid = () => {
           </div>
 
           {/* product grid */}
-          <div className="grid-column-4 mt-20">
+          <div className="grid-column-4 mt-10 md:mt-20">
             {pageProducts.map((item) => (
               <motion.div
                 initial="hidden"

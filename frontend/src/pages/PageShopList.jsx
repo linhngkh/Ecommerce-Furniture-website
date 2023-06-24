@@ -18,7 +18,7 @@ const PageShopList = () => {
       <SharedBanner>Shop List</SharedBanner>
       <div className="flex h-full w-full flex-col items-center justify-center bg-white px-20 md:flex-col md:px-20 ">
         {/* search bars */}
-        <div className="my-20">
+        <div className="my-10 md:my-20">
           <div className="flex flex-col justify-between md:flex md:flex-row ">
             <SharedTitle />
             <div className="subtext-thin flex flex-wrap gap-y-3 md:flex md:flex-row md:items-end md:justify-end md:gap-5">
@@ -40,7 +40,7 @@ const PageShopList = () => {
         </div>
 
         {/* products */}
-        <div className="mb-20">
+        <div className="mb-20 space-y-10">
           {listScenes.map((scene) => (
             <motion.div
               initial="hidden"
@@ -52,13 +52,13 @@ const PageShopList = () => {
                 visible: { opacity: 1, x: 0 },
               }}
               key={scene.title}
-              className="flex flex-col items-center justify-center gap-7 p-6 md:flex-row"
+              className="flex flex-col items-center justify-center gap-4 rounded-sm p-6 shadow-md md:flex-row"
             >
               <div>
                 <img
                   src={scene.image}
                   alt={scene.title}
-                  className="w-[300px] object-contain md:w-full"
+                  className="w-[300px] rounded-sm object-contain md:w-full"
                   loading="lazy"
                 />
               </div>
