@@ -8,7 +8,6 @@ import {
   RouterProvider,
   Route,
 } from "react-router-dom";
-import "./i18n";
 
 //components
 import HomeScreen from "./screens/HomeScreen.jsx";
