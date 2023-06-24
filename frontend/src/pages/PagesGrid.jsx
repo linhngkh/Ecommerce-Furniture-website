@@ -1,24 +1,20 @@
 import { pageProducts } from "../../data";
 import { BsGridFill } from "react-icons/bs";
 import { MdOutlineFormatListBulleted } from "react-icons/md";
+import SharedBanner from "../shares/SharedBanner";
+import SharedTitle from "../shares/SharedTitle";
 
 const PagesGrid = () => {
   return (
     <section className="md:pt-20">
       {/* banner title */}
-      <div className="mx-auto flex h-[200px] items-center bg-primary px-20 md:px-20">
-        <h1 className="font-jose text-2xl font-extrabold">Shop Grid Default</h1>
-      </div>
+      <SharedBanner>Shop Grid Default</SharedBanner>
 
       <div className="flex h-full w-full items-center justify-center bg-white px-20 md:px-20 ">
         <div className="my-20">
           {/* bars */}
           <div className="flex flex-col justify-between md:flex md:flex-row">
-            <div className="flex">
-              <h1 className="text-md font-jose font-semibold text-blue">
-                Ecommerce Acceories & Fashion item
-              </h1>
-            </div>
+            <SharedTitle />
             <div className="subtext-thin flex flex-wrap gap-y-3 md:flex md:flex-row md:items-end md:justify-end md:gap-5">
               <div className="flex  gap-3">
                 Per Page:
