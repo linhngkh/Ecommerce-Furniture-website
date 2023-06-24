@@ -17,9 +17,9 @@ const PageShopList = () => {
       {/* banner title */}
       <SharedBanner>Shop List</SharedBanner>
       <div className="flex h-full w-full flex-col items-center justify-center bg-white px-20 md:flex-col md:px-20 ">
-        {/* bars */}
+        {/* search bars */}
         <div className="my-20">
-          <div className="flex flex-col justify-between md:flex md:flex-row">
+          <div className="flex flex-col justify-between md:flex md:flex-row ">
             <SharedTitle />
             <div className="subtext-thin flex flex-wrap gap-y-3 md:flex md:flex-row md:items-end md:justify-end md:gap-5">
               <div className="flex gap-3">
