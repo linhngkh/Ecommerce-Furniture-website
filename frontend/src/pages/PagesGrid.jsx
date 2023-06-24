@@ -37,7 +37,18 @@ const PagesGrid = () => {
           {/* product grid */}
           <div className="grid-column-4 mt-20">
             {pageProducts.map((item) => (
-              <div key={item.name} className="h-[390px] w-[240px]">
+              <motion.div
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.5 }}
+                transition={{ duration: 0.5 }}
+                variants={{
+                  hidden: { opacity: 0, y: -50 },
+                  visible: { opacity: 1, y: 0 },
+                }}
+                key={item.name}
+                className="h-[390px] w-[240px]"
+              >
                 <div className="flex items-center justify-center bg-secondary p-4 hover:bg-[#EBF4F3]">
                   <img
                     src={item.img}
@@ -60,7 +71,7 @@ const PagesGrid = () => {
                     </p>
                   </div>
                 </div>
-              </div>
+              </motion.div>
             ))}
           </div>
         </div>

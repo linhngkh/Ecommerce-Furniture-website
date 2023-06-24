@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import SharedBanner from "../shares/SharedBanner";
 import SharedTitle from "../shares/SharedTitle";
 
@@ -39,9 +40,17 @@ const ShopList = () => {
         </div>
 
         {/* products */}
-        <div className="">
+        <div className="mb-20">
           {listScenes.map((scene) => (
-            <div
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.5 }}
+              transition={{ duration: 0.5 }}
+              variants={{
+                hidden: { opacity: 0, x: 50 },
+                visible: { opacity: 1, x: 0 },
+              }}
               key={scene.title}
               className="flex flex-col items-center justify-center gap-7 p-6 md:flex-row"
             >
@@ -91,7 +100,7 @@ const ShopList = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
