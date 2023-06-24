@@ -10,7 +10,7 @@ export default function DropDrownMenu() {
   return (
     <Menu as="div" className="relative inline-block text-left">
       <div>
-        <Menu.Button className="text-md inline-flex w-full justify-center  gap-x-1.5  text-black shadow-sm ">
+        <Menu.Button className="text-md  inline-flex w-full items-center justify-center  gap-x-1.5  text-black shadow-sm ">
           Pages
           <FiChevronDown
             className="-mr-1 h-5 w-5 text-gray-400"

@@ -89,9 +89,7 @@ const Header = ({ isTopOfPage }) => {
                         isActive ? activeClassname : ""
                       }
                     >
-                      <div className={`${itemCenter}`}>
-                        {t("Home")} <FiChevronDown />
-                      </div>
+                      <div className={`${itemCenter}`}>{t("Home")}</div>
                     </NavLink>
                   </li>
                   <li>
