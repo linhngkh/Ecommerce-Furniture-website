@@ -38,7 +38,7 @@ const PagesGrid = () => {
 
           {/* product grid */}
           <div className="grid-column-4 mt-20">
-            {pageProducts.map((item, index) => (
+            {pageProducts.map((item) => (
               <div key={item.name} className="h-[390px] w-[240px]">
                 <div className="flex items-center justify-center bg-secondary p-4 hover:bg-[#EBF4F3]">
                   <img
