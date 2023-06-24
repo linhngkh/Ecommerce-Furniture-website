@@ -298,7 +298,7 @@ export const listScenes = [
   },
 ];
 
-export const accessoriesItem = [
+export const accessoriesItems = [
   {
     image: "/assets/accessories/accessory-1.png",
     title: "Curabitur lectus",
@@ -348,4 +348,30 @@ export const accessoriesItem = [
     price: "€52.00",
     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo.",
   },
+];
+
+export const AccessoriesTitle = [
+  { name: "Coaster Furniture" },
+  { name: "Fusion Dot High Fashion" },
+  { name: "Unique Furnitture Restor" },
+  { name: "Young Repurposed" },
+  { name: "Green DIY furniture" },
+];
+
+export const AccessoriesCategories = [
+  { name: "Prestashop" },
+  { name: "Magento" },
+  { name: "Bigcommerce" },
+  { name: "osCommerce" },
+  { name: "3dCart" },
+  { name: "Accessories" },
+  { name: "Jewellery" },
+  { name: "Watches" },
+];
+
+export const PriceFilters = [
+  { name: "$0.00 - $150.00" },
+  { name: "$150.00 - $350.00" },
+  { name: "$150.00 - $504.00" },
+  { name: "$450.00 +" },
 ];

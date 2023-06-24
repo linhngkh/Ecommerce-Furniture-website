@@ -1,121 +1,72 @@
-import { AiFillStar } from "react-icons/ai";
 import { BiSearch } from "react-icons/bi";
-
+import RatingItem from "./RatingItem";
+import {
+  AccessoriesTitle,
+  AccessoriesCategories,
+  PriceFilters,
+} from "../../data";
 const SideBar = () => {
   return (
     <div className="flex-1/3 paragraph-text space-y-10">
       <div className="space-y-3">
         <h3 className="title-product-option">Product Brand</h3>
-        <div className="flex gap-2">
-          <input type="checkbox" id="scales" name="scales" />
-          <label htmlFor="scales" className="paragraph-text">
-            Coaster Furniture
-          </label>
-        </div>
-        <div className="flex gap-2">
-          <input type="checkbox" id="scales" name="fushion" />
-          <label htmlFor="scales" className="paragraph-text">
-            Fusion Dot High Fashion
-          </label>
-        </div>
-        <div className="flex gap-2">
-          <input type="checkbox" id="scales" name="scales" className="" />
-          <label htmlFor="scales" className="paragraph-text">
-            Unique Furnitture Restor
-          </label>
-        </div>
-        <div className="flex gap-2">
-          <input type="checkbox" id="scales" name="scales" />
-          <label htmlFor="scales" className="paragraph-text">
-            Dream Furnitture Flipping
-          </label>
-        </div>
-        <div className="flex gap-2">
-          <input type="checkbox" id="scales" name="scales" />
-          <label htmlFor="scales" className="paragraph-text">
-            Young Repurposed
-          </label>
-        </div>
-        <div className="flex gap-2">
-          <input type="checkbox" id="scales" name="scales" />
-          <label htmlFor="scales" className="paragraph-text">
-            Green DIY furniture
-          </label>
-        </div>
+
+        {AccessoriesTitle.map((title) => (
+          <div className="flex gap-2" key={title.id}>
+            <input type="checkbox" id="scales" name="scales" />
+            <label htmlFor="scales" className="paragraph-text">
+              {title.name}
+            </label>
+          </div>
+        ))}
       </div>
 
       <div className="space-y-3">
         <h3 className="title-product-option">Discount Offer</h3>
-        <p className="paragraph-text">20% Cashback</p>
-        <p className="paragraph-text"> 5% Cashback Offer</p>
-        <p className="paragraph-text">25% Discount Offer</p>
+
+        <div className="flex gap-2">
+          <input type="checkbox" id="scales" name="scales" />
+          <label htmlFor="scales" className="paragraph-text">
+            5% Cashback Offer
+          </label>
+        </div>
+        <div className="flex gap-2">
+          <input type="checkbox" id="scales" name="scales" />
+          <label htmlFor="scales" className="paragraph-text">
+            25% Discount Offer
+          </label>
+        </div>
       </div>
 
       <div className="space-y-3">
         <h3 className="title-product-option">Rating Items</h3>
 
         {/* stars */}
-        <div className="flex flex-col space-y-3">
-          <div className="flex space-x-2 text-orange-300">
-            <AiFillStar />
-            <AiFillStar />
-            <AiFillStar />
-            <AiFillStar />
-            <AiFillStar />
-          </div>
-
-          <div className="flex space-x-2 text-orange-300">
-            <AiFillStar />
-            <AiFillStar />
-            <AiFillStar />
-            <AiFillStar />
-            <AiFillStar />
-          </div>
-
-          <div className="flex space-x-2 text-orange-300">
-            <AiFillStar />
-            <AiFillStar />
-            <AiFillStar />
-            <AiFillStar />
-            <AiFillStar />
-          </div>
-
-          <div className="flex space-x-2 text-orange-300">
-            <AiFillStar />
-            <AiFillStar />
-            <AiFillStar />
-            <AiFillStar />
-            <AiFillStar />
-          </div>
-        </div>
-        <div className="flex space-x-2 text-orange-300">
-          <AiFillStar />
-          <AiFillStar />
-          <AiFillStar />
-          <AiFillStar />
-          <AiFillStar />
-        </div>
+        <RatingItem />
       </div>
 
       <div className="space-y-3">
         <h3 className="title-product-option">Categories</h3>
-        <p className="paragraph-text">Prestashop</p>
-        <p className="paragraph-text">Magento</p>
-        <p className="paragraph-text">Bigcommerce</p>
-        <p className="paragraph-text">osCommerce</p>
-        <p className="paragraph-text">3dcart</p>
-        <p className="paragraph-text">Bags</p>
-        <p className="paragraph-text">Accessories</p>
-        <p className="paragraph-text">Jewellery</p>
-        <p className="paragraph-text">Watches</p>
+        {AccessoriesCategories.map((category) => (
+          <div className="flex gap-2" key={category.id}>
+            <input type="checkbox" id="scales" name="scales" />
+            <label htmlFor="scales" className="paragraph-text">
+              {category.name}
+            </label>
+          </div>
+        ))}
       </div>
 
       <div className="space-y-3">
         <h3 className="title-product-option">Price Filters</h3>
-        <p className="paragraph-text">$0.00 - $150.00</p>
-        <p className="paragraph-text">$150.00 - $350.00</p>
-        <p className="paragraph-text">$150.00 - $504.00</p>
-        <p className="paragraph-text">$450.00 +</p>
+        {PriceFilters.map((price) => (
+          <div className="flex gap-2" key={price.id}>
+            <input type="checkbox" id="scales" name="scales" />
+            <label htmlFor="scales" className="paragraph-text">
+              {price.name}
+            </label>
+          </div>
+        ))}
 
         <div className="flex items-center justify-center border-2">
           <input

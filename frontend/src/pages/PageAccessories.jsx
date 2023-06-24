@@ -1,3 +1,4 @@
+import AccessoriesProduct from "../components/AccessoriesProduct";
 import SideBar from "../components/SideBar";
 import SharedBanner from "../shares/SharedBanner";
 import SharedTitle from "../shares/SharedTitle";
@@ -6,14 +7,14 @@ import { MdOutlineFormatListBulleted } from "react-icons/md";
 
 const PageAccessories = () => {
   return (
-    <section className="md:pt-20">
+    <section className="pt-10 md:pt-20">
       {" "}
       {/* banner title */}
       <SharedBanner>Shop Left Sidebar</SharedBanner>
       <div className="flex h-full w-full items-center justify-center bg-white px-20 md:px-20 ">
         <div className="my-20">
           {/* search bars */}
-          <div className="flex flex-col justify-between md:flex md:flex-row">
+          <div className="flex flex-col justify-between px-10 md:flex md:flex-row">
             <SharedTitle />
             <div className="subtext-thin flex flex-wrap gap-y-3 md:flex md:flex-row md:items-end md:justify-end md:gap-5">
               <div className="flex  gap-3">
@@ -36,7 +37,7 @@ const PageAccessories = () => {
             {/* side bar */}
             <SideBar />
             {/* products bar */}
-            <div className="flex-2/3">b</div>
+            <AccessoriesProduct />
           </div>
         </div>
       </div>
