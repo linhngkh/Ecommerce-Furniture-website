@@ -27,6 +27,7 @@ export default {
         sand: "#FFEAC1",
         feature: "#f1f0ff",
         blueBold: "#151875",
+        subtext1: "#7E81A2",
       },
       content: {
         lamp: "url('./assets/eclipse60.png')",
