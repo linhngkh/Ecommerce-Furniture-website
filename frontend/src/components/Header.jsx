@@ -18,7 +18,6 @@ import DropDrownMenu from "../shares/DropDownMenu";
 import useMediaQuery from "../hooks/useMediaQuery";
 
 import LanguageDropdown from "./LanguageDropdown";
-import { useTranslation } from "react-i18next";
 
 //active classname
 const activeClassname = "text-rose-600";
@@ -31,12 +30,6 @@ const Header = ({ isTopOfPage }) => {
   const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
   //state
   const [isMenuToggled, setIsMenuToggled] = useState(false);
-  //language
-  const { t, i18n } = useTranslation();
-
-  const changeLanguage = async (e) => {
-    await i18n.changeLanguage(e.target.value);
-  };
 
   //style
   const navbarBackground = isTopOfPage ? "" : "drop-shadow bg-white";
@@ -59,14 +52,14 @@ const Header = ({ isTopOfPage }) => {
 
               <div className={`${divStart} gap-5`}>
                 <div className={`${itemCenter}`}>
-                  <LanguageDropdown onChange={(e) => changeLanguage(e)} />
+                  <LanguageDropdown />
                   <FiChevronDown />
                 </div>
                 <div className={`${itemCenter}`}>
                   USD <FiChevronDown />
                 </div>
                 <div className={`${itemCenter}`}>
-                  {t("Login")} <BsPerson />
+                  Login <BsPerson />
                 </div>
                 <div className={`${itemCenter}`}>
                   Wishlist <AiOutlineHeart />
@@ -89,7 +82,7 @@ const Header = ({ isTopOfPage }) => {
                         isActive ? activeClassname : ""
                       }
                     >
-                      <div className={`${itemCenter}`}>{t("Home")}</div>
+                      <div className={`${itemCenter}`}>Home</div>
                     </NavLink>
                   </li>
                   <li>
@@ -102,7 +95,7 @@ const Header = ({ isTopOfPage }) => {
                         isActive ? activeClassname : ""
                       }
                     >
-                      {t("Products")}
+                      Products
                     </NavLink>
                   </li>
                   <li>
@@ -112,7 +105,7 @@ const Header = ({ isTopOfPage }) => {
                         isActive ? activeClassname : ""
                       }
                     >
-                      {t("Blog")}
+                      Blog
                     </NavLink>
                   </li>
                   <li>
@@ -122,7 +115,7 @@ const Header = ({ isTopOfPage }) => {
                         isActive ? activeClassname : ""
                       }
                     >
-                      {t("Shop")}
+                      Shop
                     </NavLink>
                   </li>
                   <li>
@@ -132,7 +125,7 @@ const Header = ({ isTopOfPage }) => {
                         isActive ? activeClassname : ""
                       }
                     >
-                      {t("Contact")}
+                      Contact
                     </NavLink>
                   </li>
                 </ul>
@@ -188,7 +181,7 @@ const Header = ({ isTopOfPage }) => {
                       }
                     >
                       <div className={`${itemCenter}`}>
-                        {t("Home")}
+                        Home
                         <FiChevronDown />
                       </div>
                     </NavLink>
@@ -200,7 +193,7 @@ const Header = ({ isTopOfPage }) => {
                         isActive ? activeClassname : ""
                       }
                     >
-                      {t("Pages")}
+                      Pages
                     </NavLink>
                   </li>
                   <li>
@@ -210,7 +203,7 @@ const Header = ({ isTopOfPage }) => {
                         isActive ? activeClassname : ""
                       }
                     >
-                      {t("Products")}
+                      Products
                     </NavLink>
                   </li>
                   <li>
@@ -220,7 +213,7 @@ const Header = ({ isTopOfPage }) => {
                         isActive ? activeClassname : ""
                       }
                     >
-                      {t("Blog")}
+                      Blog
                     </NavLink>
                   </li>
                   <li>
@@ -230,7 +223,7 @@ const Header = ({ isTopOfPage }) => {
                         isActive ? activeClassname : ""
                       }
                     >
-                      {t("Shop")}
+                      Shop
                     </NavLink>
                   </li>
                   <li>
@@ -240,7 +233,7 @@ const Header = ({ isTopOfPage }) => {
                         isActive ? activeClassname : ""
                       }
                     >
-                      {t("Contact")}
+                      Contact
                     </NavLink>
                   </li>
                 </ul>
