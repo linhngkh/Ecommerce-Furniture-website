@@ -1,4 +1,9 @@
-import { AiFillStar, AiOutlineHeart } from "react-icons/ai";
+import {
+  AiFillStar,
+  AiOutlineHeart,
+  AiFillTwitterCircle,
+} from "react-icons/ai";
+import { FaFacebook, FaInstagramSquare } from "react-icons/fa";
 
 import SharedBanner from "../shares/SharedBanner";
 import Bag1 from "/assets/details/bag-1.png";
@@ -12,8 +17,8 @@ const Products = () => {
       <SharedBanner>Product Details</SharedBanner>
       {/* product detail */}
       <div className="flex h-full w-full items-center justify-center bg-white px-20 md:px-20">
-        <div className="my-20 flex  w-[700px] gap-6 p-3  shadow-[rgba(7,_65,_210,_0.1)_0px_9px_30px] md:w-[1200px]">
-          <div className=" flex min-w-[200px] gap-3">
+        <div className="my-20 flex h-[500px]  w-[700px] items-center gap-6 p-3  shadow-[rgba(7,_65,_210,_0.1)_0px_9px_30px] md:w-[1200px]">
+          <div className=" flex w-[700px]  min-w-[200px]  gap-3">
             <div className="flex  flex-col gap-3">
               <div className="">
                 <img src={Bag1} alt="bag" className="w-full  object-contain" />
@@ -32,7 +37,7 @@ const Products = () => {
             </div>
           </div>
 
-          <div className=" flex flex-col space-y-2 p-3">
+          <div className=" flex flex-col space-y-3 p-3">
             <h1 className="font-jose text-[30px] font-semibold text-blue">
               Playwood Bag
             </h1>
@@ -53,9 +58,17 @@ const Products = () => {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
               tellus porttitor purus, et volutpat sit.
             </p>
-            <div className="flex justify-center gap-2 text-center">
-              <p className="font-jose text-sm text-blue">Add To Cart</p>
+            <div className="flex gap-2 text-center">
+              <p className="ml-10 font-jose text-sm text-blue">Add To Cart</p>
               <AiOutlineHeart />
+            </div>
+            <p className="font-jose text-sm text-blue">Categories</p>
+            <p className="font-jose text-sm text-blue">Tags</p>
+            <div className="flex gap-2">
+              <p className="font-jose text-sm text-blue">Share </p>
+              <FaFacebook className="h-4 w-4" />
+              <FaInstagramSquare className="h-4 w-4 rounded-full text-pink" />
+              <AiFillTwitterCircle className="h-4 w-4" />
             </div>
           </div>
         </div>
