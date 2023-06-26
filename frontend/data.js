@@ -375,3 +375,4 @@ export const PriceFilters = [
   { name: "$150.00 - $504.00" },
   { name: "$450.00 +" },
 ];
+

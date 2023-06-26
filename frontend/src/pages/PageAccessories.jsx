@@ -14,7 +14,6 @@ const PageAccessories = () => {
 
   return (
     <section className="pt-10 md:pt-20">
-      {" "}
       {/* banner title */}
       <SharedBanner>Shop Left Sidebar</SharedBanner>
       <div className="flex h-full w-full items-center justify-center bg-white px-20 md:px-20 ">

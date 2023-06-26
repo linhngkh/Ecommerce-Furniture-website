@@ -15,7 +15,7 @@ import LoginScreen from "./screens/LoginScreen.jsx";
 import RegisterScreen from "./screens/RegisterScreen.jsx";
 import Contact from "./pages/Contact.jsx";
 import Blog from "./pages/Blog.jsx";
-import Products from "./pages/Products.jsx";
+import ProductDetail from "./pages/ProductsDetail";
 import Shop from "./pages/Shop.jsx";
 import PagesGrid from "./pages/PagesGrid.jsx";
 import PageShopList from "./pages/PageShopList.jsx";
@@ -30,7 +30,7 @@ const router = createBrowserRouter(
       <Route path="/register" element={<RegisterScreen />} />
       {/* pages */}
       <Route path="/blog" element={<Blog />} />
-      <Route path="/products" element={<Products />} />
+      <Route path="/products" element={<ProductDetail />} />
       <Route path="/shop" element={<Shop />} />
 
       <Route path="/pages/grid" element={<PagesGrid />} />

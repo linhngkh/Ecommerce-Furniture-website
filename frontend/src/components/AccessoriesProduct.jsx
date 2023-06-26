@@ -19,7 +19,7 @@ const AccessoriesProduct = () => {
               visible: { opacity: 1, x: 0 },
             }}
             key={item.title}
-            className="flex flex-col items-center justify-center gap-7  rounded-sm p-6 shadow-md  md:flex-row"
+            className="flex flex-col items-center justify-center gap-7  rounded-sm p-6 shadow-[rgba(7,_65,_210,_0.1)_0px_9px_30px] md:flex-row"
           >
             <div className=" w-[300px] rounded-sm">
               <img

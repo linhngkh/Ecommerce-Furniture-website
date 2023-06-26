@@ -2,12 +2,10 @@ import { motion } from "framer-motion";
 import SharedBanner from "../shares/SharedBanner";
 import SharedTitle from "../shares/SharedTitle";
 
-import { BsGridFill } from "react-icons/bs";
+import { BsGridFill ,BsCart} from "react-icons/bs";
 import { MdOutlineFormatListBulleted } from "react-icons/md";
-import { BsCart } from "react-icons/bs";
-import { AiOutlineHeart } from "react-icons/ai";
+import { AiOutlineHeart, AiFillStar } from "react-icons/ai";
 import { SlMagnifierAdd } from "react-icons/sl";
-import { AiFillStar } from "react-icons/ai";
 
 import { listScenes } from "../../data";
 
