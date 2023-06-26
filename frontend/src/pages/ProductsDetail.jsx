@@ -3,13 +3,18 @@ import {
   AiOutlineHeart,
   AiFillTwitterCircle,
 } from "react-icons/ai";
-import { FaFacebook, FaInstagramSquare } from "react-icons/fa";
+import { FaFacebook, FaInstagramSquare, FaArrowRight } from "react-icons/fa";
 
 import SharedBanner from "../shares/SharedBanner";
 import Bag1 from "/assets/details/bag-1.png";
 import Bag2 from "/assets/details/bag-2.png";
 import Bag3 from "/assets/details/bag-3.png";
 import Bag4 from "/assets/details/bag-4.png";
+import Related1 from "/assets/related/related-1.png";
+import Related2 from "/assets/related/related-2.png";
+import Related3 from "/assets/related/related-3.png";
+import Related4 from "/assets/related/related-4.png";
+
 const Products = () => {
   return (
     <section className="pt-10 md:pt-20">
@@ -70,6 +75,108 @@ const Products = () => {
               <FaInstagramSquare className="h-4 w-4 rounded-full text-pink" />
               <AiFillTwitterCircle className="h-4 w-4" />
             </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="mb-20 w-full space-y-10 bg-primary px-20 py-20 font-jose md:px-20">
+        <div className="flex gap-20 font-semibold text-blue">
+          <h3 className="hover:underline">Description</h3>
+          <h3 className="hover:underline">Additional Info</h3>
+          <h3 className="hover:underline">Reviews</h3>
+          <h3 className="hover:underline">Video</h3>
+        </div>
+
+        <div>
+          <h4 className="mb-3 text-blue">Varius tempor.</h4>
+          <p className="text-sm leading-6 text-subtext">
+            Aliquam dis vulputate vulputate integer sagittis. Faucibus dolor
+            ornare faucibus vel sed et eleifend habitasse amet. Montes, mauris
+            varius ac est bibendum. Scelerisque a, risus ac ante. Velit
+            consectetur neque, elit, aliquet. Non varius proin sed urna, egestas
+            consequat laoreet diam tincidunt. Magna eget faucibus cras justo,
+            tortor sed donec tempus. Imperdiet consequat, quis diam arcu, nulla
+            lobortis justo netus dis. Eu in fringilla vulputate nunc nec. Dui,
+            massa viverr .
+          </p>
+        </div>
+
+        <div className="space-y-3 ">
+          <h4 className="mb-3 font-jose text-blue">More details</h4>
+
+          <div className=" flex items-center justify-start gap-3">
+            <FaArrowRight className=" h-5 w-5" />
+            <p className="text-sm  text-subtext">
+              Aliquam dis vulputate vulputate integer sagittis. Faucibus dolor
+              ornare faucibus vel sed et eleifend habitasse amet.
+            </p>
+          </div>
+          <div className=" flex items-center justify-start gap-3 ">
+            <FaArrowRight className=" h-5 w-5" />
+            <p className="text-sm  text-subtext">
+              Aliquam dis vulputate vulputate integer sagittis. Faucibus dolor
+              ornare faucibus vel sed et eleifend habitasse amet.
+            </p>
+          </div>
+          <div className=" flex items-center justify-start gap-3">
+            <FaArrowRight className=" h-5 w-5" />
+            <p className="text-sm  text-subtext">
+              Aliquam dis vulputate vulputate integer sagittis. Faucibus dolor
+              ornare faucibus vel sed et eleifend habitasse amet.
+            </p>
+          </div>
+          <div className=" flex items-center justify-start gap-3">
+            <FaArrowRight className=" h-5 w-5" />
+            <p className="text-sm  text-subtext">
+              Aliquam dis vulputate vulputate integer sagittis. Faucibus dolor
+              ornare faucibus vel sed et eleifend habitasse amet.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* related products */}
+      <div className="w-full px-20 pb-20">
+        <h1 className="font-jose text-2xl font-extrabold">Related Products</h1>
+
+        <div className="mt-8 flex w-full items-center justify-evenly md:mt-10 ">
+          <div className="flex h-[340px] w-[270] gap-10 ">
+            <div className="flex flex-col items-center justify-center">
+              <img
+                src={Related1}
+                alt="related products"
+                className="h-60 w-full object-contain"
+                loading="lazy"
+              />
+              <div className="flex justify-between">
+                <p className="text-xs text-blue">Mens Fashion Wear</p>
+                <div className="flex text-orange-300">
+                  <AiFillStar />
+                  <AiFillStar />
+                  <AiFillStar />
+                  <AiFillStar />
+                  <AiFillStar />
+                </div>
+              </div>
+            </div>
+            <img
+              src={Related2}
+              alt="related products"
+              className="h-60 w-full object-contain"
+              loading="lazy"
+            />
+            <img
+              src={Related3}
+              alt="related products"
+              className="h-60 w-full object-contain"
+              loading="lazy"
+            />
+            <img
+              src={Related4}
+              alt="related products"
+              className="h-60 w-full object-contain"
+              loading="lazy"
+            />
           </div>
         </div>
       </div>
