@@ -80,7 +80,7 @@ const Products = () => {
       </div>
 
       <div className="mb-20 w-full space-y-10 bg-primary px-20 py-20 font-jose md:px-20">
-        <div className="flex gap-20 font-semibold text-blue">
+        <div className="flex flex-col gap-4 font-semibold text-blue md:gap-20">
           <h3 className="hover:underline">Description</h3>
           <h3 className="hover:underline">Additional Info</h3>
           <h3 className="hover:underline">Reviews</h3>
@@ -108,39 +108,43 @@ const Products = () => {
             <FaArrowRight className=" h-5 w-5" />
             <p className="text-sm  text-subtext">
               Aliquam dis vulputate vulputate integer sagittis. Faucibus dolor
-              ornare faucibus vel sed et eleifend habitasse amet.
+              ornare faucibus vel sed et eleifend habitasse amet. Montes, mauris
+              varius ac est bibendum. Scelerisque a, risus ac ante. Velit
             </p>
           </div>
           <div className=" flex items-center justify-start gap-3 ">
             <FaArrowRight className=" h-5 w-5" />
             <p className="text-sm  text-subtext">
               Aliquam dis vulputate vulputate integer sagittis. Faucibus dolor
-              ornare faucibus vel sed et eleifend habitasse amet.
+              ornare faucibus vel sed et eleifend habitasse amet. Montes, mauris
+              varius ac est bibendum. Scelerisque a, risus ac ante. Velit
             </p>
           </div>
           <div className=" flex items-center justify-start gap-3">
             <FaArrowRight className=" h-5 w-5" />
             <p className="text-sm  text-subtext">
               Aliquam dis vulputate vulputate integer sagittis. Faucibus dolor
-              ornare faucibus vel sed et eleifend habitasse amet.
+              ornare faucibus vel sed et eleifend habitasse amet. Montes, mauris
+              varius ac est bibendum. Scelerisque a, risus ac ante. Velit
             </p>
           </div>
           <div className=" flex items-center justify-start gap-3">
             <FaArrowRight className=" h-5 w-5" />
             <p className="text-sm  text-subtext">
               Aliquam dis vulputate vulputate integer sagittis. Faucibus dolor
-              ornare faucibus vel sed et eleifend habitasse amet.
+              ornare faucibus vel sed et eleifend habitasse amet. Montes, mauris
+              varius ac est bibendum. Scelerisque a, risus ac ante. Velit
             </p>
           </div>
         </div>
       </div>
 
       {/* related products */}
-      <div className=" w-full px-20 pb-20 ">
+      <div className="  h-full px-20 pb-20">
         <h1 className="font-jose text-2xl font-extrabold">Related Products</h1>
 
-        <div className="mt-20 grid-cols-4  gap-4">
-          <div className="flex h-[340px] w-[270]  gap-10 ">
+        <div className="mt-20">
+          <div className=" flex h-[340px] w-[270]  gap-10">
             <div className="flex flex-col items-center justify-center">
               <img
                 src={Related1}
