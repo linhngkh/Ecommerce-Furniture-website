@@ -33,8 +33,9 @@ const Product = () => {
         <h1 className="text-center font-jose text-4xl font-bold text-blue">
           Featured Products
         </h1>
+
         {/* featured products */}
-        <div className="grid-column-3">
+        <div className="gridColumn-3">
           {featureProducts.map((product, id) => (
             <div
               className={` h-[361px] w-[270px] justify-self-center drop-shadow-xl md:grid md:grid-rows-1`}
@@ -74,18 +75,17 @@ const Product = () => {
           </h1>
         </motion.div>
 
-        <div>
-          <ul className=" flex justify-center gap-4 py-5 text-blue ">
+        <div className="">
+          <ul className=" flex flex-col gap-4 py-5 text-center text-blue md:flex-row md:items-center md:justify-center">
             {items.map((item, index) => (
               <li className="hover:text-pink hover:underline" key={index}>
-                {" "}
                 {item}
               </li>
             ))}
           </ul>
         </div>
 
-        <div className="grid-column-6 0 mt-10">
+        <div className="gridColumn-6   mt-10">
           {latestProducts.map((product) => (
             <div key={product.id} className={`${flexCenter} `}>
               <div className={`grid place-items-center gap-2 bg-secondary`}>
@@ -122,7 +122,7 @@ const Product = () => {
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
           variants={container}
-          className=" grid-column-3 mb-20 mt-10 rounded-sm drop-shadow-[rgba(7,_65,_210,_0.1)_0px_9px_40px] md:flex md:justify-between md:gap-0 md:space-x-5"
+          className="gridColumn-3  mb-20 mt-10 rounded-sm drop-shadow-[rgba(7,_65,_210,_0.1)_0px_9px_40px] md:flex md:justify-between md:gap-0 md:space-x-5"
         >
           {offers.map((offer, index) => (
             <motion.div

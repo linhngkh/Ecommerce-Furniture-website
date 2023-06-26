@@ -40,7 +40,7 @@ const Trending = () => {
         whileInView="visible"
         viewport={{ once: true, amount: 0.5 }}
         variants={container}
-        className="grid-column-3 drop-shadow-[rgba(7,_65,_210,_0.1)_0px_9px_30px] md:flex md:flex-row  md:justify-center md:gap-x-4"
+        className="gridColumn-3 drop-shadow-[rgba(7,_65,_210,_0.1)_0px_9px_30px] md:flex md:flex-row  md:justify-center md:gap-x-4"
       >
         {trendings.map((trending, index) => (
           <motion.div

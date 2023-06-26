@@ -35,7 +35,7 @@ const PagesGrid = () => {
           </div>
 
           {/* product grid */}
-          <div className="grid-column-4 mt-10 md:mt-20">
+          <div className="gridColumn-4 mt-10 md:mt-20">
             {pageProducts.map((item) => (
               <motion.div
                 initial="hidden"

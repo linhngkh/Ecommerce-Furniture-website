@@ -18,6 +18,7 @@ import DropDrownMenu from "../shares/DropDownMenu";
 import useMediaQuery from "../hooks/useMediaQuery";
 
 import LanguageDropdown from "./LanguageDropdown";
+import { Link } from "react-router-dom";
 
 //active classname
 const activeClassName = "text-rose-600";
@@ -72,7 +73,9 @@ const Header = ({ isTopOfPage }) => {
             <div
               className={` ${divBetween} ${navbarBackground}  gap-3 px-20 py-2 text-navbartext`}
             >
-              <h1 className="font-jose text-2xl font-bold ">Hekto</h1>
+              <Link to="/">
+                <h1 className="font-jose text-2xl font-bold ">Hekto</h1>
+              </Link>
               <div className="">
                 <ul className="flex flex-row gap-5 ">
                   <li>
@@ -145,9 +148,11 @@ const Header = ({ isTopOfPage }) => {
           </div>
         ) : (
           <div className={` ${divBetween}  gap-3 bg-secondary px-20 py-3`}>
-            <h1 className="navbartext font-jose text-3xl font-bold text-blue">
-              Hekto
-            </h1>
+            <Link to="/">
+              <h1 className="navbartext font-jose text-3xl font-bold text-blue">
+                Hekto
+              </h1>
+            </Link>
             <button
               className="rounded-full bg-blue p-2"
               onClick={() => setIsMenuToggled(!isMenuToggled)}

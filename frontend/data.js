@@ -376,3 +376,9 @@ export const PriceFilters = [
   { name: "$450.00 +" },
 ];
 
+export const relatedProducts = [
+  { name: "Mens Fashion Wear", price: "€43.00" },
+  { name: "Women's Fashion", price: "€43.00" },
+  { name: "Wolx Dummy Fashion", price: "€67.00" },
+  { name: "Top Wall Digital Clock", price: "€51.00" },
+];

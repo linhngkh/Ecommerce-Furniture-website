@@ -10,7 +10,7 @@ const SideBar = () => {
   return (
     <div className="flex-1/3 paragraph-text space-y-10">
       <div className="space-y-3">
-        <h3 className="title-product-option">Product Brand</h3>
+        <h3 className="titleProductOption">Product Brand</h3>
 
         {AccessoriesTitle.map((title) => (
           <div className="flex gap-2" key={title.id}>
@@ -23,7 +23,7 @@ const SideBar = () => {
       </div>
 
       <div className="space-y-3">
-        <h3 className="title-product-option">Discount Offer</h3>
+        <h3 className="titleProductOption">Discount Offer</h3>
 
         <div className="flex gap-2">
           <input type="checkbox" id="scales" name="scales" />
@@ -40,14 +40,14 @@ const SideBar = () => {
       </div>
 
       <div className="space-y-3">
-        <h3 className="title-product-option">Rating Items</h3>
+        <h3 className="titleProductOption">Rating Items</h3>
 
         {/* stars */}
         <RatingItem />
       </div>
 
       <div className="space-y-3">
-        <h3 className="title-product-option">Categories</h3>
+        <h3 className="titleProductOption">Categories</h3>
         {AccessoriesCategories.map((category) => (
           <div className="flex gap-2" key={category.id}>
             <input type="checkbox" id="scales" name="scales" />
@@ -59,7 +59,7 @@ const SideBar = () => {
       </div>
 
       <div className="space-y-3">
-        <h3 className="title-product-option">Price Filters</h3>
+        <h3 className="titleProductOption">Price Filters</h3>
         {PriceFilters.map((price) => (
           <div className="flex gap-2" key={price.id}>
             <input type="checkbox" id="scales" name="scales" />
@@ -82,7 +82,7 @@ const SideBar = () => {
       </div>
 
       <div className="space-y-3">
-        <h3 className="title-product-option">Filter By Color</h3>
+        <h3 className="titleProductOption">Filter By Color</h3>
         <div className="grid grid-cols-3 gap-4">
           <div className="flex gap-2">
             <div className="h-4 w-4 rounded-full bg-blues"></div>

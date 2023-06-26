@@ -157,7 +157,7 @@ const DiscountItem = () => {
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
           variants={container}
-          className="grid-column-3 items-center justify-center gap-7 md:flex md:gap-x-8"
+          className="gridColumn-3 items-center justify-center gap-7 md:flex md:gap-x-8"
         >
           {topCategory.map((category, _index) => (
             <motion.div variants={childVariant} key={_index}>

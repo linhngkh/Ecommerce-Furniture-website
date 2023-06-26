@@ -136,11 +136,11 @@ const Products = () => {
       </div>
 
       {/* related products */}
-      <div className="w-full px-20 pb-20">
+      <div className=" w-full px-20 pb-20 ">
         <h1 className="font-jose text-2xl font-extrabold">Related Products</h1>
 
-        <div className="mt-8 flex w-full items-center justify-evenly md:mt-10 ">
-          <div className="flex h-[340px] w-[270] gap-10 ">
+        <div className="mt-20 grid-cols-4  gap-4">
+          <div className="flex h-[340px] w-[270]  gap-10 ">
             <div className="flex flex-col items-center justify-center">
               <img
                 src={Related1}
@@ -148,8 +148,10 @@ const Products = () => {
                 className="h-60 w-full object-contain"
                 loading="lazy"
               />
-              <div className="flex justify-between">
-                <p className="text-xs text-blue">Mens Fashion Wear</p>
+              <div className="flex justify-between py-4">
+                <p className="text-sm font-semibold text-blue">
+                  Mens Fashion Wear
+                </p>
                 <div className="flex text-orange-300">
                   <AiFillStar />
                   <AiFillStar />
@@ -158,25 +160,74 @@ const Products = () => {
                   <AiFillStar />
                 </div>
               </div>
+              <p className="font-jose text-sm text-blue">€43.00</p>
             </div>
-            <img
-              src={Related2}
-              alt="related products"
-              className="h-60 w-full object-contain"
-              loading="lazy"
-            />
-            <img
-              src={Related3}
-              alt="related products"
-              className="h-60 w-full object-contain"
-              loading="lazy"
-            />
-            <img
-              src={Related4}
-              alt="related products"
-              className="h-60 w-full object-contain"
-              loading="lazy"
-            />
+
+            <div className="flex flex-col items-center justify-center">
+              <img
+                src={Related2}
+                alt="related products"
+                className="h-60 w-full object-contain"
+                loading="lazy"
+              />
+              <div className="flex justify-between py-4">
+                <p className="text-xs font-semibold text-blue">
+                  Women's Fashion
+                </p>
+                <div className="flex text-orange-300">
+                  <AiFillStar />
+                  <AiFillStar />
+                  <AiFillStar />
+                  <AiFillStar />
+                  <AiFillStar />
+                </div>
+              </div>
+              <p className="font-jose text-sm text-blue">€43.00</p>
+            </div>
+
+            <div className="flex flex-col items-center justify-center">
+              <img
+                src={Related3}
+                alt="related products"
+                className="h-60 w-full object-contain"
+                loading="lazy"
+              />
+              <div className="flex justify-between py-4">
+                <p className="text-xs font-semibold text-blue">
+                  Wolx Dummy Fashion
+                </p>
+                <div className="flex text-orange-300">
+                  <AiFillStar />
+                  <AiFillStar />
+                  <AiFillStar />
+                  <AiFillStar />
+                  <AiFillStar />
+                </div>
+              </div>
+              <p className="font-jose text-sm text-blue">€67.00</p>
+            </div>
+
+            <div className="flex flex-col items-center justify-center ">
+              <img
+                src={Related4}
+                alt="related products"
+                className="h-60 w-full object-contain"
+                loading="lazy"
+              />
+              <div className="flex justify-between py-4">
+                <p className="text-xs font-semibold text-blue">
+                  Top Wall Digital Clock
+                </p>
+                <div className="flex text-orange-300">
+                  <AiFillStar />
+                  <AiFillStar />
+                  <AiFillStar />
+                  <AiFillStar />
+                  <AiFillStar />
+                </div>
+              </div>
+              <p className="font-jose text-sm text-blue">€51.00</p>
+            </div>
           </div>
         </div>
       </div>
