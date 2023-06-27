@@ -176,7 +176,7 @@ const Products = () => {
               />
               <div className="flex justify-between py-4">
                 <p className="text-xs font-semibold text-blue">
-                  Women's Fashion
+                  Women &apos; s Fashion
                 </p>
                 <div className="flex text-orange-300">
                   <AiFillStar />
