@@ -21,7 +21,7 @@ const Products = () => {
       {/* banner title */}
       <SharedBanner>Product Details</SharedBanner>
       {/* product detail */}
-      <div className="flex h-full w-full items-center justify-center bg-white px-20 md:px-20">
+      <div className="flex  h-full w-full items-center justify-center bg-white px-20 md:px-20">
         <div className="my-20 flex h-[1000px] w-[600px] flex-col items-center  gap-6 p-3 shadow-[rgba(7,_65,_210,_0.1)_0px_9px_30px] md:h-[500px]  md:w-[1200px] md:flex-row">
           <div className=" flex w-[600px] min-w-[200px] items-center justify-center gap-3  md:w-[700px]">
             <div className="flex flex-col  gap-3">
@@ -140,11 +140,11 @@ const Products = () => {
       </div>
 
       {/* related products */}
-      <div className="  h-full px-20 pb-20">
+      <div className="  px-20 pb-20">
         <h1 className="font-jose text-2xl font-extrabold">Related Products</h1>
 
-        <div className="mt-20">
-          <div className=" flex h-[340px] w-[270]  gap-10">
+        <div className="mt-10  md:mt-20">
+          <div className="   w-[270]  gap-10">
             <div className="flex flex-col items-center justify-center">
               <img
                 src={Related1}
