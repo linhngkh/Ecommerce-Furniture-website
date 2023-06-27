@@ -107,7 +107,7 @@ const Contact = () => {
                     className="w-[50%] border-2 p-2 text-sm"
                   />
                   <input
-                    type="text"
+                    type="email"
                     name="name"
                     placeholder="Your E-mail"
                     className="w-[50%] border-2 p-2 text-sm"
@@ -116,15 +116,15 @@ const Contact = () => {
                 <input
                   type="text"
                   name="name"
-                  placeholder="Your E-mail"
+                  placeholder="Subject*"
                   className="w-full border-2 p-2 text-sm"
                 />
                 <textarea
                   name="Type Your Messages"
                   placeholder="Type Your Messages"
                   id=""
-                  cols="20"
-                  rows="8"
+                  cols="10"
+                  rows="6"
                   className="w-full border-2 p-2 text-sm"
                 />
                 <ActionButton>Send Mail</ActionButton>
