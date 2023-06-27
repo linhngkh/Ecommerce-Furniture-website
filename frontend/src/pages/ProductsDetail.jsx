@@ -80,7 +80,7 @@ const Products = () => {
       </div>
 
       <div className="mb-20 w-full space-y-10 bg-primary px-20 py-20 font-jose md:px-20">
-        <div className="flex flex-col gap-4 font-semibold text-blue md:gap-20">
+        <div className="flex flex-col gap-4 font-semibold text-blue md:flex-row md:gap-20">
           <h3 className="hover:underline">Description</h3>
           <h3 className="hover:underline">Additional Info</h3>
           <h3 className="hover:underline">Reviews</h3>
