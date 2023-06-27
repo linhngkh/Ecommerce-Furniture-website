@@ -22,7 +22,7 @@ const Products = () => {
       <SharedBanner>Product Details</SharedBanner>
       {/* product detail */}
       <div className="flex  h-full w-full items-center justify-center bg-white px-20 md:px-20">
-        <div className="my-20 flex h-[1000px] w-[600px] flex-col items-center  gap-6 p-3 shadow-[rgba(7,_65,_210,_0.1)_0px_9px_30px] md:h-[500px]  md:w-[1200px] md:flex-row">
+        <div className="my-20 flex h-screen w-[600px] flex-col items-center  gap-6 p-3 shadow-[rgba(7,_65,_210,_0.1)_0px_9px_30px] md:h-[500px]  md:w-[1200px] md:flex-row">
           <div className=" flex w-[600px] min-w-[200px] items-center justify-center gap-3  md:w-[700px]">
             <div className="flex flex-col  gap-3">
               <div className="">
@@ -79,7 +79,7 @@ const Products = () => {
         </div>
       </div>
 
-      <div className="mb-20 w-full space-y-10 bg-primary px-20 py-20 font-jose md:px-20">
+      <div className="ms:py-20 mb-20 w-full space-y-10 bg-primary px-10 py-10 font-jose md:px-20">
         <div className="flex flex-col gap-4 font-semibold text-blue md:flex-row md:gap-20">
           <h3 className="hover:underline">Description</h3>
           <h3 className="hover:underline">Additional Info</h3>
@@ -140,11 +140,11 @@ const Products = () => {
       </div>
 
       {/* related products */}
-      <div className="  px-20 pb-20">
+      <div className="px-20 pb-10 md:pb-20">
         <h1 className="font-jose text-2xl font-extrabold">Related Products</h1>
 
-        <div className="mt-10  md:mt-20">
-          <div className="   w-[270]  gap-10">
+        <div className="mt-10 md:mt-20 ">
+          <div className="flex  w-[270] flex-col gap-10 md:flex-row">
             <div className="flex flex-col items-center justify-center">
               <img
                 src={Related1}
