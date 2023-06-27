@@ -59,8 +59,9 @@ const Header = ({ isTopOfPage }) => {
                 <div className={`${itemCenter}`}>
                   USD <FiChevronDown />
                 </div>
-                <div className={`${itemCenter}`}>
-                  Login <BsPerson />
+                <div className={`${itemCenter} flex-row`}>
+                  <Link to={"/login"}>Login</Link>
+                  <BsPerson />
                 </div>
                 <div className={`${itemCenter}`}>
                   Wishlist <AiOutlineHeart />

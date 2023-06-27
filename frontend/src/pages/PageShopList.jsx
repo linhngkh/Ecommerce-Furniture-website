@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import SharedBanner from "../shares/SharedBanner";
 import SharedTitle from "../shares/SharedTitle";
 
-import { BsGridFill ,BsCart} from "react-icons/bs";
+import { BsGridFill, BsCart } from "react-icons/bs";
 import { MdOutlineFormatListBulleted } from "react-icons/md";
 import { AiOutlineHeart, AiFillStar } from "react-icons/ai";
 import { SlMagnifierAdd } from "react-icons/sl";
@@ -11,7 +11,7 @@ import { listScenes } from "../../data";
 
 const PageShopList = () => {
   return (
-    <section className="md:pt-10">
+    <section className="pt-10 md:pt-20">
       {/* banner title */}
       <SharedBanner>Shop List</SharedBanner>
       <div className="flex h-full w-full flex-col items-center justify-center bg-white px-20 md:flex-col md:px-20 ">
