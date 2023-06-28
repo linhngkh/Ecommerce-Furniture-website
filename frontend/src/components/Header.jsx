@@ -145,7 +145,7 @@ const Header = ({ isTopOfPage }) => {
             </div>
           </div>
         ) : (
-          <div className={` ${divBetween}  gap-3 bg-secondary px-20 py-3`}>
+          <div className={` ${divBetween}  bg-secondary px-10 py-3`}>
             <Link to="/">
               <h1 className="navbartext font-jose text-3xl font-bold text-blue">
                 Hekto

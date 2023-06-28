@@ -6,8 +6,8 @@ import { motion } from "framer-motion";
 
 const HeroSection = () => {
   return (
-    <section className="bg-primary md:pt-20">
-      <div className="grid px-10 md:flex">
+    <section className=" bg-primary md:pt-20">
+      <div className="grid px-10 md:flex ">
         {/* LAMP */}
         <motion.div
           initial="hidden"

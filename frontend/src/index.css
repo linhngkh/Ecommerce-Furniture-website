@@ -16,6 +16,7 @@ body,
 .app {
   height: 100%;
   width: 100%;
+  overflow-x: hidden;
   font-family: "Lato", sans-serif;
   scroll-behavior: smooth;
 }

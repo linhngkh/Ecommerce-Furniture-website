@@ -8,7 +8,7 @@ const flexCenter = `flex items-center justify-center`;
 
 const Product = () => {
   return (
-    <section className=" md:mx-auto md:min-h-full md:w-5/6">
+    <section className=" mx-auto  w-full md:px-20">
       <motion.div
         initial="hidden"
         whileInView="visible"
