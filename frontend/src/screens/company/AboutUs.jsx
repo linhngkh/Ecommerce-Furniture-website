@@ -1,4 +1,5 @@
 import SharedBanner from "../../shares/SharedBanner";
+import SharedText from "../../shares/SharedText";
 import ActionButton from "../../shares/ActionButton";
 import AboutUsImage from "/assets/about-us.png";
 import Offers from "../../components/Offers";
@@ -25,11 +26,13 @@ const AboutUs = () => {
         </div>
       </div>
 
-      <div className="w-full">
-        <h1 className="text-center font-jose text-4xl font-bold text-blue">
-          Our Features
-        </h1>
+      <div className="w-full md:px-20">
+        <SharedText>Our Features</SharedText>
         <Offers />
+      </div>
+
+      <div className="w-full bg-[#fbfbff] p-10 md:px-20">
+        <SharedText>Our Client Say!</SharedText>
       </div>
     </section>
   );
