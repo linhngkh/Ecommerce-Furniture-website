@@ -1,4 +1,5 @@
 import { AiFillStar } from "react-icons/ai";
+
 const RatingItem = () => {
   return (
     <div className="flex flex-col space-y-3">

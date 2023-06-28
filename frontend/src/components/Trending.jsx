@@ -1,4 +1,5 @@
 import { trendings, trendingSmallChairs } from "../../data";
+import SharedText from "../shares/SharedText";
 import Discount1 from "/assets/discount.png";
 import Discount2 from "/assets/discount1.png";
 
@@ -30,9 +31,7 @@ const Trending = () => {
           visible: { opacity: 1, x: 0 },
         }}
       >
-        <h1 className="mb-10 text-center font-jose text-4xl font-bold text-blue">
-          Trending Products
-        </h1>
+        <SharedText>Trending Products</SharedText>
       </motion.div>
 
       <motion.div

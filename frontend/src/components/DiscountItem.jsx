@@ -7,6 +7,7 @@ import ActionButton from "../shares/ActionButton";
 
 import { BsCheck2 } from "react-icons/bs";
 import { motion } from "framer-motion";
+import SharedText from "../shares/SharedText";
 
 const container = {
   hidden: {},
@@ -147,9 +148,7 @@ const DiscountItem = () => {
             visible: { opacity: 1, y: 0 },
           }}
         >
-          <h1 className="mb-10 text-center font-jose text-4xl font-bold text-blue">
-            Top Categories
-          </h1>
+          <SharedText>Top Categories</SharedText>
         </motion.div>
 
         <motion.div

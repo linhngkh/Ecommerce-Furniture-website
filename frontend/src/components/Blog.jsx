@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 
 import { BiPen } from "react-icons/bi";
 import { MdDateRange } from "react-icons/md";
+import SharedText from "../shares/SharedText";
 
 const Blog = () => {
   return (
@@ -19,9 +20,8 @@ const Blog = () => {
           visible: { opacity: 1, y: 0 },
         }}
       >
-        <h1 className="mb-10 text-center font-jose text-4xl font-bold text-blue">
-          Latest Blog
-        </h1>
+        <SharedText> Latest Blog</SharedText>
+
         <div className=" place-items-center space-y-5 md:flex md:items-center md:justify-center md:gap-x-8 ">
           {blogs.map((item, index) => (
             <div
