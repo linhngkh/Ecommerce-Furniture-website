@@ -134,16 +134,20 @@ export const topCategory = [
     name: "Mini LCW Chair",
     price: "€56.00",
   },
-
+  {
+    img: "/assets/top-2.png",
+    name: "Executive Seat chair",
+    price: "€56.00",
+  },
   {
     img: "/assets/top-3.png",
     name: "Executive Seat chair",
-    price: "€32.00",
+    price: "€56.00",
   },
   {
     img: "/assets/top-1.png",
     name: "Executive Seat chair",
-    price: "€32.00",
+    price: "€56.00",
   },
 ];
 

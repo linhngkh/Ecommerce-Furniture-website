@@ -3,6 +3,7 @@ import SharedText from "../../shares/SharedText";
 import ActionButton from "../../shares/ActionButton";
 import AboutUsImage from "/assets/about-us.png";
 import Offers from "../../components/Offers";
+
 const AboutUs = () => {
   return (
     <section className="mt-10 md:mt-20">

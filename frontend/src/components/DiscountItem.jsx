@@ -160,15 +160,16 @@ const DiscountItem = () => {
         >
           {topCategory.map((category, _index) => (
             <motion.div variants={childVariant} key={_index}>
-              <div className="rounded-full bg-secondary p-7 drop-shadow-[rgba(7,_65,_210,_0.1)_0px_9px_10px]">
+              <div className="rounded-full bg-secondary p-7 drop-shadow-[rgba(7,_65,_210,_0.1)_0px_9px_10px] hover:border-8 hover:border-b-violet hover:border-l-violet">
                 <img
                   src={category.img}
                   alt="image"
                   className="w-full object-fill"
                 />
               </div>
-              <div className=" md:text-md mt-5 flex justify-center text-center text-sm text-blueBold">
-                {category.name}
+              <div className=" mt-5 flex flex-col justify-center text-center text-sm text-blueBold">
+                <p className="md:text-md text-sm ">{category.name}</p>
+                <p className="text-xs md:text-sm">{category.price}</p>
               </div>
             </motion.div>
           ))}
