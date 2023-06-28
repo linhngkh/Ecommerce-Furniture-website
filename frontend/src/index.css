@@ -15,7 +15,6 @@ body,
 #root,
 .app {
   width: 100%;
-  overflow-x: hidden;
   font-family: "Lato", sans-serif;
   scroll-behavior: smooth;
 }
