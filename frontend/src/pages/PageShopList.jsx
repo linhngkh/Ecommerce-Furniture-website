@@ -82,7 +82,7 @@ const PageShopList = () => {
                     </div>
                   </div>
 
-                  <p className="font-sm whitespace-normal text-subtext">
+                  <p className="whitespace-normal text-xs  text-subtext md:text-sm">
                     {scene.desc}
                   </p>
                   <div className="mt-2 flex justify-center gap-8 text-[#111C85] md:justify-start">

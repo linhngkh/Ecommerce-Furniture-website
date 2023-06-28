@@ -4,8 +4,8 @@ import { AiFillTwitterCircle } from "react-icons/ai";
 const Footer = () => {
   return (
     <footer className=" bg-[#eeeffb]">
-      <div className="flex items-center justify-around px-10 py-20">
-        <div className="flex gap-10">
+      <div className="flex  items-center justify-around px-10 py-20">
+        <div className="flex flex-col gap-10 md:flex-row">
           <div className="space-y-6">
             <h1 className="font-jose text-2xl font-bold text-black">Hekto</h1>
             <input
@@ -33,6 +33,7 @@ const Footer = () => {
               <li>Waterproof Headphones</li>
             </ul>
           </div>
+
           <div className="space-y-6 ">
             <h3 className="font-jose text-black">Customer Care</h3>
             <ul className="space-y-4 text-sm text-subtext">
