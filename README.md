@@ -27,3 +27,4 @@
 
 ##### Reflection
 * Working with Front End, I practice CSS skills with flex box, grid to style the website the same with Figma design.
+* Making reusable components
