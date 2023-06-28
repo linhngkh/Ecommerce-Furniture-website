@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 
 import { BiPhoneCall, BiSearch } from "react-icons/bi";
 import {
@@ -13,12 +13,9 @@ import { FiChevronDown } from "react-icons/fi";
 import { BsPerson } from "react-icons/bs";
 import { GiHamburgerMenu } from "react-icons/gi";
 
-import DropDrownMenu from "../shares/DropDownMenu";
-
+import DropDrownMenu from "../screens/pages/DropDownMenu";
+import MenuDropDown from "../screens/company/MenuDropDown";
 import useMediaQuery from "../hooks/useMediaQuery";
-
-import LanguageDropdown from "./LanguageDropdown";
-import { Link } from "react-router-dom";
 
 //active classname
 const activeClassName = "text-rose-600";
@@ -53,7 +50,7 @@ const Header = ({ isTopOfPage }) => {
 
               <div className={`${divStart} gap-5`}>
                 <div className={`${itemCenter}`}>
-                  <LanguageDropdown />
+                  EN
                   <FiChevronDown />
                 </div>
                 <div className={`${itemCenter}`}>
@@ -129,7 +126,7 @@ const Header = ({ isTopOfPage }) => {
                         isActive ? activeClassName : ""
                       }
                     >
-                      Contact
+                      <MenuDropDown />
                     </NavLink>
                   </li>
                 </ul>
