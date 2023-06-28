@@ -26,7 +26,7 @@ const Blog = () => {
           {blogs.map((item, index) => (
             <div
               key={index}
-              className="rounded-b-lg bg-white drop-shadow-[rgba(7,_65,_210,_0.1)_0px_20px_40px] md:h-[480px] md:w-[550px]"
+              className="rounded-b-lg bg-white drop-shadow-[rgba(7,_65,_210,_0.1)_0px_20px_40px] md:h-[490px] md:w-[550px]"
             >
               <img
                 src={item.img}
