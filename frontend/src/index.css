@@ -73,6 +73,6 @@ select::after {
   @apply w-[140px] px-2 py-1  text-center font-jose text-sm text-blue hover:bg-pink hover:text-white;
 }
 
-.tagStyle{
-  @apply text-sm text-blue hover:text-pink hover:underline
+.tagStyle {
+  @apply text-sm text-blue hover:text-pink hover:underline;
 }

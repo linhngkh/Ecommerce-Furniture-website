@@ -228,7 +228,7 @@ const Header = ({ isTopOfPage }) => {
                         isActive ? activeClassName : ""
                       }
                     >
-                      Contact
+                      <MenuDropDown />
                     </NavLink>
                   </li>
                 </ul>

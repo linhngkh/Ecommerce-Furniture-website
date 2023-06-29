@@ -9,7 +9,7 @@ import ActionButton from "../../shares/ActionButton";
 
 const Contact = () => {
   return (
-    <section className="overflow-x-hidden pt-10 md:pt-20">
+    <section className=" pt-10 md:pt-20">
       <SharedBanner>Contact Us</SharedBanner>
       <div className="p-10  md:p-20">
         <div className="flex flex-col md:flex-row">

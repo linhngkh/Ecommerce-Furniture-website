@@ -4,10 +4,11 @@ import { GoPrimitiveDot } from "react-icons/go";
 
 import { motion } from "framer-motion";
 
+const dotStyle = `flex flex-row items-center gap-2`;
+
 const Features = () => {
-  const dotStyle = `flex flex-row items-center gap-2`;
   return (
-    <section className="grid justify-center bg-feature md:flex md:items-center md:justify-center">
+    <section className="grid justify-center bg-feature px-10 md:flex md:items-center md:justify-center">
       {/* image */}
       <motion.div
         initial="hidden"
@@ -23,7 +24,7 @@ const Features = () => {
       </motion.div>
 
       {/* features */}
-      <div className="md:basis-1/2 md:space-y-4">
+      <div className="  md:basis-1/2 md:space-y-4">
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -34,10 +35,10 @@ const Features = () => {
             visible: { opacity: 1, x: 0 },
           }}
         >
-          <h1 className="overflow-x-hidden  font-jose  text-3xl font-bold text-blueBold">
-            <span className="indent-3">Unique Features Of leatest & </span>{" "}
+          <h1 className="overflow-x-hidden  font-jose text-xl font-bold text-blueBold md:text-3xl">
+            <span className="indent-3">Unique Features Of leatest & </span>
             <br />
-            <span className="indent-3">Trending Poducts</span>
+            <span className="indent-3">Trending Products</span>
           </h1>
         </motion.div>
 

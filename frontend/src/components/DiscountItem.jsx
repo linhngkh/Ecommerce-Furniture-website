@@ -181,7 +181,7 @@ const DiscountItem = () => {
 
         <div className="absolute left-1/2 top-1/2  -translate-x-1/2 -translate-y-1/2 transform text-center">
           <h1 className="text-center font-jose text-sm font-bold text-blue md:text-2xl md:leading-10">
-            Get Leatest Update By Subscribe <br /> 0ur Newslater
+            Get Latest Update By Subscribe <br /> 0ur Newslater
           </h1>
           <ActionButton>Shop Now</ActionButton>
         </div>
