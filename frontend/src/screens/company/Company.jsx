@@ -1,5 +1,5 @@
 import AboutUs from "./AboutUs";
-import Contact from "../../pages/Contact";
+import Contact from "./Contact";
 
 const Company = () => {
   return (

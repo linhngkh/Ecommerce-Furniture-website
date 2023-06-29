@@ -1,15 +1,15 @@
-import SharedBanner from "../shares/SharedBanner";
+import SharedBanner from "../../shares/SharedBanner";
 import Ellipse1 from "/assets/accessories/Ellipse44.png";
 import Ellipse2 from "/assets/accessories/Ellipse45.png";
 import Ellipse3 from "/assets/accessories/Ellipse46.png";
 import Ellipse4 from "/assets/accessories/Group97.png";
 import Ellipse5 from "/assets/accessories/Group94.png";
 import AboutUs from "/assets/accessories/aboutus.png";
-import ActionButton from "../shares/ActionButton";
+import ActionButton from "../../shares/ActionButton";
 
 const Contact = () => {
   return (
-    <section className="pt-10 md:pt-20 ">
+    <section className="overflow-x-hidden pt-10 md:pt-20">
       <SharedBanner>Contact Us</SharedBanner>
       <div className="p-10  md:p-20">
         <div className="flex flex-col md:flex-row">

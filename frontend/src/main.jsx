@@ -13,7 +13,7 @@ import {
 import HomeScreen from "./screens/HomeScreen.jsx";
 import LoginScreen from "./screens/LoginScreen.jsx";
 import RegisterScreen from "./screens/RegisterScreen.jsx";
-import Contact from "./pages/Contact.jsx";
+import Contact from "./screens/company/Contact.jsx";
 import BlogPage from "./pages/BlogPage.jsx";
 import ProductDetail from "./pages/ProductsDetail";
 import Shop from "./pages/Shop.jsx";
