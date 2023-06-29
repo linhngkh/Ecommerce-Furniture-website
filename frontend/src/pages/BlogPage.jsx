@@ -3,9 +3,12 @@ import { BiPen } from "react-icons/bi";
 import { BsDot } from "react-icons/bs";
 import { MdDateRange } from "react-icons/md";
 import { blogPosts } from "../../data";
+
+const styledPagination = `relative inline-flex items-center px-4 py-2 text-sm font-semibold text-[#e0d3f5] ring-1 ring-inset ring-[#e0d3f5] hover:bg-pink hover:text-white focus:z-20 focus:outline-offset-0 rounded-sm`;
+
 const Blog = () => {
   return (
-    <section className="mt-10 md:pt-10">
+    <section className="mt-10 md:py-10">
       <SharedBanner>Blog Page</SharedBanner>
       <div className="mt-20 flex px-20">
         <div className="w-5/6 flex-1">
@@ -41,6 +44,21 @@ const Blog = () => {
                 </div>
               </div>
             ))}
+          </div>
+          <div className="flex items-center justify-center gap-5">
+            {" "}
+            <a href="#" className={`${styledPagination}`}>
+              1
+            </a>
+            <a href="#" className={`${styledPagination}`}>
+              2
+            </a>
+            <a href="#" className={`${styledPagination}`}>
+              3
+            </a>
+            <a href="#" className={`${styledPagination}`}>
+              4
+            </a>
           </div>
         </div>
         <div className="w-1/6"></div>
