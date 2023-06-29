@@ -386,3 +386,30 @@ export const relatedProducts = [
   { name: "Wolx Dummy Fashion", price: "€67.00" },
   { name: "Top Wall Digital Clock", price: "€51.00" },
 ];
+
+export const blogPosts = [
+  {
+    image: "/assets/blogs/blog-1.png",
+    author: "Surf Auxion",
+    date: "Aug 09 2020",
+    title: "Mauris at orci non vulpulate diam tincidunt nec.",
+    content:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit facilisis quis auctor pretium ipsum, eu rutrum. Condimentum eu malesuada vitae ultrices in in neque, porta dignissim. Adipiscing purus, cursus vulputate id id dictum at.",
+  },
+  {
+    image: "/assets/blogs/blog-2.png",
+    author: "Surf Auxion",
+    date: "Aug 09 2020",
+    title: "Sit nam congue feugiat nisl, mauris amet nisi.",
+    content:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit facilisis quis auctor pretium ipsum, eu rutrum. Condimentum eu malesuada vitae ultrices in in neque, porta dignissim. Adipiscing purus, cursus vulputate id id dictum at.",
+  },
+  {
+    image: "/assets/blogs/blog-3.png",
+    author: "Surf Auxion",
+    date: "Aug 09 2020",
+    title: "Aenean vitae in aliquam ultrices lectus. Etiam.",
+    content:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit facilisis quis auctor pretium ipsum, eu rutrum. Condimentum eu malesuada vitae ultrices in in neque, porta dignissim. Adipiscing purus, cursus vulputate id id dictum at.",
+  },
+];
