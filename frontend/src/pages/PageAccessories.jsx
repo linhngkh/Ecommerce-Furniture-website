@@ -1,5 +1,5 @@
 import AccessoriesProduct from "../components/AccessoriesProduct";
-import SideBar from "../components/SideBar";
+import SideBarFilter from "../components/SideBarFilter";
 import SharedBanner from "../shares/SharedBanner";
 import SharedTitle from "../shares/SharedTitle";
 import { BsGridFill } from "react-icons/bs";
@@ -42,7 +42,7 @@ const PageAccessories = () => {
           {isAboveMediumScreens ? (
             <div className="mt-20 flex justify-between">
               {/* side bar */}
-              <SideBar />
+              <SideBarFilter />
               {/* products bar */}
               <AccessoriesProduct />
             </div>

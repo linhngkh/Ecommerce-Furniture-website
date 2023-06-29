@@ -413,3 +413,67 @@ export const blogPosts = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit facilisis quis auctor pretium ipsum, eu rutrum. Condimentum eu malesuada vitae ultrices in in neque, porta dignissim. Adipiscing purus, cursus vulputate id id dictum at.",
   },
 ];
+
+export const recentPost = [
+  {
+    img: "/assets/blogs/blog-a.png",
+    title: "It is a long established fact",
+    createdAt: "Aug 09 2020",
+  },
+  {
+    img: "/assets/blogs/blog-b.png",
+    title: "It is a long established fact",
+    createdAt: "Aug 09 2020",
+  },
+  {
+    img: "/assets/blogs/blog-c.png",
+    title: "It is a long established fact",
+    createdAt: "Aug 09 2020",
+  },
+  {
+    img: "/assets/blogs/blog-d.png",
+    title: "It is a long established fact",
+    createdAt: "Aug 09 2020",
+  },
+];
+
+export const saleProducts = [
+  {
+    img: "/assets/blogs/blog-5.png",
+    title: "It is a long established fact",
+    createdAt: "Aug 09 2020",
+  },
+  {
+    img: "/assets/blogs/blog-6.png",
+    title: "It is a long established fact",
+    createdAt: "Aug 09 2020",
+  },
+  {
+    img: "/assets/blogs/blog-7.png",
+    title: "It is a long established fact",
+    createdAt: "Aug 09 2020",
+  },
+];
+
+export const offerProducts = [
+  {
+    img: "/assets/blogs/bag-1.png",
+    title: "Duis lectus est.",
+    price: "$12.00 - $15.00",
+  },
+  {
+    img: "/assets/blogs/bag-2.png",
+    title: "Sed placerat.",
+    price: "$12.00 - $15.00",
+  },
+  {
+    img: "/assets/blogs/bag-3.png",
+    title: "Netus proin.",
+    price: "$12.00 - $15.00",
+  },
+  {
+    img: "/assets/blogs/bag-4.png",
+    title: "Platea in.",
+    price: "$12.00 - $15.00",
+  },
+];

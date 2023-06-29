@@ -25,7 +25,7 @@ const Products = () => {
         <div className="flex w-[600px]  flex-col items-center gap-6  p-3 shadow-[rgba(7,_65,_210,_0.1)_0px_9px_30px] md:my-20 md:h-[500px]  md:w-[1200px] md:flex-row">
           <div className=" flex w-[400px] min-w-[200px] items-center justify-center gap-3  md:w-[700px]">
             <div className="flex flex-col  gap-3">
-              <div className="">
+              <div>
                 <img src={Bag1} alt="bag" className="w-full  object-contain" />
               </div>
               <div>
