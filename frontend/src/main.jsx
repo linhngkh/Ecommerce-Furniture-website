@@ -23,6 +23,7 @@ import PageShopList from "./pages/PageShopList.jsx";
 import PageAccessories from "./pages/PageAccessories.jsx";
 import PageNotFound from "./pages/PageNotFound.jsx";
 import AboutUs from "./screens/company/AboutUs.jsx";
+import Faq from "./screens/company/Faq.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -32,7 +33,9 @@ const router = createBrowserRouter(
       <Route path="/login" element={<LoginScreen />} />
       <Route path="/register" element={<RegisterScreen />} />
       {/* pages */}
+      {/* blog page*/}
       <Route path="/blog" element={<BlogPage />} />
+      {/* single blog */}
       <Route path="/products" element={<ProductDetail />} />
       <Route path="/shop" element={<Shop />} />
       <Route path="/pages/grid" element={<PagesGrid />} />
@@ -42,6 +45,7 @@ const router = createBrowserRouter(
       {/* company */}
       <Route path="/company/contact" element={<Contact />} />
       <Route path="/company/about-us" element={<AboutUs />} />
+      <Route path="/company/faq" element={<Faq />} />
       {/* 404notfound */}
       <Route path="*" element={<PageNotFound />} />
     </Route>

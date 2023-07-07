@@ -6,6 +6,7 @@ import { MdDateRange } from "react-icons/md";
 import { blogPosts, saleProducts, offerProducts, recentPost } from "../../data";
 import { FaFacebook, FaInstagram } from "react-icons/fa";
 import { AiFillTwitterCircle } from "react-icons/ai";
+import { Link } from "react-router-dom";
 
 const styledPagination = `relative inline-flex items-center px-4 py-2 text-sm font-semibold text-[#e0d3f5] ring-1 ring-inset ring-[#e0d3f5] hover:bg-pink hover:text-white focus:z-20 focus:outline-offset-0 rounded-sm`;
 
@@ -86,11 +87,13 @@ const Blog = () => {
             <h3 className="h3Text ">Recent Post</h3>
             {recentPost.map((post) => (
               <div key={post.id} className="flex gap-3">
-                <img
-                  src={post.img}
-                  alt={post.name}
-                  className="w-[100px] object-contain"
-                />
+                <Link>
+                  <img
+                    src={post.img}
+                    alt={post.name}
+                    className="w-[100px] object-contain"
+                  />
+                </Link>
                 <div className="flex flex-col justify-center">
                   <p className="font-jose text-sm text-blue">{post.title}</p>
                   <p className="text-xs text-subtext1">{post.createdAt}</p>
