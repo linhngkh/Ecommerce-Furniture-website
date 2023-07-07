@@ -11,7 +11,7 @@ export default function MenuDropDown() {
   return (
     <Menu as="div" className="relative inline-block text-left text-navbartext">
       <div>
-        <Menu.Button className="text-md  inline-flex w-full items-center justify-center  gap-x-1.5  text-navbartext shadow-sm ">
+        <Menu.Button className="text-md  inline-flex w-full items-center justify-center  gap-x-1.5  text-navbartext shadow-sm">
           Company
           <FiChevronDown
             className="-mr-1 h-5 w-5 text-gray-400"

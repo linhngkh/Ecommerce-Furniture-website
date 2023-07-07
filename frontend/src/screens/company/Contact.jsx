@@ -104,13 +104,13 @@ const Contact = () => {
                     type="text"
                     name="name"
                     placeholder="Your Name*"
-                    className="w-[50%] border-2 p-2 text-sm"
+                    className="w-full border-2 p-2 text-sm"
                   />
                   <input
                     type="email"
                     name="name"
                     placeholder="Your E-mail"
-                    className="w-[50%] border-2 p-2 text-sm"
+                    className="w-full border-2 p-2 text-sm"
                   />
                 </div>
                 <input
