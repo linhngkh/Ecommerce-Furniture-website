@@ -37,7 +37,7 @@ const AboutUs = () => {
         <Offers />
       </div>
 
-      <div className="w-full bg-[#fbfbff] p-10 md:px-20">
+      <div className="w-full space-y-6 bg-[#fbfbff] p-10 md:px-20">
         <SharedText>Our Client Say!</SharedText>
         <Slider />
       </div>

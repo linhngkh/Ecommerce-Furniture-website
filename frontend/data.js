@@ -477,3 +477,27 @@ export const offerProducts = [
     price: "$12.00 - $15.00",
   },
 ];
+
+export const testimonials = [
+  {
+    id: 1,
+    picture: "/assets/first-client.png",
+    name: "David Dominic",
+    position: "Product Owner At Wittly",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non duisultrices quam vel dui sollicitudin aliquet id arcu. Nam vitae a enimnunc, sed sapien egestas ac nam. Tristique ultrices dolor aliquam lacusvolutpat praesent.",
+  },
+  {
+    id: 2,
+    picture: "/assets/client-2.png",
+    name: "Selina Gomez",
+    position: "CEO At Webecy Digital",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non duisultrices quam vel dui sollicitudin aliquet id arcu. Nam vitae a enimnunc, sed sapien egestas ac nam. Tristique ultrices dolor aliquam lacusvolutpat praesent.",
+  },
+  {
+    id: 3,
+    picture: "/assets/client-3.png",
+    name: "Yang Roger",
+    position: "CEO At Endoc",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non duisultrices quam vel dui sollicitudin aliquet id arcu. Nam vitae a enimnunc, sed sapien egestas ac nam. Tristique ultrices dolor aliquam lacusvolutpat praesent.",
+  },
+];
