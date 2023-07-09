@@ -6,12 +6,12 @@ const Slider = () => {
   const [index, setIndex] = useState(0);
   const { name, position, picture, text } = testimonials[index];
 
-  //number is bigger than the last item in the array
+  //number is bigger than the last item in the array, return 0
   const checkNumber = (number) => {
     if (number > testimonials.length - 1) {
       return 0;
     }
-    //number is smaller than 0, start at the beginning of the array
+    //number is smaller than 0, return last item in the array
     if (number < 0) {
       return testimonials.length - 1;
     }
