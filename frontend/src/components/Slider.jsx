@@ -37,7 +37,9 @@ const Slider = () => {
         <img src={picture} alt={name} />
         <h2 className="text-xl font-semibold text-black">{name}</h2>
         <p className="text-sm font-thin text-subtext1">{position}</p>
-        <p className="w-[700px] text-sm font-bold text-subtext1">{text}</p>
+        <p className="w-[300px]  text-sm font-bold text-subtext1 md:w-[700px]">
+          {text}
+        </p>
       </article>
       <div className="flex gap-3 ">
         <SlArrowLeft
