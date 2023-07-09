@@ -3,6 +3,7 @@ import SharedText from "../../shares/SharedText";
 import ActionButton from "../../shares/ActionButton";
 import AboutUsImage from "/assets/about-us.png";
 import Offers from "../../components/Offers";
+import Slider from "../../components/Slider";
 
 const AboutUs = () => {
   return (
@@ -38,6 +39,7 @@ const AboutUs = () => {
 
       <div className="w-full bg-[#fbfbff] p-10 md:px-20">
         <SharedText>Our Client Say!</SharedText>
+        <Slider />
       </div>
     </section>
   );
