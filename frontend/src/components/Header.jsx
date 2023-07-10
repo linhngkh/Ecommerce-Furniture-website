@@ -69,13 +69,13 @@ const Header = ({ isTopOfPage }) => {
 
             {/* below header */}
             <div
-              className={` ${divBetween} ${navbarBackground}  gap-3 px-20 py-2  text-navbartext`}
+              className={` ${divBetween} ${navbarBackground} gap-3  px-20 py-2  text-navbartext `}
             >
               <Link to="/">
                 <h1 className="font-jose text-2xl font-bold">Hekto</h1>
               </Link>
               <div className="">
-                <ul className="flex flex-row gap-5 ">
+                <ul className="flex flex-row items-center gap-5 text-center">
                   <li>
                     <NavLink
                       to="/"
