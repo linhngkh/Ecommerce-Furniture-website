@@ -50,7 +50,6 @@ const Blog = () => {
             ))}
           </div>
           <div className="flex items-center justify-center gap-5">
-            {" "}
             <a href="#" className={`${styledPagination}`}>
               1
             </a>
