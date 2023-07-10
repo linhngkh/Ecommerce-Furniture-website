@@ -1,9 +1,5 @@
-import React from 'react'
-
 const RegisterScreen = () => {
-  return (
-    <div>RegisterScreen</div>
-  )
-}
+  return <div>RegisterScreen</div>;
+};
 
-export default RegisterScreen
+export default RegisterScreen;
