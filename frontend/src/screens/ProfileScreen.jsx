@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
 
 import { useDispatch, useSelector } from "react-redux";
 import { useUpdateUserMutation } from "../slices/userApiSlice";
@@ -21,7 +20,6 @@ const ProfileScreen = () => {
 
   const [updateUser, { isLoading }] = useUpdateUserMutation();
 
-  const navigate = useNavigate();
   const dispatch = useDispatch();
 
   useEffect(() => {
