@@ -75,11 +75,13 @@ const LoginScreen = () => {
           <p className="text-sm text-subtext1">Forgot your password?</p>
           <ActionButton>Sign In </ActionButton>
 
-          <p className="text-center text-sm text-subtext1 ">
+          <p className=" text-center text-sm text-subtext1">
             Don’t have an Account?
-            <Link to="/register">
-              <span className="hover:underline">Create account</span>
-            </Link>
+            <span className="ml-1">
+              <Link to="/register">
+                <span className=" hover:underline">Create account</span>
+              </Link>
+            </span>
           </p>
         </form>
       </div>

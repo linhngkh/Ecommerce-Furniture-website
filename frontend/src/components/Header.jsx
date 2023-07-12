@@ -82,8 +82,9 @@ const Header = ({ isTopOfPage }) => {
                   Wishlist <AiOutlineHeart />
                 </div>
                 <AiOutlineShoppingCart />
+                {/* userInfo */}
                 {userInfo ? (
-                  <div>
+                  <div className="ml-7">
                     <button
                       type="button"
                       className="text-md inline-flex w-full justify-center gap-x-1.5  rounded-md px-3 py-2 font-semibold text-white shadow-sm"
@@ -97,17 +98,16 @@ const Header = ({ isTopOfPage }) => {
 
                       {isOpen && (
                         <div
-                          className="w-54 absolute right-14 z-10 mt-8 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
+                          className="absolute right-14 z-10 mt-8 w-[150px] origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
                           role="menu"
                           aria-orientation="vertical"
                           aria-labelledby="menu-button"
                           tabIndex="-1"
                         >
-                          <div className="py-1" role="none">
-                            <button>
+                          <div className="flex flex-col p-2" role="none">
+                            <button className=" text-md border-b-2 px-4 py-2 text-violet hover:bg-slate-200">
                               <Link
                                 to="/profile"
-                                className="block px-4 py-2 text-sm text-violet hover:bg-slate-200 "
                                 role="menuitem"
                                 tabIndex="-1"
                                 id="menu-item-1"
@@ -120,7 +120,7 @@ const Header = ({ isTopOfPage }) => {
                             <button
                               onClick={logoutHandler}
                               type="submit"
-                              className="block px-4 py-2 text-sm text-violet hover:bg-slate-200 "
+                              className=" text-md   px-4 py-2 text-violet hover:bg-slate-200"
                               role="menuitem"
                               tabIndex="-1"
                               id="menu-item-3"

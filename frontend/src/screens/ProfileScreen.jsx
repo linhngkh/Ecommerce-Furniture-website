@@ -1,13 +1,15 @@
 import { useState, useEffect } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 import { useDispatch, useSelector } from "react-redux";
+import { useUpdateUserMutation } from "../slices/userApiSlice";
 
 import ActionButton from "../shares/ActionButton";
 import SharedBanner from "../shares/SharedBanner";
 
 import Loader from "../components/Loader";
 import { toast } from "react-toastify";
+import { setCredentials } from "../slices/authSlice";
 
 const ProfileScreen = () => {
   const [email, setEmail] = useState("");
@@ -17,21 +19,34 @@ const ProfileScreen = () => {
 
   const { userInfo } = useSelector((state) => state.auth);
 
+  const [updateUser, { isLoading }] = useUpdateUserMutation();
+
   const navigate = useNavigate();
   const dispatch = useDispatch();
 
   useEffect(() => {
     setName(userInfo.name);
     setEmail(userInfo.email);
-  }, [userInfo.setEmail, userInfo.setName]);
+  }, [userInfo.setName, userInfo.setEmail]);
 
   const submitHandler = async (event) => {
     event.preventDefault();
-
     if (password !== confirmPassword) {
       toast.error("Passwords do not match");
     } else {
-      console.log("submit");
+      try {
+        const res = await updateUser({
+          _id: userInfo._id,
+          name,
+          email,
+          password,
+        }).unwrap();
+
+        dispatch(setCredentials({ ...res }));
+        toast.success("Profile Updated");
+      } catch (error) {
+        toast.error(error?.data?.message || error.error);
+      }
     }
   };
   return (
@@ -44,7 +59,7 @@ const ProfileScreen = () => {
         >
           <div className="">
             <h1 className="text-center font-jose text-2xl font-bold">
-              Sign up
+              Update Profile User
             </h1>
           </div>
           <input
@@ -79,17 +94,10 @@ const ProfileScreen = () => {
             placeholder="Confirm password"
             className="w-[400px] border-2 px-3 py-3 text-sm text-subtext1"
           />
+          {/* loading */}
+          {isLoading && <Loader isLoading={isLoading} />}
 
-          <ActionButton>Sign Up </ActionButton>
-
-          <p className="text-center text-sm text-subtext1 ">
-            Already have an Account?{" "}
-            <span>
-              <Link to="/login">
-                <span className="hover:underline">Log in</span>
-              </Link>
-            </span>
-          </p>
+          <ActionButton>Update</ActionButton>
         </form>
       </div>
     </section>
