@@ -40,7 +40,7 @@ const LoginScreen = () => {
   };
 
   return (
-    <section className="pt-20 md:pt-20">
+    <section className="pt-10 md:pt-20">
       <SharedBanner>My Account</SharedBanner>
       <div className="mx-auto flex items-center justify-center px-20 py-20">
         <form
