@@ -20,8 +20,12 @@ const HeroSection = () => {
           }}
           className="w-[10%] md:w-[20%]"
         >
-          {" "}
-          <img src={Lamp} alt="lamp" className="" />
+          <img
+            src={Lamp}
+            alt="lamp"
+            className="w-full object-fill"
+            loading="lazy"
+          />
         </motion.div>
 
         <div className="flex flex-col items-center  md:flex md:basis-3/4 md:flex-row md:py-20">
@@ -64,7 +68,7 @@ const HeroSection = () => {
             className="mt-10 flex-1"
           >
             <div className="relative flex items-center">
-              <img src={Sofa} alt="sofa" />
+              <img src={Sofa} alt="sofa" loading="lazy" />
             </div>
           </motion.div>
         </div>

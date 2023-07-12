@@ -34,7 +34,7 @@ const Slider = () => {
   return (
     <div className="mx-auto flex flex-col items-center justify-center space-y-5 text-center">
       <article className="flex flex-col items-center justify-center space-y-5 ">
-        <img src={picture} alt={name} />
+        <img src={picture} alt={name} loading="lazy" />
         <h2 className="text-xl font-semibold text-black">{name}</h2>
         <p className="text-sm font-thin text-subtext1">{position}</p>
         <p className="w-[300px]  text-sm font-bold text-subtext1 md:w-[700px]">

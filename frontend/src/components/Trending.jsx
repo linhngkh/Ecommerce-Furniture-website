@@ -48,7 +48,12 @@ const Trending = () => {
             className=" h-[350px] w-[270px] justify-self-center  border-x-8 border-y-8 border-white"
           >
             <div key={trending.index}>
-              <img src={trending.img} alt="chair" className="w-full" />
+              <img
+                src={trending.img}
+                alt="chair"
+                className="w-full"
+                loading="lazy"
+              />
             </div>
 
             <div className=" flex flex-col items-center justify-center bg-white px-5 py-3">
@@ -78,7 +83,7 @@ const Trending = () => {
               Shop now
             </p>
 
-            <img src={Discount2} alt="image" className="w-30" />
+            <img src={Discount2} alt="image" className="w-30" loading="lazy" />
           </div>
         </div>
 
@@ -92,7 +97,7 @@ const Trending = () => {
               View Collection
             </p>
 
-            <img src={Discount1} alt="image" />
+            <img src={Discount1} alt="image" loading="lazy" />
           </div>
         </div>
 
@@ -105,11 +110,11 @@ const Trending = () => {
                   src={item.img}
                   alt="chair"
                   className="bg-secondary px-5 py-2"
+                  loading="lazy"
                 />
                 <div
                   className={`${flexCenter} font-jose text-sm font-semibold text-blue`}
                 >
-                  {" "}
                   <p>{item.name}</p>
                   <p>{item.price}</p>
                 </div>

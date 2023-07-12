@@ -39,8 +39,11 @@ const Header = ({ isTopOfPage }) => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
+  const [logputApiCall] = useLogoutMutation();
+
   const logoutHandler = async () => {
     try {
+      await logputApiCall().unwrap();
       dispatch(logout());
       navigate("/");
     } catch (error) {

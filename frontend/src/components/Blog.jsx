@@ -32,6 +32,7 @@ const Blog = () => {
                 src={item.img}
                 alt={item.desc}
                 className="w-full object-cover"
+                loading="lazy"
               />
               <div className="px-2 py-2">
                 <div className="flex items-center justify-between">

@@ -20,7 +20,7 @@ const Features = () => {
           visible: { opacity: 1, x: 0 },
         }}
       >
-        <img src={BigChair} alt="big sofa" />
+        <img src={BigChair} alt="big sofa" loading="lazy" />
       </motion.div>
 
       {/* features */}

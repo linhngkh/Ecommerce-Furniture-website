@@ -165,6 +165,7 @@ const DiscountItem = () => {
                   src={category.img}
                   alt="image"
                   className="w-full object-fill"
+                  loading="lazy"
                 />
               </div>
               <div className=" mt-5 flex flex-col justify-center text-center text-sm text-blueBold">
@@ -177,7 +178,12 @@ const DiscountItem = () => {
       </div>
       {/* banner */}
       <div className="relative">
-        <img src={Banner} alt="banner" className="w-full object-cover" />
+        <img
+          src={Banner}
+          alt="banner"
+          className="w-full object-cover"
+          loading="lazy"
+        />
 
         <div className="absolute left-1/2 top-1/2  -translate-x-1/2 -translate-y-1/2 transform text-center">
           <h1 className="text-center font-jose text-sm font-bold text-blue md:text-2xl md:leading-10">
@@ -188,7 +194,7 @@ const DiscountItem = () => {
       </div>
       {/* brand */}
       <div className="mt-20  flex justify-center">
-        <img src={Brand} alt="brand" />
+        <img src={Brand} alt="brand" loading="lazy" />
       </div>
     </section>
   );

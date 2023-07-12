@@ -7,6 +7,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { useLoginMutation } from "../slices/userApiSlice";
 import { setCredentials } from "../slices/authSlice";
 import { toast } from "react-toastify";
+import Loader from "../components/Loader";
 
 const LoginScreen = () => {
   const [email, setEmail] = useState("");
@@ -69,7 +70,8 @@ const LoginScreen = () => {
             placeholder="Password"
             className="w-[400px] border-2 px-3 py-3 text-sm text-subtext1"
           />
-          {isLoading && <h2>Loading...</h2>}
+          {/* loading */}
+          {isLoading && <Loader isLoading={isLoading} />}
           <p className="text-sm text-subtext1">Forgot your password?</p>
           <ActionButton>Sign In </ActionButton>
 

@@ -44,7 +44,7 @@ const Product = () => {
             key={id}
           >
             <div className={`${flexCenter} bg-secondary p-5`}>
-              <img src={product.img} alt={product.name} />
+              <img src={product.img} alt={product.name} loading="lazy" />
             </div>
             <div
               className={`${flexCenter} flex-col gap-y-2 bg-white px-8 py-2`}
