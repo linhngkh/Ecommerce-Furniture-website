@@ -49,6 +49,7 @@ const router = createBrowserRouter(
       <Route path="/company/contact" element={<Contact />} />
       <Route path="/company/about-us" element={<AboutUs />} />
       <Route path="/company/faq" element={<Faq />} />
+
       {/* 404notfound */}
       <Route path="*" element={<PageNotFound />} />
     </Route>

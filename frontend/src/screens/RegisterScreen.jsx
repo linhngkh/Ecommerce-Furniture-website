@@ -14,7 +14,7 @@ const RegisterScreen = () => {
     console.log("submit");
   };
   return (
-    <section className="pt-20 md:pt-20">
+    <section className="pt-10 md:pt-20">
       <SharedBanner>Register</SharedBanner>
       <div className="mx-auto flex items-center justify-center px-20 py-20">
         <form
@@ -58,7 +58,7 @@ const RegisterScreen = () => {
             placeholder="Confirm password"
             className="w-[400px] border-2 px-3 py-3 text-sm text-subtext1"
           />
-          <p className="text-sm text-subtext1">Forgot your password?</p>
+
           <ActionButton>Sign Up </ActionButton>
 
           <p className="text-center text-sm text-subtext1 ">

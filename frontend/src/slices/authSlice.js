@@ -9,7 +9,6 @@ const initialState = {
 };
 
 // create slice
-
 const authSlice = createSlice({
   name: "auth",
   initialState,
