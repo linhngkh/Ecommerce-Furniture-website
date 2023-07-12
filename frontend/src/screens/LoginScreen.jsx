@@ -42,7 +42,7 @@ const LoginScreen = () => {
   return (
     <section className="pt-10 md:pt-20">
       <SharedBanner>My Account</SharedBanner>
-      <div className="mx-auto flex items-center justify-center px-20 py-20">
+      <div className="mx-auto flex items-center justify-center p-10">
         <form
           onSubmit={submitHandler}
           className="W-[544px] flex h-[474px] flex-col space-y-4 p-10 shadow-[rgba(7,_65,_210,_0.1)_0px_9px_30px]"
@@ -69,6 +69,7 @@ const LoginScreen = () => {
             placeholder="Password"
             className="w-[400px] border-2 px-3 py-3 text-sm text-subtext1"
           />
+          {isLoading && <h2>Loading...</h2>}
           <p className="text-sm text-subtext1">Forgot your password?</p>
           <ActionButton>Sign In </ActionButton>
 

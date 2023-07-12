@@ -1,8 +1,11 @@
 import { useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { useLogoutMutation } from "../slices/userApiSlice";
+import { logout } from "../slices/authSlice.js";
 
-import { NavLink, Link } from "react-router-dom";
-
-import { BiPhoneCall, BiSearch } from "react-icons/bi";
+import { NavLink, Link, useNavigate } from "react-router-dom";
+//icons
+import { BiPhoneCall, BiSearch, BiDownArrow } from "react-icons/bi";
 import {
   AiOutlineCloseCircle,
   AiOutlineMail,
@@ -13,6 +16,7 @@ import { FiChevronDown } from "react-icons/fi";
 import { BsPerson } from "react-icons/bs";
 import { GiHamburgerMenu } from "react-icons/gi";
 
+//components
 import DropDrownMenu from "../screens/pages/DropDownMenu";
 import MenuDropDown from "../screens/company/MenuDropDown";
 import useMediaQuery from "../hooks/useMediaQuery";
@@ -20,7 +24,7 @@ import useMediaQuery from "../hooks/useMediaQuery";
 //active classname
 const activeClassName = "text-rose-600";
 const divStart = `flex justify-start items-center`;
-const itemCenter = `flex items-center gap-1`;
+const itemCenter = `flex items-center gap-1 justify-center`;
 const divBetween = `flex justify-between items-center`;
 
 const Header = ({ isTopOfPage }) => {
@@ -28,6 +32,21 @@ const Header = ({ isTopOfPage }) => {
   const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
   //state
   const [isMenuToggled, setIsMenuToggled] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
+  //get userInfo
+  const { userInfo } = useSelector((state) => state.auth);
+
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+
+  const logoutHandler = async () => {
+    try {
+      dispatch(logout());
+      navigate("/");
+    } catch (error) {
+      console.log(error);
+    }
+  };
 
   //style
   const navbarBackground = isTopOfPage ? "" : "drop-shadow bg-white";
@@ -56,17 +75,71 @@ const Header = ({ isTopOfPage }) => {
                 <div className={`${itemCenter}`}>
                   USD <FiChevronDown />
                 </div>
-                <div className={`${itemCenter} flex-row`}>
-                  <Link to={"/login"}>Log in</Link>
-                  <BsPerson />
-                </div>
-                <div className={`${itemCenter} flex-row`}>
-                  <Link to={"/register"}>Sign up</Link>
-                </div>
                 <div className={`${itemCenter}`}>
                   Wishlist <AiOutlineHeart />
                 </div>
                 <AiOutlineShoppingCart />
+                {userInfo ? (
+                  <div>
+                    <button
+                      type="button"
+                      className="text-md inline-flex w-full justify-center gap-x-1.5  rounded-md px-3 py-2 font-semibold text-white shadow-sm"
+                      id="username"
+                      onClick={() => setIsOpen(!isOpen)}
+                    >
+                      <div className={`${itemCenter}`}>
+                        {userInfo.name}
+                        <BiDownArrow />
+                      </div>
+
+                      {isOpen && (
+                        <div
+                          className="w-54 absolute right-14 z-10 mt-8 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
+                          role="menu"
+                          aria-orientation="vertical"
+                          aria-labelledby="menu-button"
+                          tabIndex="-1"
+                        >
+                          <div className="py-1" role="none">
+                            <button>
+                              <Link
+                                to="/profile"
+                                className="block px-4 py-2 text-sm text-violet hover:bg-slate-200 "
+                                role="menuitem"
+                                tabIndex="-1"
+                                id="menu-item-1"
+                              >
+                                Profile
+                              </Link>
+                            </button>
+
+                            {/* log out */}
+                            <button
+                              onClick={logoutHandler}
+                              type="submit"
+                              className="block px-4 py-2 text-sm text-violet hover:bg-slate-200 "
+                              role="menuitem"
+                              tabIndex="-1"
+                              id="menu-item-3"
+                            >
+                              Log out
+                            </button>
+                          </div>
+                        </div>
+                      )}
+                    </button>
+                  </div>
+                ) : (
+                  <>
+                    <div className={`${itemCenter} flex-row`}>
+                      <Link to={"/login"}>Log in</Link>
+                      <BsPerson />
+                    </div>
+                    <div className={`${itemCenter} flex-row`}>
+                      <Link to={"/register"}>Sign up</Link>
+                    </div>
+                  </>
+                )}
               </div>
             </div>
 
