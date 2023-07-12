@@ -13,6 +13,8 @@ import {
 import store from "./store";
 import { Provider } from "react-redux";
 
+import PrivateRoute from "./components/PrivateRoute.jsx";
+
 //components
 import HomeScreen from "./screens/HomeScreen.jsx";
 import LoginScreen from "./screens/LoginScreen.jsx";
@@ -27,6 +29,7 @@ import PageAccessories from "./pages/PageAccessories.jsx";
 import PageNotFound from "./pages/PageNotFound.jsx";
 import AboutUs from "./screens/company/AboutUs.jsx";
 import Faq from "./screens/company/Faq.jsx";
+import ProfileScreen from "./screens/ProfileScreen.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -35,6 +38,11 @@ const router = createBrowserRouter(
       {/* screens */}
       <Route path="/login" element={<LoginScreen />} />
       <Route path="/register" element={<RegisterScreen />} />
+      {/* private routes */}
+      <Route path="" element={<PrivateRoute />}>
+        <Route path="/profile" element={<ProfileScreen />} />
+      </Route>
+
       {/* pages */}
       {/* blog page*/}
       <Route path="/blog" element={<BlogPage />} />
