@@ -8,8 +8,11 @@
 ### Built with
 #### Front End
 * React.js 
+* Redux Toolkit
 * TailwindCSS
+
 #### Back End
+* JWT Authentication
 * MongoDB
 * Node.js
 * Express
@@ -32,6 +35,6 @@
 
 * Making reusable components.
 
-* Structuring my application in an effective way when it comes to more complex web.
+* Structuring my application, both frontend & backend in an effective way when it comes to more complex web.(MVC pattern)
 
-* Optimizing my web performance.
+* Optimizing my web performance. 
