@@ -17,7 +17,7 @@
 * Firebase - Frontend
 * 
 ---
-##### User flows: 
+#### User flows: 
  * logins to this page, 
  * registers to this page, 
  * logs out
@@ -27,7 +27,7 @@
  * see payment in totals
  * check out
 
-##### Reflection & What I learn so far
+#### Reflection & What I learn so far
 * Working with Front End, I practice CSS skills with flex box, grid layouts to style the website with the same Figma design.
 * Making reusable components.
 * Structuring my application in an effective way when it comes to more complex web. 
