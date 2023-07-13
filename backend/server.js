@@ -16,17 +16,15 @@ import userRoutes from "./routes/userRoutes.js";
 const app = express();
 
 // middleware
-app.use(cors());
+
 app.use(express.json());
+app.use(cors());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 
 // Define the CORS middleware
 const corsMiddleware = (req, res, next) => {
-  res.header(
-    "Access-Control-Allow-Origin",
-    "*"
-  ); // Update with your allowed domain
+  res.header("Access-Control-Allow-Origin", "*"); // Update with your allowed domain
   res.header(
     "Access-Control-Allow-Headers",
     "Origin, X-Requested-With, Content-Type, Accept"
