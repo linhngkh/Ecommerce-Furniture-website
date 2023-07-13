@@ -25,7 +25,7 @@ const AccessoriesProduct = () => {
               <img
                 src={item.image}
                 alt={item.title}
-                className=" object-contain md:w-full"
+                className=" zoom object-contain md:w-full"
                 loading="lazy"
               />
             </div>

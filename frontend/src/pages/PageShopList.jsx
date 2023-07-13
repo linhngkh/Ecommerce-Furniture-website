@@ -56,7 +56,7 @@ const PageShopList = () => {
                 <img
                   src={scene.image}
                   alt={scene.title}
-                  className="w-[300px] rounded-sm object-contain md:w-full"
+                  className="zoom w-[300px] rounded-sm object-contain md:w-full"
                   loading="lazy"
                 />
               </div>

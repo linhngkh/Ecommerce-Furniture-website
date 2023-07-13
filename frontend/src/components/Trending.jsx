@@ -73,7 +73,7 @@ const Trending = () => {
 
       {/* 3 divs */}
       <div className=" space-y-10 p-20 md:flex md:flex-row md:justify-center md:gap-x-5">
-        {/* first */}
+        {/* first div*/}
         <div className="bg-[#fff8fb] text-blue drop-shadow-[rgba(7,_65,_210,_0.1)_0px_0px_20px] md:flex  md:w-[30%] md:px-4 md:py-6">
           <div className="p-4 md:flex md:flex-col md:p-4">
             <p className="font-jose text-lg font-semibold">
@@ -87,7 +87,7 @@ const Trending = () => {
           </div>
         </div>
 
-        {/* second */}
+        {/* second div*/}
         <div className="bg-[#EEEFFB] text-blue drop-shadow-[rgba(7,_65,_210,_0.1)_0px_0px_20px] md:flex md:w-[30%] md:px-4 md:py-6">
           <div className="p-4 md:flex md:flex-col md:p-4">
             <p className="font-jose text-lg font-semibold">
@@ -101,7 +101,7 @@ const Trending = () => {
           </div>
         </div>
 
-        {/* third */}
+        {/* third div*/}
         <div className=" md:flex md:w-[33,3%]">
           <div className={`${flexCenter} gap-y-4`}>
             {trendingSmallChairs.map((item, _id) => (

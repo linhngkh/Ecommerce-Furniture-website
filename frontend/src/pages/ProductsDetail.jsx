@@ -26,18 +26,34 @@ const Products = () => {
           <div className=" flex w-[400px] min-w-[200px] items-center justify-center gap-3  md:w-[700px]">
             <div className="flex flex-col  gap-3">
               <div>
-                <img src={Bag1} alt="bag" className="w-full  object-contain" />
+                <img
+                  src={Bag1}
+                  alt="bag"
+                  className="zoom  w-full  object-contain "
+                />
               </div>
               <div>
-                <img src={Bag2} alt="bag" className="w-full object-contain" />
+                <img
+                  src={Bag2}
+                  alt="bag"
+                  className="zoom w-full object-contain"
+                />
               </div>
               <div>
-                <img src={Bag3} alt="bag" className="w-full object-contain" />
+                <img
+                  src={Bag3}
+                  alt="bag"
+                  className="zoom w-full object-contain"
+                />
               </div>
             </div>
             <div>
               <div>
-                <img src={Bag4} alt="bag" className="w-full object-contain" />
+                <img
+                  src={Bag4}
+                  alt="bag"
+                  className="zoom w-full object-contain"
+                />
               </div>
             </div>
           </div>
@@ -149,7 +165,7 @@ const Products = () => {
               <img
                 src={Related1}
                 alt="related products"
-                className="h-60 w-full object-contain"
+                className="zoom h-60 w-full object-contain"
                 loading="lazy"
               />
               <div className="flex justify-between py-4">
@@ -171,7 +187,7 @@ const Products = () => {
               <img
                 src={Related2}
                 alt="related products"
-                className="h-60 w-full object-contain"
+                className="zoom h-60 w-full object-contain"
                 loading="lazy"
               />
               <div className="flex justify-between py-4">
@@ -193,7 +209,7 @@ const Products = () => {
               <img
                 src={Related3}
                 alt="related products"
-                className="h-60 w-full object-contain"
+                className="zoom h-60 w-full object-contain"
                 loading="lazy"
               />
               <div className="flex justify-between py-4">
@@ -215,7 +231,7 @@ const Products = () => {
               <img
                 src={Related4}
                 alt="related products"
-                className="h-60 w-full object-contain"
+                className="zoom h-60 w-full object-contain"
                 loading="lazy"
               />
               <div className="flex justify-between py-4">

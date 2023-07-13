@@ -164,7 +164,7 @@ const DiscountItem = () => {
                 <img
                   src={category.img}
                   alt="image"
-                  className="w-full object-fill"
+                  className="zoom w-full object-fill"
                   loading="lazy"
                 />
               </div>
