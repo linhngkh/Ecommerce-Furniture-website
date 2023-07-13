@@ -13,18 +13,22 @@
 * MongoDB
 * Node.js
 * Express
+#### Deploy
+* Firebase - Frontend
+* 
 ---
-### What I learned
-
 ##### Working with Back End, when user: 
  * logins to this page, 
  * registers to this page, 
  * logs out
- 
+ * private routes for user only when they register or login into this page
+
  * add/ remove items to cart
  * see payment in totals
  * check out
 
-##### Reflection
-* Working with Front End, I practice CSS skills with flex box, grid to style the website the same with Figma design.
-* Making reusable components
+##### Reflection & What I learn so far
+* Working with Front End, I practice CSS skills with flex box, grid layouts to style the website with the same Figma design.
+* Making reusable components.
+* Structuring my application in an effective way when it comes to more complex web. 
+* Optimizing my web performance.
