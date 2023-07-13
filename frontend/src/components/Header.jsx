@@ -85,7 +85,7 @@ const Header = ({ isTopOfPage }) => {
                 {/* userInfo */}
                 {userInfo ? (
                   <div className="ml-7">
-                    <button
+                    <div
                       type="button"
                       className="text-md inline-flex w-full justify-center gap-x-1.5  rounded-md px-3 py-2 font-semibold text-white shadow-sm"
                       id="username"
@@ -130,7 +130,7 @@ const Header = ({ isTopOfPage }) => {
                           </div>
                         </div>
                       )}
-                    </button>
+                    </div>
                   </div>
                 ) : (
                   <>
