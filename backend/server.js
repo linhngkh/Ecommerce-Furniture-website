@@ -20,26 +20,26 @@ const app = express();
 app.use(express.json());
 app.use(
   cors({
-    origin: "https://frontend-furniture.firebaseapp.com",
+    origin: "*",
     allowedHeaders: "Content-Type, Authorization",
   })
 );
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 
-// Define the CORS middleware
-const corsMiddleware = (req, res, next) => {
-  res.header("Access-Control-Allow-Origin", "*"); // Update with your allowed domain
-  res.header(
-    "Access-Control-Allow-Headers",
-    "Origin, X-Requested-With, Content-Type, Accept"
-  );
-  res.header("Access-Control-Allow-Methods", "POST, PATCH, OPTIONS");
-  next();
-};
+// // Define the CORS middleware
+// const corsMiddleware = (req, res, next) => {
+//   res.header("Access-Control-Allow-Origin", "*"); // Update with your allowed domain
+//   res.header(
+//     "Access-Control-Allow-Headers",
+//     "Origin, X-Requested-With, Content-Type, Accept"
+//   );
+//   res.header("Access-Control-Allow-Methods", "POST, PATCH, OPTIONS");
+//   next();
+// };
 
-// Apply the CORS middleware to all routes
-app.use(corsMiddleware);
+// // Apply the CORS middleware to all routes
+// app.use(corsMiddleware);
 
 app.use("/api/users", userRoutes);
 app.get("/", (req, res) => res.send("Server is ready"));
