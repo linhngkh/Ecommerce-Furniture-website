@@ -25,7 +25,13 @@ app.use(cors());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 
-app.options("*", cors()); // include before other routes
+const issue2options = {
+  origin: "*",
+  methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
+  preflightContinue: false,
+  optionsSuccessStatus: 204,
+};
+app.options("*", cors(issue2options));
 
 app.use("/api/users", userRoutes);
 app.get("/", (req, res) => res.send("Server is ready"));
