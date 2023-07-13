@@ -29,6 +29,9 @@
 
 #### Reflection & What I learn so far
 * Working with Front End, I practice CSS skills with flex box, grid layouts to style the website with the same Figma design.
+
 * Making reusable components.
-* Structuring my application in an effective way when it comes to more complex web. 
+
+* Structuring my application in an effective way when it comes to more complex web.
+ 
 * Optimizing my web performance.
