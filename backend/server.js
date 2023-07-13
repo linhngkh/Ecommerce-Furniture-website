@@ -23,7 +23,10 @@ app.use(cookieParser());
 
 // Define the CORS middleware
 const corsMiddleware = (req, res, next) => {
-  res.header("Access-Control-Allow-Origin", "http://localhost:5173"); // Update with your allowed domain
+  res.header(
+    "Access-Control-Allow-Origin",
+    "https://frontend-furniture.firebaseapp.com/"
+  ); // Update with your allowed domain
   res.header(
     "Access-Control-Allow-Headers",
     "Origin, X-Requested-With, Content-Type, Accept"
