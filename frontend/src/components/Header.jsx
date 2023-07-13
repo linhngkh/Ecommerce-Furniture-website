@@ -239,7 +239,7 @@ const Header = ({ isTopOfPage }) => {
           </div>
         )}
 
-        {/* mobile menu modal */}
+        {/* MOBILE SIDE BAR MENU */}
         {!isAboveMediumScreens && isMenuToggled && (
           <div className="fixed bottom-0 right-0 top-0 z-40 h-full w-[300px] bg-feature text-navbartext drop-shadow-xl md:top-16 md:ml-40 md:justify-end">
             {/* close Button */}

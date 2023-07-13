@@ -44,7 +44,12 @@ const Product = () => {
             key={id}
           >
             <div className={`${flexCenter} bg-secondary p-5`}>
-              <img src={product.img} alt={product.name} loading="lazy" />
+              <img
+                src={product.img}
+                alt={product.name}
+                loading="lazy"
+                className="zoom"
+              />
             </div>
             <div
               className={`${flexCenter} flex-col gap-y-2 bg-white px-8 py-2`}
@@ -90,7 +95,7 @@ const Product = () => {
                 <img
                   src={product.img}
                   alt={product.name}
-                  className="h-50 w-full object-cover"
+                  className="h-50 zoom w-full object-cover"
                   loading="lazy"
                 />
               </div>

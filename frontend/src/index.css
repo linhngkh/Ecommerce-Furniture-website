@@ -77,3 +77,7 @@ select::after {
 .tagStyle {
   @apply text-sm text-blue hover:text-pink hover:underline;
 }
+
+.zoom {
+  @apply max-w-xs transition duration-300 ease-in-out hover:scale-110;
+}

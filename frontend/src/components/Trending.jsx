@@ -51,7 +51,7 @@ const Trending = () => {
               <img
                 src={trending.img}
                 alt="chair"
-                className="w-full"
+                className="zoom w-full"
                 loading="lazy"
               />
             </div>
@@ -109,7 +109,7 @@ const Trending = () => {
                 <img
                   src={item.img}
                   alt="chair"
-                  className="bg-secondary px-5 py-2"
+                  className="zoom bg-secondary px-5 py-2"
                   loading="lazy"
                 />
                 <div

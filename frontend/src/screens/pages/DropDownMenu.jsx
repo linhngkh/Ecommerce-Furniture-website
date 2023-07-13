@@ -2,6 +2,7 @@ import { Fragment } from "react";
 import { Menu, Transition } from "@headlessui/react";
 import { FiChevronDown } from "react-icons/fi";
 import { Link } from "react-router-dom";
+
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
@@ -35,7 +36,7 @@ export default function DropDrownMenu() {
                 <Link
                   to="/pages/grid"
                   className={classNames(
-                    active ? "bg-gray-100 text-gray-900" : "text-gray-700",
+                    active ? "bg-gray-100 text-gray-900 " : "text-gray-700",
                     "block px-4 py-2 text-sm"
                   )}
                 >

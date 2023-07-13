@@ -1,10 +1,12 @@
 import { pageProducts } from "../../data";
 import { BsGridFill } from "react-icons/bs";
+import { BiExpand } from "react-icons/bi";
 import { MdOutlineFormatListBulleted } from "react-icons/md";
 import SharedBanner from "../shares/SharedBanner";
 import SharedTitle from "../shares/SharedTitle";
 
 import { motion } from "framer-motion";
+import IconButton from "../shares/IconButton";
 
 const PagesGrid = () => {
   return (
@@ -53,9 +55,16 @@ const PagesGrid = () => {
                   <img
                     src={item.img}
                     alt={item.name}
-                    className="h-48 w-full object-contain"
+                    className="zoom h-48 w-full object-contain"
                     loading="lazy"
                   />
+                  <div className="absolute bottom-5 w-full px-6 opacity-0 transition group-hover:opacity-100">
+                    <div className="flex justify-center gap-x-6">
+                      <IconButton onClick={() => {}}>
+                        <BiExpand className="text-gray-600" />
+                      </IconButton>
+                    </div>
+                  </div>
                 </div>
                 <div className=" md:py-5">
                   <div className="text-center">
