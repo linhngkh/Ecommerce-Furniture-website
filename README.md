@@ -17,7 +17,7 @@
 * Firebase - Frontend
 * 
 ---
-##### Working with Back End, when user: 
+##### User flows: 
  * logins to this page, 
  * registers to this page, 
  * logs out
