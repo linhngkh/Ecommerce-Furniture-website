@@ -11,6 +11,7 @@ import userRoutes from "./routes/userRoutes.js";
 
 //connect mongoDB
 import connectDB from "./config/db.js";
+import { products } from "./products.js";
 connectDB();
 
 // middleware
@@ -22,6 +23,10 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 
 app.use("/api/users", userRoutes);
+
+app.get("/api/products", (req, res) => {
+  res.send(products);
+});
 app.get("/", (req, res) => res.send("Server is ready"));
 
 app.use(notFound);
