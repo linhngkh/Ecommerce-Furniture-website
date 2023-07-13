@@ -21,16 +21,18 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 
-// Enable CORS
-app.options("/api/users/auth", (req, res) => {
+// Define the CORS middleware
+const corsMiddleware = (req, res, next) => {
   res.header("Access-Control-Allow-Origin", "http://localhost:5173"); // Update with your allowed domain
   res.header(
     "Access-Control-Allow-Headers",
     "Origin, X-Requested-With, Content-Type, Accept"
   );
-  res.header("Access-Control-Allow-Methods", "POST"); // Update with the allowed HTTP methods
-  res.sendStatus(204); // Send a successful response without content
-});
+  next();
+};
+
+// Apply the CORS middleware to all routes
+app.use(corsMiddleware);
 
 app.use("/api/users", userRoutes);
 app.get("/", (req, res) => res.send("Server is ready"));
