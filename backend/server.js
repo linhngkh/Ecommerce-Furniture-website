@@ -25,6 +25,8 @@ app.use(cors());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 
+app.options("*", cors()); // include before other routes
+
 app.use("/api/users", userRoutes);
 app.get("/", (req, res) => res.send("Server is ready"));
 
