@@ -1,6 +1,6 @@
 import { apiSlice } from "./apiSlice";
 
-const USER_URL = "/api/users";
+const USER_URL = "https://ecommerce-furniture-website.vercel.app/api/users";
 
 export const userApiSlice = apiSlice.injectEndpoints({
   endpoints: (builder) => ({
