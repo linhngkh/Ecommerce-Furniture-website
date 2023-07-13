@@ -14,24 +14,12 @@ import connectDB from "./config/db.js";
 connectDB();
 
 // middleware
-app.use((req, res, next) => {
-  res.header("Access-Control-Allow-Origin", "*");
-  next();
-});
 
 app.use(express.json());
-app.use(cors());
+app.use(cors({ origin: "*" }));
 
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
-
-const issue2options = {
-  origin: "*",
-  methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
-  preflightContinue: false,
-  optionsSuccessStatus: 204,
-};
-app.options("*", cors(issue2options));
 
 app.use("/api/users", userRoutes);
 app.get("/", (req, res) => res.send("Server is ready"));
