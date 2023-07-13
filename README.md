@@ -20,7 +20,7 @@
 #### User flows: 
  * logins to this page, 
  * registers to this page, 
- * logs out
+ * logs out,
  * private routes for user only when they register or login into this page
 
  * add/ remove items to cart
@@ -33,5 +33,5 @@
 * Making reusable components.
 
 * Structuring my application in an effective way when it comes to more complex web.
- 
+
 * Optimizing my web performance.
