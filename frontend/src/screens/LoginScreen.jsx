@@ -7,7 +7,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { useLoginMutation } from "../slices/userApiSlice";
 import { setCredentials } from "../slices/authSlice";
 import { toast } from "react-toastify";
-import Loader from "../components/Loader";
+import Loader from "../shares/Loader";
 
 const LoginScreen = () => {
   const [email, setEmail] = useState("");

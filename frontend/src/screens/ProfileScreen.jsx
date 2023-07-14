@@ -6,9 +6,9 @@ import { useUpdateUserMutation } from "../slices/userApiSlice";
 import ActionButton from "../shares/ActionButton";
 import SharedBanner from "../shares/SharedBanner";
 
-import Loader from "../components/Loader";
 import { toast } from "react-toastify";
 import { setCredentials } from "../slices/authSlice";
+import Loader from "../shares/Loader";
 
 const ProfileScreen = () => {
   const [email, setEmail] = useState("");

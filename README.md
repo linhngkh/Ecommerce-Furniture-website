@@ -8,7 +8,7 @@
 ### Built with
 #### Front End
 * React.js 
-* Redux Toolkit
+* Redux Toolkit / RTK Query
 * TailwindCSS
 
 #### Back End

@@ -23,13 +23,14 @@ import Contact from "./screens/company/Contact.jsx";
 import BlogPage from "./pages/BlogPage.jsx";
 import ProductDetail from "./pages/ProductsDetail";
 import Shop from "./pages/Shop.jsx";
-import PagesGrid from "./pages/PagesGrid.jsx";
+
 import PageShopList from "./pages/PageShopList.jsx";
 import PageAccessories from "./pages/PageAccessories.jsx";
 import PageNotFound from "./pages/PageNotFound.jsx";
 import AboutUs from "./screens/company/AboutUs.jsx";
 import Faq from "./screens/company/Faq.jsx";
 import ProfileScreen from "./screens/ProfileScreen.jsx";
+import PagesGrid from "./pages/page-grid/PagesGrid.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(

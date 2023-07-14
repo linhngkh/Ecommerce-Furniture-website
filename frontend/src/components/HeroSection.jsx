@@ -3,6 +3,7 @@ import Sofa from "/assets/sofa.png";
 import Lamp from "/assets/lamp.png";
 
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const HeroSection = () => {
   return (
@@ -52,7 +53,9 @@ const HeroSection = () => {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in
               est adipiscing in phasellus non in justo.
             </p>
-            <ActionButton>Shop Now</ActionButton>
+            <Link to="/pages/grid">
+              <ActionButton>Shop Now</ActionButton>
+            </Link>
           </motion.div>
 
           {/* images */}

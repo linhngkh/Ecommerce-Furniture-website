@@ -7,7 +7,7 @@ import { setCredentials } from "../slices/authSlice";
 
 import ActionButton from "../shares/ActionButton";
 import SharedBanner from "../shares/SharedBanner";
-import Loader from "../components/Loader";
+import Loader from "../shares/Loader";
 import { toast } from "react-toastify";
 
 const RegisterScreen = () => {
