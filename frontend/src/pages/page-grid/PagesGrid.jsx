@@ -8,11 +8,14 @@ import SharedBanner from "../../shares/SharedBanner";
 import SharedTitle from "../../shares/SharedTitle";
 import Sorting from "./Sorting";
 import ProductsList from "./ProductsList";
+import { useGetAllProductsQuery } from "../../slices/producstApi";
 
 const PagesGrid = () => {
   const [viewMode, setViewMode] = useState("grid");
 
   const [sortBy, setSortBy] = useState("price");
+
+  const { data, error, isLoading } = useGetAllProductsQuery();
 
   const handleSetGrid = () => {
     setViewMode("grid");
@@ -63,7 +66,11 @@ const PagesGrid = () => {
           </div>
 
           {/* product grid */}
-          {viewMode === "grid" ? <ProductsGrid /> : <ProductsList />}
+          {viewMode === "grid" ? (
+            <ProductsGrid data={data} isLoading={isLoading} error={error} />
+          ) : (
+            <ProductsList data={data} isLoading={isLoading} error={error} />
+          )}
         </div>
       </div>
     </section>

@@ -4,10 +4,8 @@ import { motion } from "framer-motion";
 import IconButton from "../../shares/IconButton";
 import Loader from "../../shares/Loader";
 import { BiExpand } from "react-icons/bi";
-import { useGetAllProductsQuery } from "../../slices/producstApi";
 
-const ProductsList = () => {
-  const { data, error, isLoading } = useGetAllProductsQuery();
+const ProductsList = ({ data, isLoading, error }) => {
   return (
     <>
       {isLoading ? (
