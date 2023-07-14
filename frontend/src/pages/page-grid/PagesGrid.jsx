@@ -1,15 +1,33 @@
+import { useState } from "react";
 
 import { BsGridFill } from "react-icons/bs";
-
 import { MdOutlineFormatListBulleted } from "react-icons/md";
-
-
 
 import ProductsGrid from "./ProductsGrid";
 import SharedBanner from "../../shares/SharedBanner";
 import SharedTitle from "../../shares/SharedTitle";
+import Sorting from "./Sorting";
+import ProductsList from "./ProductsList";
 
 const PagesGrid = () => {
+  const [viewMode, setViewMode] = useState("grid");
+
+  const [sortBy, setSortBy] = useState("price");
+
+  const handleSetGrid = () => {
+    setViewMode("grid");
+  };
+
+  const handleSetList = () => {
+    setViewMode("list");
+  };
+
+  const sorting = () => {};
+
+  const onChangeHandler = (e) => {
+    setSortBy(e.target.value);
+  };
+
   return (
     <section className="pt-10 md:pt-20">
       {/* banner title */}
@@ -25,20 +43,27 @@ const PagesGrid = () => {
                 Per Page:
                 <input className="w-20 border-2" />
               </div>
-              <div className="flex gap-3">
-                Sort By: <select className="w-20 border-2"></select>
-              </div>
+              {/* sorting */}
+              <Sorting
+                onChangeHandler={onChangeHandler}
+                sortBy={sortBy}
+                sorting={sorting}
+              />
+
               <div className="flex items-center justify-center gap-1 md:gap-2">
                 View:
-                <BsGridFill />
-                <MdOutlineFormatListBulleted />
-                <input className="w-25 border-2" />
+                <button onClick={handleSetGrid}>
+                  <BsGridFill size={30} />
+                </button>
+                <button onClick={handleSetList}>
+                  <MdOutlineFormatListBulleted size={30} />
+                </button>
               </div>
             </div>
           </div>
 
           {/* product grid */}
-          <ProductsGrid />
+          {viewMode === "grid" ? <ProductsGrid /> : <ProductsList />}
         </div>
       </div>
     </section>
