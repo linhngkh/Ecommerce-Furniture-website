@@ -5,6 +5,7 @@ import IconButton from "../../shares/IconButton";
 import Loader from "../../shares/Loader";
 import { BiExpand } from "react-icons/bi";
 import { useGetAllProductsQuery } from "../../slices/producstApi";
+
 const ProductsGrid = () => {
   const { data, error, isLoading } = useGetAllProductsQuery();
   return (
@@ -15,7 +16,7 @@ const ProductsGrid = () => {
         <p>An error occurred</p>
       ) : (
         <div className="gridColumn-4 mt-10 md:mt-20">
-          {data?.map((item) => (
+          {data?.map((item, _id) => (
             <motion.div
               initial="hidden"
               whileInView="visible"
@@ -25,7 +26,7 @@ const ProductsGrid = () => {
                 hidden: { opacity: 0, y: -50 },
                 visible: { opacity: 1, y: 0 },
               }}
-              key={item.name}
+              key={_id}
               className="h-[390px] w-[240px]"
             >
               <div className="flex items-center justify-center bg-secondary p-4 hover:bg-[#EBF4F3]">
