@@ -11,11 +11,34 @@ import ProductsList from "./ProductsList";
 import { useGetAllProductsQuery } from "../../slices/producstApi";
 
 const PagesGrid = () => {
+  const { data, error, isLoading } = useGetAllProductsQuery();
+
   const [viewMode, setViewMode] = useState("grid");
 
-  const [sortBy, setSortBy] = useState("price");
+  const [products, setProducts] = useState(data);
+  console.log(products);
+  const sortProducts = (option) => {
+    const sortedProducts = [...products]; // Create a copy of the original products array
 
-  const { data, error, isLoading } = useGetAllProductsQuery();
+    switch (option) {
+      case "name-asc":
+        sortedProducts.sort((a, b) => a.name.localeCompare(b.name));
+        break;
+      case "name-desc":
+        sortedProducts.sort((a, b) => b.name.localeCompare(a.name));
+        break;
+      case "price-asc":
+        sortedProducts.sort((a, b) => a.price - b.price);
+        break;
+      case "price-desc":
+        sortedProducts.sort((a, b) => b.price - a.price);
+        break;
+      default:
+        break;
+    }
+
+    setProducts(sortedProducts);
+  };
 
   const handleSetGrid = () => {
     setViewMode("grid");
@@ -23,12 +46,6 @@ const PagesGrid = () => {
 
   const handleSetList = () => {
     setViewMode("list");
-  };
-
-  const sorting = () => {};
-
-  const onChangeHandler = (e) => {
-    setSortBy(e.target.value);
   };
 
   return (
@@ -47,11 +64,7 @@ const PagesGrid = () => {
                 <input className="w-20 border-2" />
               </div>
               {/* sorting */}
-              <Sorting
-                onChangeHandler={onChangeHandler}
-                sortBy={sortBy}
-                sorting={sorting}
-              />
+              <Sorting sortProducts={sortProducts} />
 
               <div className="flex items-center justify-center gap-1 md:gap-2">
                 View:
