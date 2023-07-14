@@ -5,6 +5,7 @@ const initialState = {
   status: null,
   items: [],
 };
+
 //action creator
 export const productsFetch = createAsyncThunk(
   //action type
