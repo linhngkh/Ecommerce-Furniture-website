@@ -24,7 +24,7 @@ app.use(cookieParser());
 
 app.use("/api/users", userRoutes);
 
-app.get("/api/products", (req, res) => {
+app.use("/api/products", (req, res) => {
   res.send(products);
 });
 app.get("/", (req, res) => res.send("Server is ready"));
