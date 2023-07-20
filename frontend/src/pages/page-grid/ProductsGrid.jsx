@@ -1,11 +1,20 @@
 //redux toolkit
+import { useDispatch } from "react-redux";
+import { addToCart } from "../../slices/cartSlice";
 
 import { motion } from "framer-motion";
+
 import IconButton from "../../shares/IconButton";
 import Loader from "../../shares/Loader";
-import { BiExpand } from "react-icons/bi";
+import { BsFillCartCheckFill } from "react-icons/bs";
 
 const ProductsGrid = ({ data, isLoading, error }) => {
+  const dispatch = useDispatch();
+
+  const handleAddToCart = (item) => {
+    dispatch(addToCart(item));
+  };
+
   return (
     <>
       {isLoading ? (
@@ -34,13 +43,6 @@ const ProductsGrid = ({ data, isLoading, error }) => {
                   className="zoom h-48 w-full object-contain"
                   loading="lazy"
                 />
-                <div className="absolute bottom-5 w-full px-6 opacity-0 transition group-hover:opacity-100">
-                  <div className="flex justify-center gap-x-6">
-                    <IconButton onClick={() => {}}>
-                      <BiExpand className="text-gray-600" />
-                    </IconButton>
-                  </div>
-                </div>
               </div>
               <div className=" md:py-5">
                 <div className="text-center">
@@ -52,6 +54,13 @@ const ProductsGrid = ({ data, isLoading, error }) => {
                 <div className="flex items-center justify-center gap-3 text-center">
                   <p className=" text-sm ">{item.discount}</p>
                   <p className="text-sm text-pink line-through">{item.price}</p>
+                </div>
+                <div className="  bottom-5 w-full px-6 transition ">
+                  <div className="flex justify-center gap-x-6">
+                    <IconButton onClick={() => handleAddToCart(item)}>
+                      <BsFillCartCheckFill className="text-gray-600" />
+                    </IconButton>
+                  </div>
                 </div>
               </div>
             </motion.div>

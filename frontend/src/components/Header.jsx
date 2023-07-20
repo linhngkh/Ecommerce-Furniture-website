@@ -81,7 +81,11 @@ const Header = ({ isTopOfPage }) => {
                 <div className={`${itemCenter}`}>
                   Wishlist <AiOutlineHeart />
                 </div>
-                <AiOutlineShoppingCart />
+                {/* shopping cart */}
+                <button>
+                  <AiOutlineShoppingCart />
+                  {/* {cart.length} */}
+                </button>
                 {/* userInfo */}
                 {userInfo ? (
                   <div className="ml-7">
