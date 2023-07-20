@@ -2,8 +2,10 @@ import { useSelector } from "react-redux/es/hooks/useSelector";
 import { Link } from "react-router-dom";
 
 import SharedBanner from "../../shares/SharedBanner";
-import { BsArrowLeft } from "react-icons/bs";
-import { BsFillCheckCircleFill } from "react-icons/bs";
+import { BsArrowLeft, BsFillCheckCircleFill } from "react-icons/bs";
+import { AiOutlineMinus, AiOutlinePlus } from "react-icons/ai";
+//styles
+const buttonStyles = `px-4 py-2 bg-[#e7e7e7] text-black font-bold rounded-md `;
 
 const ShoppingCart = () => {
   const cart = useSelector((state) => state.cart);
@@ -26,7 +28,7 @@ const ShoppingCart = () => {
             </div>
           ) : (
             <div className="flex">
-              <div className="w-[900px]">
+              <div className=" w-[900px] ">
                 <div className="grid grid-cols-4 items-center justify-items-stretch gap-8 pl-10 font-jose text-[20px] font-bold text-blue">
                   <div className="bg-blue-200 w-[100px] p-4">Products</div>
                   <div>Price</div>
@@ -34,29 +36,49 @@ const ShoppingCart = () => {
                   <div>Total</div>
                 </div>
 
-                <div>
+                <div className="flex justify-between px-10">
                   {cart.cartItems?.map((cartItem) => (
-                    <div key={cartItem.id} className="">
-                      <img
-                        src={cartItem.img}
-                        alt={cartItem.name}
-                        className="w-[100px] object-cover"
-                      />
-                      <h3>{cartItem.name}</h3>
+                    <div
+                      key={cartItem.id}
+                      className="flex flex-row justify-between"
+                    >
                       <div>
-                        <p>{cartItem.price}</p>
+                        <img
+                          src={cartItem.img}
+                          alt={cartItem.name}
+                          className="w-[100px] object-cover"
+                        />
+                        <h3>{cartItem.name}</h3>
                       </div>
+
                       <div>
-                        <button>-</button>
-                        <div>{cart.cartQuantity}</div>
-                        <button>+</button>
+                        <p>€{cartItem.price}</p>
                       </div>
+                      <div className="flex items-center justify-between">
+                        <button
+                          className={`${buttonStyles}`}
+                          onClick={() => {}}
+                        >
+                          <AiOutlineMinus />
+                        </button>
+                        <div className="bg-[#f0eff2] px-1 font-bold">
+                          {cart.cartQuantity}
+                        </div>
+                        <button
+                          className={`${buttonStyles}`}
+                          onClick={() => {}}
+                        >
+                          <AiOutlinePlus />
+                        </button>
+                      </div>
+
                       <div>
-                        <p>{cartItem.cartTotalAmount}</p>
+                        <p>€{cartItem.cartTotalAmount}</p>
                       </div>
                     </div>
                   ))}
                 </div>
+
                 {/* <div className="flex justify-between">
                   <ActionButton>Update Cart</ActionButton>
                   <ActionButton>Clear Cart</ActionButton>

@@ -54,9 +54,9 @@ const ProductsGrid = ({ data, isLoading, error }) => {
                 </div>
 
                 <div className="flex items-center justify-center gap-3 text-center">
-                  <p className=" text-sm ">{product.discount}</p>
+                  <p className=" text-sm ">€{product.discount}</p>
                   <p className="text-sm text-pink line-through">
-                    {product.price}
+                    €{product.price}
                   </p>
                 </div>
                 <div className="bottom-5 w-full px-6 transition ">
