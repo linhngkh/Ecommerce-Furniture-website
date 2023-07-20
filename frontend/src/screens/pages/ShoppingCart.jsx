@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 
 import SharedBanner from "../../shares/SharedBanner";
 import { BsArrowLeft } from "react-icons/bs";
-import ActionButton from "../../shares/ActionButton";
 import { BsFillCheckCircleFill } from "react-icons/bs";
 
 const ShoppingCart = () => {
@@ -11,7 +10,7 @@ const ShoppingCart = () => {
   return (
     <section className="w-full pt-10 md:pt-20">
       <SharedBanner>Shopping Cart</SharedBanner>
-      <div className=" flex items-center justify-center py-20 font-jose">
+      <div className=" flex justify-between py-20 font-jose">
         <div>
           {cart.cartItems.length === 0 ? (
             <div>
@@ -27,8 +26,8 @@ const ShoppingCart = () => {
             </div>
           ) : (
             <div className="flex">
-              <div className="flex w-full">
-                <div className="grid grid-cols-4 items-center justify-items-stretch gap-8 font-jose text-[20px] font-bold text-blue">
+              <div className="w-[900px]">
+                <div className="grid grid-cols-4 items-center justify-items-stretch gap-8 pl-10 font-jose text-[20px] font-bold text-blue">
                   <div className="bg-blue-200 col-span-2 p-4">Products</div>
                   <div>Price</div>
                   <div>Quantity</div>
