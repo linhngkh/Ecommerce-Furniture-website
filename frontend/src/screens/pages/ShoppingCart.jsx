@@ -28,7 +28,7 @@ const ShoppingCart = () => {
             <div className="flex">
               <div className="w-[900px]">
                 <div className="grid grid-cols-4 items-center justify-items-stretch gap-8 pl-10 font-jose text-[20px] font-bold text-blue">
-                  <div className="bg-blue-200 col-span-2 p-4">Products</div>
+                  <div className="bg-blue-200 w-[100px] p-4">Products</div>
                   <div>Price</div>
                   <div>Quantity</div>
                   <div>Total</div>
@@ -40,7 +40,7 @@ const ShoppingCart = () => {
                       <img
                         src={cartItem.img}
                         alt={cartItem.name}
-                        className="w-[100px]"
+                        className="w-[100px] object-cover"
                       />
                       <h3>{cartItem.name}</h3>
                       <div>
