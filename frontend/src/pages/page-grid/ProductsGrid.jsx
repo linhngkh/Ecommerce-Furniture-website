@@ -4,15 +4,14 @@ import { addToCart } from "../../slices/cartSlice";
 
 import { motion } from "framer-motion";
 
-import IconButton from "../../shares/IconButton";
 import Loader from "../../shares/Loader";
 import { BsFillCartCheckFill } from "react-icons/bs";
 
 const ProductsGrid = ({ data, isLoading, error }) => {
   const dispatch = useDispatch();
 
-  const handleAddToCart = (item) => {
-    dispatch(addToCart(item));
+  const handleAddToCart = (product) => {
+    dispatch(addToCart(product));
   };
 
   return (
@@ -23,7 +22,7 @@ const ProductsGrid = ({ data, isLoading, error }) => {
         <p>An error occurred</p>
       ) : (
         <div className="gridColumn-4 mt-10 md:mt-20">
-          {data?.map((item, _id) => (
+          {data?.map((product) => (
             <motion.div
               initial="hidden"
               whileInView="visible"
@@ -33,13 +32,13 @@ const ProductsGrid = ({ data, isLoading, error }) => {
                 hidden: { opacity: 0, y: -50 },
                 visible: { opacity: 1, y: 0 },
               }}
-              key={_id}
+              key={product.id}
               className="h-[390px] w-[240px]"
             >
               <div className="flex items-center justify-center bg-secondary p-4 hover:bg-[#EBF4F3]">
                 <img
-                  src={item.img}
-                  alt={item.name}
+                  src={product.img}
+                  alt={product.name}
                   className="zoom h-48 w-full object-contain"
                   loading="lazy"
                 />
@@ -47,19 +46,24 @@ const ProductsGrid = ({ data, isLoading, error }) => {
               <div className=" md:py-5">
                 <div className="text-center">
                   <p className="text-md font-jose font-extrabold text-[#151875]">
-                    {item.name}
+                    {product.name}
                   </p>
                 </div>
 
                 <div className="flex items-center justify-center gap-3 text-center">
-                  <p className=" text-sm ">{item.discount}</p>
-                  <p className="text-sm text-pink line-through">{item.price}</p>
+                  <p className=" text-sm ">{product.discount}</p>
+                  <p className="text-sm text-pink line-through">
+                    {product.price}
+                  </p>
                 </div>
-                <div className="  bottom-5 w-full px-6 transition ">
+                <div className="bottom-5 w-full px-6 transition ">
                   <div className="flex justify-center gap-x-6">
-                    <IconButton onClick={() => handleAddToCart(item)}>
+                    <button
+                      className="flex items-center justify-center rounded-full border bg-white p-2 shadow-md transition hover:scale-110"
+                      onClick={() => handleAddToCart(product)}
+                    >
                       <BsFillCartCheckFill className="text-gray-600" />
-                    </IconButton>
+                    </button>
                   </div>
                 </div>
               </div>
