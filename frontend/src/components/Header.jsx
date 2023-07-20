@@ -83,7 +83,9 @@ const Header = ({ isTopOfPage }) => {
                 </div>
                 {/* shopping cart */}
                 <button>
-                  <AiOutlineShoppingCart />
+                  <Link to="/cart">
+                    <AiOutlineShoppingCart />
+                  </Link>
                   {/* {cart.length} */}
                 </button>
                 {/* userInfo */}

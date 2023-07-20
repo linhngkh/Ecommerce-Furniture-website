@@ -1,17 +1,20 @@
 //redux toolkit
 import { useDispatch } from "react-redux";
-import { addToCart } from "../../slices/cartSlice";
-
+import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 
 import Loader from "../../shares/Loader";
 import { BsFillCartCheckFill } from "react-icons/bs";
+import { addToCart } from "../../slices/cartSlice";
 
 const ProductsGrid = ({ data, isLoading, error }) => {
   const dispatch = useDispatch();
 
+  const navigate = useNavigate();
+
   const handleAddToCart = (product) => {
     dispatch(addToCart(product));
+    navigate("/cart");
   };
 
   return (

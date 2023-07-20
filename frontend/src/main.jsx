@@ -31,6 +31,7 @@ import AboutUs from "./screens/company/AboutUs.jsx";
 import Faq from "./screens/company/Faq.jsx";
 import ProfileScreen from "./screens/ProfileScreen.jsx";
 import PagesGrid from "./pages/page-grid/PagesGrid.jsx";
+import ShoppingCart from "./screens/pages/ShoppingCart.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -39,6 +40,7 @@ const router = createBrowserRouter(
       {/* screens */}
       <Route path="/login" element={<LoginScreen />} />
       <Route path="/register" element={<RegisterScreen />} />
+      <Route path="/cart" element={<ShoppingCart />} />
       {/* private routes */}
       <Route path="" element={<PrivateRoute />}>
         <Route path="/profile" element={<ProfileScreen />} />
