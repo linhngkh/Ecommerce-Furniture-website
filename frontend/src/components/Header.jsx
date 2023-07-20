@@ -82,12 +82,15 @@ const Header = ({ isTopOfPage }) => {
                   Wishlist <AiOutlineHeart />
                 </div>
                 {/* shopping cart */}
+
                 <button>
                   <Link to="/cart">
                     <AiOutlineShoppingCart />
                   </Link>
-                  {/* {cart.length} */}
                 </button>
+                <span className="bg-red-500 absolute -right-4 top-5 inline-flex h-7 w-7 items-center justify-center rounded-full text-xs font-bold text-white">
+                  0 {/* {cart.length} */}
+                </span>
                 {/* userInfo */}
                 {userInfo ? (
                   <div className="ml-7">
@@ -196,7 +199,7 @@ const Header = ({ isTopOfPage }) => {
                   </li>
                   <li>
                     <NavLink
-                      to="/shop"
+                      to="/cart"
                       className={({ isActive }) =>
                         isActive ? activeClassName : ""
                       }
@@ -298,7 +301,7 @@ const Header = ({ isTopOfPage }) => {
                   </li>
                   <li>
                     <NavLink
-                      to="/shop"
+                      to="/cart"
                       className={({ isActive }) =>
                         isActive ? activeClassName : ""
                       }

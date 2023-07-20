@@ -22,7 +22,6 @@ import RegisterScreen from "./screens/RegisterScreen.jsx";
 import Contact from "./screens/company/Contact.jsx";
 import BlogPage from "./pages/BlogPage.jsx";
 import ProductDetail from "./pages/ProductsDetail";
-import Shop from "./pages/Shop.jsx";
 
 import PageShopList from "./pages/PageShopList.jsx";
 import PageAccessories from "./pages/PageAccessories.jsx";
@@ -51,7 +50,6 @@ const router = createBrowserRouter(
       <Route path="/blog" element={<BlogPage />} />
       {/* single blog */}
       <Route path="/products" element={<ProductDetail />} />
-      <Route path="/shop" element={<Shop />} />
       <Route path="/pages/grid" element={<PagesGrid />} />
       <Route path="/pages/shoplist" element={<PageShopList />} />
       <Route path="/pages/accessories" element={<PageAccessories />} />
