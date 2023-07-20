@@ -1,5 +1,3 @@
-import React from "react";
-
 const MobileDropDownMenu = () => {
   return (
     <div>
@@ -10,10 +8,7 @@ const MobileDropDownMenu = () => {
           aria-controls="dropdown-example"
           data-collapse-toggle="dropdown-example"
         >
-          <span
-            className="ml-3 flex-1 whitespace-nowrap text-left"
-            sidebarToggleItem
-          >
+          <span className="ml-3 flex-1 whitespace-nowrap text-left">
             E-commerce
           </span>
         </button>

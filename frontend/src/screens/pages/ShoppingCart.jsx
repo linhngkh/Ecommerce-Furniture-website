@@ -3,6 +3,8 @@ import SharedBanner from "../../shares/SharedBanner";
 import { Link } from "react-router-dom";
 import { BsArrowLeft } from "react-icons/bs";
 import ActionButton from "../../shares/ActionButton";
+import { BsFillCheckCircleFill } from "react-icons/bs";
+
 const ShoppingCart = () => {
   const cart = useSelector((state) => state.cart);
   return (
@@ -11,15 +13,17 @@ const ShoppingCart = () => {
       <div className="mx-auto flex items-center justify-center p-10">
         <div>
           {cart.cartItems.length === 0 ? (
-            <>
+            <div>
               <h3>Your cart is currently empty</h3>
-              <Link to="/pages/grid">
-                <BsArrowLeft />
-                <span>Start Shopping!</span>
-              </Link>
-            </>
+              <div className="flex items-center justify-center gap-3">
+                <BsArrowLeft size={30} />
+                <span>
+                  <Link to="/pages/grid">Start Shopping! </Link>
+                </span>
+              </div>
+            </div>
           ) : (
-            <div className="flex items-center justify-between gap-4">
+            <div className="flex items-start justify-between gap-4">
               <div>
                 <div>
                   <h3>Products</h3>
@@ -54,6 +58,17 @@ const ShoppingCart = () => {
 
               <div>
                 <h3>Cart Totals</h3>
+                <div>
+                  <p>Subtotals:</p>
+                  <p>€{cart.cartTotalAmount}</p>
+                </div>
+                <p>
+                  <span>
+                    <BsFillCheckCircleFill />
+                  </span>
+                  Shipping & taxes calculated at checkout
+                </p>
+                <button>Proceed to Checkout</button>
               </div>
             </div>
           )}

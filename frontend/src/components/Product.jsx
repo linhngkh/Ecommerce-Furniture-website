@@ -30,7 +30,7 @@ const Product = () => {
         <SharedText>Featured Products</SharedText>
       </motion.div>
 
-      {/* featured products */}
+      {/* FEATURED PRODUCTS */}
       <motion.div
         initial="hidden"
         whileInView="visible"
@@ -63,7 +63,7 @@ const Product = () => {
         ))}
       </motion.div>
 
-      {/* latest products */}
+      {/* LATEST PRODUCTS */}
       <div className="pt-10">
         <motion.div
           initial="hidden"
@@ -104,7 +104,7 @@ const Product = () => {
         </div>
       </div>
 
-      {/* offers */}
+      {/* OFFERS */}
       <motion.div
         initial="hidden"
         whileInView="visible"

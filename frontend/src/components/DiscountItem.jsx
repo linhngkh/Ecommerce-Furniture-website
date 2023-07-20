@@ -8,6 +8,7 @@ import ActionButton from "../shares/ActionButton";
 import { BsCheck2 } from "react-icons/bs";
 import { motion } from "framer-motion";
 import SharedText from "../shares/SharedText";
+import { Link } from "react-router-dom";
 
 const container = {
   hidden: {},
@@ -24,7 +25,7 @@ const childVariant = {
 const DiscountItem = () => {
   return (
     <section className=" w-full">
-      {/* DiscountItem */}
+      {/* DISCOUNT ITEMS */}
       <motion.div
         initial="hidden"
         whileInView="visible"
@@ -58,7 +59,7 @@ const DiscountItem = () => {
       </motion.div>
 
       <div className="items-center md:flex md:flex-row md:px-10">
-        {/* features */}
+        {/* FEATURES */}
         <div className=" basis-1/2 space-y-4 pl-10">
           <motion.div
             initial="hidden"
@@ -82,7 +83,7 @@ const DiscountItem = () => {
             </p>
           </motion.div>
 
-          {/* lists */}
+          {/* LISTS */}
           <motion.div
             initial="hidden"
             whileInView="visible"
@@ -117,10 +118,12 @@ const DiscountItem = () => {
               </div>
             </div>
           </motion.div>
-          <ActionButton>Shop Now</ActionButton>
+          <Link to="/pages/grid">
+            <ActionButton>Shop Now</ActionButton>
+          </Link>
         </div>
 
-        {/* images */}
+        {/* IMAGES */}
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -136,7 +139,7 @@ const DiscountItem = () => {
         </motion.div>
       </div>
 
-      {/* top categories */}
+      {/* TOP CATEGORIES*/}
       <div className="m-20">
         <motion.div
           initial="hidden"
@@ -176,7 +179,8 @@ const DiscountItem = () => {
           ))}
         </motion.div>
       </div>
-      {/* banner */}
+
+      {/* BANNER*/}
       <div className="relative">
         <img
           src={Banner}
@@ -189,7 +193,10 @@ const DiscountItem = () => {
           <h1 className="text-center font-jose text-sm font-bold text-blue md:text-2xl md:leading-10">
             Get Latest Update By Subscribe <br /> 0ur Newslater
           </h1>
-          <ActionButton>Shop Now</ActionButton>
+
+          <Link to="/pages/grid">
+            <ActionButton>Shop Now</ActionButton>
+          </Link>
         </div>
       </div>
       {/* brand */}

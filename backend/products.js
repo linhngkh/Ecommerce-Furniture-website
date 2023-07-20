@@ -83,4 +83,11 @@ export const products = [
     price: "€32.00",
     discount: "€49.00",
   },
+  {
+    id: 13,
+    img: "https://res.cloudinary.com/linh123/image/upload/v1689863943/vpmx2nxsc24nzjp2qnni.png",
+    name: "B&B Italian Sofa",
+    price: "€32.00",
+    discount: "€49.00",
+  },
 ];

@@ -9,7 +9,7 @@ import SharedText from "../shares/SharedText";
 const Blog = () => {
   return (
     <section className="px-10 py-5 md:px-40 md:py-10">
-      {/* blog */}
+      {/* BLOG */}
       <motion.div
         initial="hidden"
         whileInView="visible"
