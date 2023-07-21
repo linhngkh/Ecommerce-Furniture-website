@@ -8,10 +8,11 @@ import colors from "colors";
 import cookieParser from "cookie-parser";
 import cors from "cors";
 import userRoutes from "./routes/userRoutes.js";
+import productsRoute from "./routes/productsRouter.js";
 
 //connect mongoDB
 import connectDB from "./config/db.js";
-import { products } from "./products.js";
+
 connectDB();
 
 // middleware
@@ -24,9 +25,8 @@ app.use(cookieParser());
 
 app.use("/api/users", userRoutes);
 
-app.get("/api/products", (req, res) => {
-  res.send(products);
-});
+app.use("/api/products", productsRoute);
+
 app.get("/", (req, res) => res.send("Server is ready"));
 
 app.use(notFound);

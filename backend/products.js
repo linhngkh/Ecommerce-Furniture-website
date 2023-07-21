@@ -7,14 +7,12 @@ export const products = [
     discount: "49.00",
   },
   {
-    id: 2,
     img: "https://res.cloudinary.com/linh123/image/upload/v1689313512/zgazuaazpcpqrlbv6a06.png",
     name: "Jonathan adler chair",
-    price: "26.00",
-    discount: "49.00",
+    price: 49,
+    discount: 26,
   },
   {
-    id: 3,
     img: "https://res.cloudinary.com/linh123/image/upload/v1689313512/n2kxltaonm3tuc6zefvl.png",
     name: "Jonathan adler chair",
     price: "26.00",

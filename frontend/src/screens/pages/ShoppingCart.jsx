@@ -1,11 +1,12 @@
 import { useSelector } from "react-redux/es/hooks/useSelector";
 import { Link } from "react-router-dom";
-
 import SharedBanner from "../../shares/SharedBanner";
 import { BsArrowLeft, BsFillCheckCircleFill } from "react-icons/bs";
 import { AiOutlineMinus, AiOutlinePlus } from "react-icons/ai";
 //styles
 const buttonStyles = `px-4 py-2 bg-[#e7e7e7] text-black font-bold rounded-md `;
+
+const pinkButtons = `mt-5 bg-pink px-4 py-2 font-jose text-sm text-white transition hover:bg-deeppink`;
 
 const ShoppingCart = () => {
   const cart = useSelector((state) => state.cart);
@@ -27,16 +28,16 @@ const ShoppingCart = () => {
               </div>
             </div>
           ) : (
-            <div className="flex">
+            <div className="flex px-10">
               <div className=" w-[900px] ">
-                <div className="grid grid-cols-4 items-center justify-items-stretch gap-8 pl-10 font-jose text-[20px] font-bold text-blue">
+                <div className="grid grid-cols-4 items-center justify-items-stretch gap-8  font-jose text-[20px] font-bold text-blue">
                   <div className="bg-blue-200 w-[100px] p-4">Products</div>
                   <div>Price</div>
                   <div>Quantity</div>
                   <div>Total</div>
                 </div>
 
-                <div className="flex justify-between px-10">
+                <div className="flex justify-between ">
                   {cart.cartItems?.map((cartItem) => (
                     <div
                       key={cartItem.id}
@@ -79,10 +80,10 @@ const ShoppingCart = () => {
                   ))}
                 </div>
 
-                {/* <div className="flex justify-between">
-                  <ActionButton>Update Cart</ActionButton>
-                  <ActionButton>Clear Cart</ActionButton>
-                </div> */}
+                <div className="flex justify-between">
+                  <button className={`${pinkButtons}`}>Update Cart</button>
+                  <button className={`${pinkButtons}`}>Clear Cart</button>
+                </div>
               </div>
 
               {/* CART TOTALS */}
