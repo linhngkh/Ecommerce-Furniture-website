@@ -89,7 +89,7 @@ const Header = ({ isTopOfPage }) => {
                     </Link>
                   </button>
 
-                  <span className="absolute -right-3 top-2 inline-flex h-4 w-4 items-center justify-center rounded-full bg-white text-xs font-bold text-violet">
+                  <span className="absolute -right-4 top-2 inline-flex h-5 w-5 items-center justify-center rounded-full bg-red text-xs font-bold text-white">
                     0
                   </span>
                 </div>
