@@ -10,7 +10,7 @@ import {
 
 import { protectRoute } from "../middleware/authMiddleware.js";
 
-router.post("/", registerUser);
+router.post("/register", registerUser);
 router.post("/auth", authUser);
 router.post("/logout", logoutUser);
 
