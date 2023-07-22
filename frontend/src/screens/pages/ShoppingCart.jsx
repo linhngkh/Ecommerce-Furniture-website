@@ -8,6 +8,7 @@ const buttonStyles = `px-4 py-2 bg-[#e7e7e7] text-black font-bold rounded-md `;
 
 const pinkButtons = `mt-5 bg-pink px-4 py-2 font-jose text-sm text-white transition hover:bg-deeppink`;
 
+const flexCenter = `flex items-center justify-center`;
 const ShoppingCart = () => {
   const cart = useSelector((state) => state.cart);
   return (
@@ -28,13 +29,13 @@ const ShoppingCart = () => {
               </div>
             </div>
           ) : (
-            <div className="flex px-10">
-              <div className=" w-[900px] pr-10">
+            <div className="flex flex-col px-10 md:flex-row ">
+              <div className=" w-[500px] pr-10 md:w-[900px] md:pr-10">
                 <div className="grid grid-cols-4 items-center justify-items-stretch gap-9  font-jose text-[20px] font-bold text-blue">
                   <div className="bg-blue-200 w-[100px] p-4">Products</div>
-                  <div className="">Price</div>
-                  <div>Quantity</div>
-                  <div>Total</div>
+                  <div className="ml-20">Price</div>
+                  <div className="ml-10">Quantity</div>
+                  <div className="ml-20">Total</div>
                 </div>
 
                 <div className="flex justify-between ">
@@ -43,7 +44,7 @@ const ShoppingCart = () => {
                       key={cartItem.id}
                       className="flex flex-row justify-between"
                     >
-                      <div className="flex items-center justify-center">
+                      <div className={`${flexCenter}`}>
                         <img
                           src={cartItem.img}
                           alt={cartItem.name}
@@ -52,18 +53,21 @@ const ShoppingCart = () => {
                         <p className="text-sm">{cartItem.name}</p>
                       </div>
 
-                      <div className="ml-4">
-                        <p>{cartItem.price}</p>
+                      <div className={`${flexCenter} ml-20`}>
+                        <p className="text-sm">{cartItem.price}</p>
                       </div>
-                      <div className="ml-20 flex items-center justify-between">
+
+                      {/* BUTTONS */}
+                      <div className={`${flexCenter} ml-20`}>
                         <button
                           className={`${buttonStyles}`}
                           onClick={() => {}}
                         >
                           <AiOutlineMinus />
                         </button>
-                        <div className="bg-[#f0eff2] px-1 font-bold">
-                          {cart.cartQuantity}
+
+                        <div className="bg-[#f0eff2] p-2  font-bold">
+                          {cart.cartQuantity}1
                         </div>
                         <button
                           className={`${buttonStyles}`}
@@ -73,13 +77,13 @@ const ShoppingCart = () => {
                         </button>
                       </div>
 
-                      <div className="ml-20">
-                        <p>€{cartItem.cartTotalAmount}</p>
+                      <div className={`${flexCenter} ml-20`}>
+                        <p className="text-sm">€{cartItem.cartTotalAmount}</p>
                       </div>
                     </div>
                   ))}
                 </div>
-                <img src="/line6.png" className="w-full" />
+                <img src="/line6.png" className="mt-4 h-0.5 w-full" />
                 <div className="flex justify-between">
                   <button className={`${pinkButtons}`}>Update Cart</button>
                   <button className={`${pinkButtons}`}>Clear Cart</button>
@@ -87,8 +91,8 @@ const ShoppingCart = () => {
               </div>
 
               {/* CART TOTALS */}
-              <div>
-                <div className=" w-[400px]">
+              <div className="mt-10">
+                <div className="flex w-[400px] flex-col">
                   <h3 className="text-center font-jose font-bold text-blue">
                     Cart Totals
                   </h3>
@@ -121,8 +125,9 @@ const ShoppingCart = () => {
                     </button>
                   </div>
                 </div>
+
                 {/* CALCULATE SHOPPING */}
-                <div className="pt-5">
+                <div className="flex w-[400px] flex-col pt-5">
                   <h3 className="text-center font-jose font-bold text-blue">
                     Calculate Shopping
                   </h3>
