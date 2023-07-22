@@ -29,10 +29,10 @@ const ShoppingCart = () => {
             </div>
           ) : (
             <div className="flex px-10">
-              <div className=" w-[900px] ">
-                <div className="grid grid-cols-4 items-center justify-items-stretch gap-8  font-jose text-[20px] font-bold text-blue">
+              <div className=" w-[900px] pr-10">
+                <div className="grid grid-cols-4 items-center justify-items-stretch gap-9  font-jose text-[20px] font-bold text-blue">
                   <div className="bg-blue-200 w-[100px] p-4">Products</div>
-                  <div>Price</div>
+                  <div className="">Price</div>
                   <div>Quantity</div>
                   <div>Total</div>
                 </div>
@@ -43,19 +43,19 @@ const ShoppingCart = () => {
                       key={cartItem.id}
                       className="flex flex-row justify-between"
                     >
-                      <div>
+                      <div className="flex items-center justify-center">
                         <img
                           src={cartItem.img}
                           alt={cartItem.name}
                           className="w-[100px] object-cover"
                         />
-                        <h3>{cartItem.name}</h3>
+                        <p className="text-sm">{cartItem.name}</p>
                       </div>
 
-                      <div>
-                        <p>€{cartItem.price}</p>
+                      <div className="ml-4">
+                        <p>{cartItem.price}</p>
                       </div>
-                      <div className="flex items-center justify-between">
+                      <div className="ml-20 flex items-center justify-between">
                         <button
                           className={`${buttonStyles}`}
                           onClick={() => {}}
@@ -73,13 +73,13 @@ const ShoppingCart = () => {
                         </button>
                       </div>
 
-                      <div>
+                      <div className="ml-20">
                         <p>€{cartItem.cartTotalAmount}</p>
                       </div>
                     </div>
                   ))}
                 </div>
-
+                <img src="/line6.png" className="w-full" />
                 <div className="flex justify-between">
                   <button className={`${pinkButtons}`}>Update Cart</button>
                   <button className={`${pinkButtons}`}>Clear Cart</button>
