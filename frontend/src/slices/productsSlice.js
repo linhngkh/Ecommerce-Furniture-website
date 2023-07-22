@@ -21,17 +21,17 @@ const productsSlice = createSlice({
   name: "products",
   initialState,
   reducers: {},
-  extraReducers: {
-    [productsFetch.pending]: (state, action) => {
+  extraReducers: (builder) => {
+    builder.addCase(productsFetch.pending, (state, { payload }) => {
       state.status = "pending";
-    },
-    [productsFetch.fulfilled]: (state, action) => {
+    });
+    builder.addCase(productsFetch.fulfilled, (state, { payload }) => {
       state.status = "success";
-      state.items = action.payload;
-    },
-    [productsFetch.rejected]: (state, action) => {
+      state.items = payload;
+    });
+    builder.addCase(productsFetch.rejected, (state, { payload }) => {
       state.status = "rejected";
-    },
+    });
   },
 });
 export default productsSlice.reducer;

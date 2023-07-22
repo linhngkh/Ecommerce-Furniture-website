@@ -40,7 +40,7 @@ const ProductsGrid = ({ data, isLoading, error }) => {
             >
               <div className="flex items-center justify-center bg-secondary p-4 hover:bg-[#EBF4F3]">
                 <img
-                  src={product.img}
+                  src={product.imgUrl}
                   alt={product.name}
                   className="zoom h-48 w-full object-contain"
                   loading="lazy"

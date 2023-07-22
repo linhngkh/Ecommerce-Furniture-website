@@ -14,7 +14,8 @@ const ShoppingCart = () => {
   return (
     <section className="w-full pt-10 md:pt-20">
       <SharedBanner>Shopping Cart</SharedBanner>
-      <div className=" flex justify-between py-20 font-jose">
+
+      <div className=" flex justify-center py-20 font-jose">
         <div>
           {cart.cartItems.length === 0 ? (
             <div>
@@ -29,62 +30,66 @@ const ShoppingCart = () => {
               </div>
             </div>
           ) : (
-            <div className="flex flex-col px-10 md:flex-row ">
-              <div className=" w-[500px] pr-10 md:w-[900px] md:pr-10">
-                <div className="grid grid-cols-4 items-center justify-items-stretch gap-9  font-jose text-[20px] font-bold text-blue">
-                  <div className="bg-blue-200 w-[100px] p-4">Products</div>
-                  <div className="ml-20">Price</div>
-                  <div className="ml-10">Quantity</div>
-                  <div className="ml-20">Total</div>
-                </div>
+            <div className="container flex flex-col px-10 md:flex-row ">
+              <div className=" w-[500px]  pr-10 md:w-[1000px] md:pr-10">
+                <div className="grid grid-cols-4 justify-items-stretch gap-9  font-jose text-[20px] font-bold text-blue">
+                  {/* <!-- Column Headers --> */}
+                  <div className="w-2/5">Products</div>
+                  <div className="w-1/5">Price</div>
+                  <div className="w-1/5">Quantity</div>
+                  <div className="w-1/5 ">Total</div>
 
-                <div className="flex justify-between ">
-                  {cart.cartItems?.map((cartItem) => (
-                    <div
-                      key={cartItem.id}
-                      className="flex flex-row justify-between"
-                    >
-                      <div className={`${flexCenter}`}>
-                        <img
-                          src={cartItem.img}
-                          alt={cartItem.name}
-                          className="w-[100px] object-cover"
-                        />
-                        <p className="text-sm">{cartItem.name}</p>
-                      </div>
+                  {/* <!-- Sample Cart Items --> */}
 
-                      <div className={`${flexCenter} ml-20`}>
-                        <p className="text-sm">{cartItem.price}</p>
-                      </div>
-
-                      {/* BUTTONS */}
-                      <div className={`${flexCenter} ml-20`}>
-                        <button
-                          className={`${buttonStyles}`}
-                          onClick={() => {}}
-                        >
-                          <AiOutlineMinus />
-                        </button>
-
-                        <div className="bg-[#f0eff2] p-2  font-bold">
-                          {cart.cartQuantity}1
+                  <div className="flex justify-between ">
+                    {cart.cartItems?.map((cartItem) => (
+                      <div
+                        key={cartItem._id}
+                        className="flex flex-row justify-between"
+                      >
+                        {/* PRODUCT */}
+                        <div className={`flex w-2/5`}>
+                          <img
+                            src={cartItem.imgUrl}
+                            alt={cartItem.name}
+                            className="h-24 object-cover"
+                          />
+                          <p className="text-sm">{cartItem.name}</p>
                         </div>
-                        <button
-                          className={`${buttonStyles}`}
-                          onClick={() => {}}
-                        >
-                          <AiOutlinePlus />
-                        </button>
-                      </div>
 
-                      <div className={`${flexCenter} ml-20`}>
-                        <p className="text-sm">€{cartItem.cartTotalAmount}</p>
+                        <div className={`${flexCenter} ml-20`}>
+                          <p className="text-sm">{cartItem.price}</p>
+                        </div>
+
+                        {/* BUTTONS */}
+                        <div className="flex w-1/5 justify-center">
+                          <button
+                            className={`${buttonStyles}`}
+                            onClick={() => {}}
+                          >
+                            <AiOutlineMinus />
+                          </button>
+
+                          <div className="bg-[#f0eff2] p-2  font-bold">
+                            {cart.cartQuantity}1
+                          </div>
+                          <button
+                            className={`${buttonStyles}`}
+                            onClick={() => {}}
+                          >
+                            <AiOutlinePlus />
+                          </button>
+                        </div>
+
+                        <div className={`${flexCenter} ml-20`}>
+                          <p className="text-sm">€{cartItem.cartTotalAmount}</p>
+                        </div>
                       </div>
-                    </div>
-                  ))}
+                    ))}
+                  </div>
                 </div>
                 <img src="/line6.png" className="mt-4 h-0.5 w-full" />
-                <div className="flex justify-between">
+                <div className="flex justify-bw">
                   <button className={`${pinkButtons}`}>Update Cart</button>
                   <button className={`${pinkButtons}`}>Clear Cart</button>
                 </div>
@@ -167,6 +172,12 @@ const ShoppingCart = () => {
                       Calculate Shipping
                     </button>
                   </div>
+                </div>
+                <div className="mt-5 flex items-center justify-center gap-3">
+                  <BsArrowLeft size={30} />
+                  <span className="font-semibold text-blue">
+                    <Link to="/pages/grid">Continue Shopping</Link>
+                  </span>
                 </div>
               </div>
             </div>
