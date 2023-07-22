@@ -82,15 +82,18 @@ const Header = ({ isTopOfPage }) => {
                   Wishlist <AiOutlineHeart />
                 </div>
                 {/* shopping cart */}
+                <div className="relative">
+                  <button>
+                    <Link to="/cart">
+                      <AiOutlineShoppingCart className="h-5 w-5" />
+                    </Link>
+                  </button>
 
-                <button>
-                  <Link to="/cart">
-                    <AiOutlineShoppingCart />
-                  </Link>
-                </button>
-                <span className="bg-red-500 absolute -right-4 top-5 inline-flex h-7 w-7 items-center justify-center rounded-full text-xs font-bold text-white">
-                  0 {/* {cart.length} */}
-                </span>
+                  <span className="absolute -right-3 top-2 inline-flex h-4 w-4 items-center justify-center rounded-full bg-white text-xs font-bold text-violet">
+                    0
+                  </span>
+                </div>
+
                 {/* userInfo */}
                 {userInfo ? (
                   <div className="ml-7">

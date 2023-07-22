@@ -47,6 +47,8 @@ const LoginScreen = () => {
         <form
           onSubmit={submitHandler}
           className="W-[544px] flex h-[474px] flex-col space-y-4 p-10 shadow-[rgba(7,_65,_210,_0.1)_0px_9px_30px]"
+          method="POST"
+          target="_blank"
         >
           <div className="">
             <h1 className="text-center font-jose text-2xl font-bold">Log in</h1>
@@ -72,6 +74,8 @@ const LoginScreen = () => {
           />
           {/* loading */}
           {isLoading && <Loader isLoading={isLoading} />}
+          {/* loading */}
+
           <p className="text-sm text-subtext1">Forgot your password?</p>
           <ActionButton>Sign In </ActionButton>
 

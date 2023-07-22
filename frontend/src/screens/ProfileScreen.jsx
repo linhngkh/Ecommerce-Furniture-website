@@ -16,11 +16,11 @@ const ProfileScreen = () => {
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
 
+  const dispatch = useDispatch();
+
   const { userInfo } = useSelector((state) => state.auth);
 
   const [updateUser, { isLoading }] = useUpdateUserMutation();
-
-  const dispatch = useDispatch();
 
   useEffect(() => {
     setName(userInfo.name);
@@ -29,6 +29,7 @@ const ProfileScreen = () => {
 
   const submitHandler = async (event) => {
     event.preventDefault();
+
     if (password !== confirmPassword) {
       toast.error("Passwords do not match");
     } else {

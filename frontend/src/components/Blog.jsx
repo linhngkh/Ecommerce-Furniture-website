@@ -23,9 +23,9 @@ const Blog = () => {
         <SharedText> Latest Blog</SharedText>
 
         <div className=" place-items-center space-y-5 md:flex md:items-center md:justify-center md:gap-x-8 ">
-          {blogs.map((item, index) => (
+          {blogs.map((item, _id) => (
             <div
-              key={index}
+              key={_id}
               className="rounded-b-lg bg-white drop-shadow-[rgba(7,_65,_210,_0.1)_0px_20px_40px] md:h-[490px] md:w-[550px]"
             >
               <img
