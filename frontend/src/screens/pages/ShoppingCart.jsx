@@ -30,25 +30,24 @@ const ShoppingCart = () => {
               </div>
             </div>
           ) : (
-            <div className="container flex flex-col px-10 md:flex-row ">
-              <div className=" w-[500px]  pr-10 md:w-[1000px] md:pr-10">
-                <div className="grid grid-cols-4 justify-items-stretch gap-9  font-jose text-[20px] font-bold text-blue">
+            <div className="container mx-auto ">
+              <div className=" w-[500px] pr-10 md:w-[1000px] md:pr-10">
+                <div className="w-3/4 bg-white ">
                   {/* <!-- Column Headers --> */}
-                  <div className="w-2/5">Products</div>
-                  <div className="w-1/5">Price</div>
-                  <div className="w-1/5">Quantity</div>
-                  <div className="w-1/5 ">Total</div>
+                  <div className="flex">
+                    <h3 className="w-2/5">Products</h3>
+                    <h3 className="w-1/5">Price</h3>
+                    <h3 className="w-1/5">Quantity</h3>
+                    <h3 className="w-1/5 ">Total</h3>
+                  </div>
 
                   {/* <!-- Sample Cart Items --> */}
 
-                  <div className="flex justify-between ">
+                  <div className="-mx-8 flex items-center px-6 py-5 hover:bg-gray-100">
                     {cart.cartItems?.map((cartItem) => (
-                      <div
-                        key={cartItem._id}
-                        className="flex flex-row justify-between"
-                      >
+                      <div key={cartItem._id} className="flex w-2/5">
                         {/* PRODUCT */}
-                        <div className={`flex w-2/5`}>
+                        <div className="w-20">
                           <img
                             src={cartItem.imgUrl}
                             alt={cartItem.name}
@@ -57,41 +56,40 @@ const ShoppingCart = () => {
                           <p className="text-sm">{cartItem.name}</p>
                         </div>
 
-                        <div className={`${flexCenter} ml-20`}>
+                        <div className="ml-4 flex flex-grow flex-col justify-between">
                           <p className="text-sm">{cartItem.price}</p>
-                        </div>
 
-                        {/* BUTTONS */}
-                        <div className="flex w-1/5 justify-center">
-                          <button
-                            className={`${buttonStyles}`}
-                            onClick={() => {}}
-                          >
-                            <AiOutlineMinus />
-                          </button>
-
-                          <div className="bg-[#f0eff2] p-2  font-bold">
-                            {cart.cartQuantity}1
+                          {/* BUTTONS */}
+                          <div className="flex w-1/5 justify-center">
+                            <button
+                              className={`${buttonStyles}`}
+                              onClick={() => {}}
+                            >
+                              <AiOutlineMinus />
+                            </button>
+                            <div className="bg-[#f0eff2] p-2  font-bold">
+                              {cart.cartQuantity}1
+                            </div>
+                            <button
+                              className={`${buttonStyles}`}
+                              onClick={() => {}}
+                            >
+                              <AiOutlinePlus />
+                            </button>
                           </div>
-                          <button
-                            className={`${buttonStyles}`}
-                            onClick={() => {}}
-                          >
-                            <AiOutlinePlus />
-                          </button>
                         </div>
 
-                        <div className={`${flexCenter} ml-20`}>
-                          <p className="text-sm">€{cartItem.cartTotalAmount}</p>
-                        </div>
+                        <span className="w-1/5 text-center text-sm ">
+                          €{cartItem.cartTotalAmount}
+                        </span>
                       </div>
                     ))}
                   </div>
-                </div>
-                <img src="/line6.png" className="mt-4 h-0.5 w-full" />
-                <div className="flex justify-bw">
-                  <button className={`${pinkButtons}`}>Update Cart</button>
-                  <button className={`${pinkButtons}`}>Clear Cart</button>
+                  <img src="/line6.png" className="mt-4 h-0.5 w-full" />
+                  <div className="justify-bw flex">
+                    <button className={`${pinkButtons}`}>Update Cart</button>
+                    <button className={`${pinkButtons}`}>Clear Cart</button>
+                  </div>
                 </div>
               </div>
 
@@ -129,55 +127,58 @@ const ShoppingCart = () => {
                       Proceed to Checkout
                     </button>
                   </div>
-                </div>
 
-                {/* CALCULATE SHOPPING */}
-                <div className="flex w-[400px] flex-col pt-5">
-                  <h3 className="text-center font-jose font-bold text-blue">
-                    Calculate Shopping
-                  </h3>
-                  <div className="mt-7 flex h-[340px] w-[371px] flex-col space-y-6 bg-primary px-5 py-7">
-                    <div>
-                      <div className="mb-1 flex justify-between">
-                        <input
-                          type="text"
-                          className="w-full bg-primary py-2 text-xs text-black"
-                          placeholder="Country"
-                        />
-                      </div>
-                      <img src="/line6.png" />
-                    </div>
+                  <div className="w-1/4 px-8 py-10">
+                    {/* CALCULATE SHOPPING */}
+                    <div className="flex w-[400px] flex-col pt-5">
+                      <h3 className="text-center font-jose font-bold text-blue">
+                        Calculate Shopping
+                      </h3>
+                      <div className="mt-7 flex h-[340px] w-[371px] flex-col space-y-6 bg-primary px-5 py-7">
+                        <div>
+                          <div className="mb-1 flex justify-between">
+                            <input
+                              type="text"
+                              className="w-full bg-primary py-2 text-xs text-black"
+                              placeholder="Country"
+                            />
+                          </div>
+                          <img src="/line6.png" />
+                        </div>
 
-                    <div>
-                      <div className="mb-1 flex justify-between">
-                        <input
-                          type="text"
-                          className="w-full bg-primary py-2 text-xs text-black "
-                          placeholder="Address"
-                        />
+                        <div>
+                          <div className="mb-1 flex justify-between">
+                            <input
+                              type="text"
+                              className="w-full bg-primary py-2 text-xs text-black "
+                              placeholder="Address"
+                            />
+                          </div>
+                          <img src="/line6.png" />
+                        </div>
+                        <div>
+                          <div className="mb-1 flex justify-between">
+                            <input
+                              type="text"
+                              className="w-full bg-primary py-2 text-xs text-black "
+                              placeholder="Postal Code"
+                            />
+                          </div>
+                          <img src="/line6.png" />
+                        </div>
+                        <button className="w-[200px] rounded-sm  bg-pink px-1 py-2 text-xs text-white">
+                          Calculate Shipping
+                        </button>
                       </div>
-                      <img src="/line6.png" />
                     </div>
-                    <div>
-                      <div className="mb-1 flex justify-between">
-                        <input
-                          type="text"
-                          className="w-full bg-primary py-2 text-xs text-black "
-                          placeholder="Postal Code"
-                        />
-                      </div>
-                      <img src="/line6.png" />
-                    </div>
-                    <button className="w-[200px] rounded-sm  bg-pink px-1 py-2 text-xs text-white">
-                      Calculate Shipping
-                    </button>
                   </div>
-                </div>
-                <div className="mt-5 flex items-center justify-center gap-3">
-                  <BsArrowLeft size={30} />
-                  <span className="font-semibold text-blue">
-                    <Link to="/pages/grid">Continue Shopping</Link>
-                  </span>
+
+                  <div className="mt-5 flex items-center justify-center gap-3">
+                    <BsArrowLeft size={30} />
+                    <span className="font-semibold text-blue">
+                      <Link to="/pages/grid">Continue Shopping</Link>
+                    </span>
+                  </div>
                 </div>
               </div>
             </div>
