@@ -13,8 +13,10 @@ import { protectRoute } from "../middleware/authMiddleware.js";
 router.post("/", registerUser);
 router.post("/auth", authUser);
 router.post("/logout", logoutUser);
+
+//insert protect middleware for private routes
 router
   .route("/profile")
   .get(protectRoute, getUserProfile)
-  .put(protectRoute,updateUserProfile);
+  .put(protectRoute, updateUserProfile);
 export default router;

@@ -6,7 +6,6 @@ import generateToken from "../utils/generateToken.js";
 //route POST /api/users/auth
 //access public
 const authUser = asyncHandler(async (req, res) => {
- 
   const { email, password } = req.body;
 
   const user = await User.findOne({ email });
@@ -103,6 +102,7 @@ const updateUserProfile = asyncHandler(async (req, res) => {
     throw new Error("User not found");
   }
 });
+
 export {
   authUser,
   logoutUser,
