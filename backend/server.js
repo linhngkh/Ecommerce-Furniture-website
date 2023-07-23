@@ -7,7 +7,7 @@ const app = express();
 import colors from "colors";
 import cookieParser from "cookie-parser";
 import cors from "cors";
-import { corsOptions } from "./config/corsOptions.js";
+// import { corsOptions } from "./config/corsOptions.js";
 import userRoutes from "./routes/userRoutes.js";
 import productsRoutes from "./routes/productsRouter.js";
 
@@ -17,7 +17,7 @@ import connectDB from "./config/db.js";
 connectDB();
 
 // middleware
-app.use(cors(corsOptions));
+app.use(cors({ origin: "*" }));
 app.use(express.json());
 
 app.use(express.urlencoded({ extended: true }));
