@@ -13,7 +13,7 @@ export const productsFetch = createAsyncThunk(
   //payloadCreator
   async () => {
     const response = await axios.get(
-      "https://ecommerce-furniture-website.vercel.app/api/products"
+      "https://backend-stores.vercel.app/api/products"
     );
     return response?.data;
   }
