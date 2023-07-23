@@ -7,6 +7,7 @@ const app = express();
 import colors from "colors";
 import cookieParser from "cookie-parser";
 import cors from "cors";
+import { corsOptions } from "./config/corsOptions.js";
 import userRoutes from "./routes/userRoutes.js";
 import productsRoute from "./routes/productsRouter.js";
 
@@ -16,9 +17,8 @@ import connectDB from "./config/db.js";
 connectDB();
 
 // middleware
-
+app.use(cors(corsOptions));
 app.use(express.json());
-app.use(cors());
 
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
