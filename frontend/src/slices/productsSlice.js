@@ -1,5 +1,6 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
+import { serverUrl } from "./producstApi";
 
 const initialState = {
   status: null,
@@ -12,9 +13,7 @@ export const productsFetch = createAsyncThunk(
   "products/productsFetch",
   //payloadCreator
   async () => {
-    const response = await axios.get(
-      "https://backend-stores.vercel.app/api/products"
-    );
+    const response = await axios.get(`${serverUrl}/api/products`);
     return response?.data;
   }
 );
