@@ -27,19 +27,9 @@ app.use("/api/users", userRoutes);
 
 app.use("/api/products", productsRoute);
 
-if (process.env.NODE_ENV === "production") {
-  const __dirname = path.resolve();
-  // make static folder
-  app.use(express.static(path.join(__dirname, "frontend/dist")));
-  //if get any routes that not /api/users, then show dist/index.html
-  app.get("*", (req, res) =>
-    res.sendFile(path.resolve(__dirname, "frontend", "dist", "index.html"))
-  );
-} else {
-  app.get("/", (req, res) => {
-    res.send(`<h1>Server is ready</h1>`);
-  });
-}
+app.get("/", (req, res) => {
+  res.send(`<h1>Server is ready</h1>`);
+});
 
 app.use(notFound);
 app.use(errorHandler);
