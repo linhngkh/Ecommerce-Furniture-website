@@ -9,8 +9,10 @@ const buttonStyles = `px-4 py-2 bg-[#e7e7e7] text-black font-bold rounded-md `;
 const pinkButtons = `mt-5 bg-pink px-4 py-2 font-jose text-sm text-white transition hover:bg-deeppink`;
 
 const flexCenter = `flex items-center justify-center`;
+
 const ShoppingCart = () => {
   const cart = useSelector((state) => state.cart);
+
   return (
     <section className="w-full pt-10 md:pt-20">
       <SharedBanner>Shopping Cart</SharedBanner>

@@ -1,7 +1,7 @@
 //register api service to help fetching data from backend api
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 
-const baseUrl = "http://localhost:5000/api";
+const baseUrl = "https://ecommerce-furniture-website.vercel.app/api";
 
 export const productsApi = createApi({
   reducerPath: "productsApi",

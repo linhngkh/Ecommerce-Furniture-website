@@ -2,7 +2,7 @@ import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 
 //keep empty "" because we use proxy
 const baseQuery = fetchBaseQuery({
-  baseUrl: "http://localhost:5000",
+  baseUrl: "https://ecommerce-furniture-website.vercel.app",
 });
 
 export const apiSlice = createApi({
