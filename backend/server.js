@@ -27,10 +27,6 @@ app.use("/api/users", userRoutes);
 
 app.use("/api/products", productsRoutes);
 
-app.get("/", (req, res) => {
-  res.send(`<h1>Server is ready</h1>`);
-});
-
 app.use(notFound);
 app.use(errorHandler);
 
