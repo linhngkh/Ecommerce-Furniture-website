@@ -6,8 +6,8 @@ const productsModel = mongoose.Schema({
     type: String,
     required: true,
   },
-  price: Number,
-  discount: Number,
+  price: { type: Number },
+  discount: { type: Number },
 });
 
 const Product = mongoose.model("Product", productsModel);
