@@ -9,7 +9,7 @@ import cookieParser from "cookie-parser";
 import cors from "cors";
 import { corsOptions } from "./config/corsOptions.js";
 import userRoutes from "./routes/userRoutes.js";
-import productsRoute from "./routes/productsRouter.js";
+import productsRoutes from "./routes/productsRouter.js";
 
 //connect mongoDB
 import connectDB from "./config/db.js";
@@ -25,11 +25,7 @@ app.use(cookieParser());
 
 app.use("/api/users", userRoutes);
 
-app.use("/api/products", productsRoute);
-
-app.get("/api/products", (req, res) => {
-  res.send("sajfhasj");
-});
+app.use("/api/products", productsRoutes);
 
 app.get("/", (req, res) => {
   res.send(`<h1>Server is ready</h1>`);
