@@ -5,7 +5,13 @@ const baseUrl = "https://backend-stores.vercel.app";
 
 export const productsApi = createApi({
   reducerPath: "productsApi",
-  baseQuery: fetchBaseQuery({ baseUrl }),
+  baseQuery: fetchBaseQuery({
+    baseUrl,
+    prepareHeaders: (headers, { getState }) => {
+      headers.set("Access-Control-Allow-Origin", "*");
+      return headers;
+    },
+  }),
   endpoints: (builder) => ({
     getAllProducts: builder.query({
       query: () => "products",
