@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-const productsModel = mongoose.Schema({
+const productsModel = new mongoose.Schema({
   imgUrl: String,
   name: {
     type: String,
