@@ -82,7 +82,7 @@ const Header = ({ isTopOfPage }) => {
                   Wishlist <AiOutlineHeart />
                 </div>
                 {/* shopping cart */}
-                <div className="relative">
+                <div className={`${itemCenter} relative mr-3`}>
                   <button>
                     <Link to="/cart">
                       <AiOutlineShoppingCart className="h-5 w-5" />
