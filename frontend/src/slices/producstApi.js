@@ -1,9 +1,9 @@
 //register api service to help fetching data from backend api
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 
-export const serverUrl = import.meta.env.VITE_SERVER_URL;
+// const serverUrl = import.meta.env.VITE_SERVER_URL;
 
-const baseUrl = `${serverUrl}/api/products`;
+const baseUrl = `http://localhost:5000/api`;
 
 export const productsApi = createApi({
   reducerPath: "productsApi",

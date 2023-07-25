@@ -1,6 +1,7 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
-import { serverUrl } from "./producstApi";
+
+const serverUrl = import.meta.env.VITE_SERVER_URL;
 
 const initialState = {
   status: null,
@@ -13,7 +14,7 @@ export const productsFetch = createAsyncThunk(
   "products/productsFetch",
   //payloadCreator
   async () => {
-    const response = await axios.get(`${serverUrl}/api/products`);
+    const response = await axios.get(`http://localhost:5000/api/products`);
     return response?.data;
   }
 );
