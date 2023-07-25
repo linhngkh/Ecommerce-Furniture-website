@@ -26,6 +26,7 @@
  * logs out,
  * private routes for user only when they register or login into this page
 
+(Future features will be added)
  * add/ remove items to cart
  * see payment in totals
  * check out
