@@ -21,7 +21,7 @@
 
 #### Deploy
 * Firebase - Frontend
-* Firebase - [Backend](https://ecommerce-furniture-website.vercel.app/)
+* Vercel - [Backend](https://ecommerce-furniture-website.vercel.app/)
 ---
 #### User flows: 
  * logins to this page, 
