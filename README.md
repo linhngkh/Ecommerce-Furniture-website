@@ -13,9 +13,12 @@
 
 #### Back End
 * JWT Authentication
-* MongoDB
 * Node.js
 * Express
+
+#### Database 
+* MongoDB
+
 #### Deploy
 * Firebase - Frontend
 * Firebase - [Backend](https://ecommerce-furniture-website.vercel.app/)
@@ -34,8 +37,11 @@
 #### Reflection & What I learn so far
 * Working with Front End, I practice CSS skills with flex box, grid layouts to style the website with the same Figma design.
 
-* Making reusable components.
+* Making reusable and shared components.
 
-* Structuring my application, both frontend & backend in an effective way when it comes to more complex web.(MVC pattern)
+* Structuring my application, both frontend & backend in an effective way when the projects have various components and pages.
 
 * Optimizing my web performance. 
+
+#### License
+Figma files and images are belonged to Creative Commons (CC)
