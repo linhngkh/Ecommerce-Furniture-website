@@ -6,6 +6,7 @@ const port = process.env.PORT || 5000;
 const app = express();
 import colors from "colors";
 import cookieParser from "cookie-parser";
+import helmet from "helmet";
 
 import cors from "cors";
 // import { corsOptions } from "./config/corsOptions.js";
@@ -20,11 +21,10 @@ connectDB();
 // middleware
 app.use(cors({ origin: "*" }));
 app.use(express.json());
-
-// for POST and PUT requests
 app.use(express.urlencoded({ extended: true }));
 
 app.use(cookieParser());
+app.use(helmet());
 
 app.use("/api/users", userRoutes);
 
